@@ -34,15 +34,17 @@ header, main, footer {
 }
 
 header nav {
-    /* background : var(--yellow); */
-    display: flex;
-    align-items : center;
-    justify-content: center;
+    /* background      : var(--yellow); */
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 40%;
 }
 
 header nav ul {
     /* background : var(--green); */
     display         : flex;
+    flex            : 1;
     flex-direction  : row;
     justify-content : space-evenly;
     width           : 30%;
@@ -77,6 +79,11 @@ header nav ul {
     /* background : var(--yellow); */
 }
 
+.header__center {
+    flex-direction : row;
+    justify-content : space-between;
+}
+
 main {
     flex-grow : 1;
     height    : 100%;
@@ -92,4 +99,12 @@ footer {
 a {
     color: #00e;
     text-decoration: none;
+}
+
+pre {
+    margin-left: 1rem;
+}
+
+code {
+      font-size: 1.0rem;
 }

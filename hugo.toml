@@ -4,8 +4,9 @@ title = 'CS Notebook'
 theme = 'csnotebook'
 
 
-
 [markup]
+    [markup.highlight]
+        codeFences = false  # default is true
     [markup.goldmark]
         [markup.goldmark.extensions]
             [markup.goldmark.extensions.passthrough]
