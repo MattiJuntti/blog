@@ -1,0 +1,95 @@
+:root {
+    --red    : #FF9B9B;
+    --green  : #CBFFA9;
+    --orange : #FFD6A5;
+    --yellow : #FFFEC4;
+}
+
+*, html, header, main, footer {
+}
+
+html {
+    height : 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+body, header, main, footer {
+    display : flex;
+}
+
+body {
+    display     : flex;
+    flex-direction : column;
+    color       : #222;
+    font-family : sans-serif;
+    line-height : 1.5;
+    margin      : 0;
+}
+
+header, main, footer {
+    flex-direction : row;
+}
+
+header nav {
+    /* background : var(--yellow); */
+    display: flex;
+    align-items : center;
+    justify-content: center;
+}
+
+header nav ul {
+    /* background : var(--green); */
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-evenly;
+    width           : 30%;
+    margin          : 0;
+    padding         : 0;
+    list-style-type : none;
+}
+
+.header__left   , .main__left   , .footer__left    ,
+.header__center , .main__center , .footer__center  ,
+.header__right  , .main__right  , .footer__right {
+    display        : flex;
+    flex-direction : column;
+    width : 100%;
+}
+
+.header__left  , .main__left  , .footer__left    ,
+.header__right , .main__right , .footer__right {
+    width : 100%;
+}
+
+.header__left, .main__left, .footer__left {
+    /* background : var(--green); */
+}
+
+.header__center, .main__center, .footer__center {
+    /* background : var(--red); */
+    min-width   : 700px;
+}
+
+.header__right, .main__right, .footer__right {
+    /* background : var(--yellow); */
+}
+
+main {
+    flex-grow : 1;
+    height    : 100%;
+}
+
+.main__center {
+    text-align: justify;
+}
+
+footer {
+}
+
+a {
+    color: #00e;
+    text-decoration: none;
+}
