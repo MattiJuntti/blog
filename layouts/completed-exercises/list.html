@@ -1,9 +1,0 @@
-{{ define "main" }}
-    <!-- <h5>layouts/completed-exercises/list.html</h5> -->
-    <h1>Completed Exercises</h1>
-    {{ .Content }}
-    {{ range .Pages }}
-        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-        {{ .Summary }}
-    {{ end }}
-{{ end }}
