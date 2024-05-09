@@ -1,9 +1,8 @@
 {{ define "main" }}
-    <h5>layouts/_default/list.html</h5>
-    <h1>Posts</h1>
-    <ul>
-    {{ range where .Site.RegularPages "Section" "==" "post" }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{ range sort .Pages "Title" }}
+        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
     {{ end }}
-    </ul>
 {{ end }}
