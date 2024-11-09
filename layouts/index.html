@@ -2,7 +2,7 @@
     <!-- <h5>layouts/_default/list.html</h5> -->
     <ul>
     {{ range where .Site.RegularPages "Section" "==" "post" }}
-        <li><a href="{{ .Permalink }}"><h1>{{ .Title }}</h1></a>
+        <li><a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
             <p>{{ .Summary }}</p>
         </li>
     {{ end }}
