@@ -1,0 +1,7 @@
+{{ define "main" }}
+    {{ partial "breadcrumbs.html" . }}
+    <h2>{{ .Title }}</h2>
+
+    {{ .Content }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}
