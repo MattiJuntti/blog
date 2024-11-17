@@ -38,6 +38,20 @@ h3.list_link {
     margin-bottom : 0;
 }
 
+ul.navigator {
+    margin       : 0;
+    padding-left : 0;
+    list-style   : none;
+}
+
+ul.navigator li.nav-link {
+    display: inline;
+}
+
+ul.navigator li.nav-link + li.nav-link:before {
+    content: "\003E\00a0";
+}
+
 time {
     margin-bottom : 1rem;
 }
