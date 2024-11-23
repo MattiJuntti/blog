@@ -178,6 +178,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration : underline;
+}
+
 code {
       font-size: 1.0rem;
 }
