@@ -6,7 +6,7 @@
     --yellow : #FFFEC4;
 
     --code-comment-color : #A9A9A9;
-    --code-indentation : "    ";
+    --code-indentation : "  ";
     --code-line-hl-color : var(--green);
 }
 
