@@ -3,3 +3,5 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
+{{ $syntax_light_css := resources.Get "syntax-light.css" | minify }}
+    <link rel="stylesheet" as="style" href="{{ $syntax_light_css.Permalink }}" />
