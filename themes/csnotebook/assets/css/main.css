@@ -72,7 +72,7 @@ time {
 }
 
 pre span::before {
-    content: "     ";
+    content: var(--code-indentation) "  ";
 }
 
 pre span span::before {
