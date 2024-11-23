@@ -6,8 +6,13 @@ theme = 'csnotebook'
 
 [markup]
     [markup.highlight]
-        codeFences = false  # default is true
+        style = "bw"
+        noClasses = false
     [markup.goldmark]
+        [markup.goldmark.parser]
+            [markup.goldmark.parser.attribute]
+                block = true
+                title = true
         [markup.goldmark.renderer]
             unsafe = true
         [markup.goldmark.extensions]
