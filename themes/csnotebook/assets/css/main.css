@@ -5,6 +5,8 @@
     --orange : #FFD6A5;
     --yellow : #FFFEC4;
 
+    --link-color : var(--red);
+
     --code-comment-color : #A9A9A9;
     --code-indentation : "  ";
     --code-line-hl-color : var(--green);
@@ -172,7 +174,7 @@ footer {
 }
 
 a {
-    color: var(--red);
+    color: var(--link-color);
     text-decoration: none;
 }
 
