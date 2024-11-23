@@ -1,8 +1,13 @@
 :root {
-    --red    : #FF9B9B;
+    --white  : #FFFFFF;
+    --red    : #FF6868;
     --green  : #CBFFA9;
     --orange : #FFD6A5;
     --yellow : #FFFEC4;
+
+    --code-comment-color : #A9A9A9;
+    --code-indentation : "    ";
+    --code-line-hl-color : var(--green);
 }
 
 *, html, header, main, footer {
@@ -54,6 +59,42 @@ ul.navigator li.nav-link + li.nav-link:before {
 
 time {
     margin-bottom : 1rem;
+}
+
+.exercise-tag {
+    text-align       : center;
+    font-weight      : bold;
+    color            : var(--white);
+    border           : 1px solid var(--red);
+    background-color : var(--red);
+    border-radius    : 5px;
+    padding          : 2px 5px 2px 5px;
+}
+
+pre span::before {
+    content: "     ";
+}
+
+pre span span::before {
+    content: "";
+}
+
+.listing {
+    counter-reset: linenumber;
+}
+
+.listing pre code span.line::before {
+    counter-increment : linenumber;
+    content           : " " counter(linenumber) var(--code-indentation);
+    color             : var(--code-comment-color);
+}
+
+.listing pre code span.line:nth-child(n + 10)::before {
+    content           : counter(linenumber) var(--code-indentation);
+}
+
+.listing pre code span span {
+    counter-increment: linenumber 0;
 }
 
 header, main, footer {
@@ -131,12 +172,8 @@ footer {
 }
 
 a {
-    color: #00e;
+    color: var(--red);
     text-decoration: none;
-}
-
-pre {
-    margin-left: 1rem;
 }
 
 code {
