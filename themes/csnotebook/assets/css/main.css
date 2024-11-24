@@ -8,7 +8,7 @@
     --link-color : var(--red);
 
     --code-comment-color : #A9A9A9;
-    --code-indentation : "  ";
+    --code-indentation   : "  ";
     --code-line-hl-color : var(--green);
 }
 
@@ -28,12 +28,12 @@ body, header, main, footer {
 }
 
 body {
-    display     : flex;
+    display        : flex;
     flex-direction : column;
-    color       : #222;
-    font-family : sans-serif;
-    line-height : 1.5;
-    margin      : 0;
+    color          : #222;
+    font-family    : sans-serif;
+    line-height    : 1.5;
+    margin         : 0;
 }
 
 h1 {
@@ -100,7 +100,7 @@ pre span span::before {
 }
 
 .listing pre code span span {
-    counter-increment: linenumber 0;
+    counter-increment : linenumber 0;
 }
 
 header, main, footer {
@@ -132,7 +132,7 @@ header nav ul {
 .header__right  , .main__right  , .footer__right {
     display        : flex;
     flex-direction : column;
-    width : 100%;
+    width          : 100%;
 }
 
 .header__left  , .main__left  , .footer__left    ,
@@ -154,7 +154,7 @@ header nav ul {
 }
 
 .header__center {
-    flex-direction : row;
+    flex-direction  : row;
     justify-content : space-between;
 }
 
@@ -174,9 +174,9 @@ main {
 }
 
 .main__center img {
-    max-width : 100%;
-    margin-top : 2rem;
-    margin-bottom: 1rem;
+    max-width     : 100%;
+    margin-top    : 2rem;
+    margin-bottom : 1rem;
 }
 
 footer {
@@ -193,5 +193,5 @@ a:hover {
 }
 
 code {
-      font-size: 1.0rem;
+      font-size : 1.0rem;
 }
