@@ -173,6 +173,10 @@ main {
     list-style   : none;
 }
 
+.main__center img {
+    max-width : 100%;
+}
+
 footer {
     margin-top: 300px;
 }
