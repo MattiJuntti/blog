@@ -40,20 +40,20 @@
 /* NameVariableMagic */ .chroma .vm {  }
 /* Literal */ .chroma .l {  }
 /* LiteralDate */ .chroma .ld {  }
-/* LiteralString */ .chroma .s { font-style:italic }
-/* LiteralStringAffix */ .chroma .sa { font-style:italic }
-/* LiteralStringBacktick */ .chroma .sb { font-style:italic }
-/* LiteralStringChar */ .chroma .sc { font-style:italic }
-/* LiteralStringDelimiter */ .chroma .dl { font-style:italic }
-/* LiteralStringDoc */ .chroma .sd { font-style:italic }
-/* LiteralStringDouble */ .chroma .s2 { font-style:italic }
-/* LiteralStringEscape */ .chroma .se { font-weight:normal;font-style:italic }
-/* LiteralStringHeredoc */ .chroma .sh { font-style:italic }
-/* LiteralStringInterpol */ .chroma .si { font-weight:normal;font-style:italic }
-/* LiteralStringOther */ .chroma .sx { font-style:italic }
-/* LiteralStringRegex */ .chroma .sr { font-style:italic }
-/* LiteralStringSingle */ .chroma .s1 { font-style:italic }
-/* LiteralStringSymbol */ .chroma .ss { font-style:italic }
+/* LiteralString */ .chroma .s {  }
+/* LiteralStringAffix */ .chroma .sa {  }
+/* LiteralStringBacktick */ .chroma .sb {  }
+/* LiteralStringChar */ .chroma .sc {  }
+/* LiteralStringDelimiter */ .chroma .dl {  }
+/* LiteralStringDoc */ .chroma .sd {  }
+/* LiteralStringDouble */ .chroma .s2 {  }
+/* LiteralStringEscape */ .chroma .se { font-weight:normal; }
+/* LiteralStringHeredoc */ .chroma .sh {  }
+/* LiteralStringInterpol */ .chroma .si { font-weight:normal; }
+/* LiteralStringOther */ .chroma .sx {  }
+/* LiteralStringRegex */ .chroma .sr {  }
+/* LiteralStringSingle */ .chroma .s1 {  }
+/* LiteralStringSymbol */ .chroma .ss {  }
 /* LiteralNumber */ .chroma .m {  }
 /* LiteralNumberBin */ .chroma .mb {  }
 /* LiteralNumberFloat */ .chroma .mf {  }
@@ -73,7 +73,7 @@
 /* CommentPreprocFile */ .chroma .cpf {  }
 /* Generic */ .chroma .g {  }
 /* GenericDeleted */ .chroma .gd {  }
-/* GenericEmph */ .chroma .ge { font-style:italic }
+/* GenericEmph */ .chroma .ge {  }
 /* GenericError */ .chroma .gr {  }
 /* GenericHeading */ .chroma .gh { font-weight:normal }
 /* GenericInserted */ .chroma .gi {  }
