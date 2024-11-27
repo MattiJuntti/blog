@@ -1,7 +1,6 @@
 {{ define "main" }}
     {{ partial "breadcrumbs.html" . }}
     <h2>{{ .Title }}</h2>
-    {{ .Content }}
     {{ range .Pages }}
         <h3 class = "list_link"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
     {{ end }}
