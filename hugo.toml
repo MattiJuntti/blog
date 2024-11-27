@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://mattijuntti.me/'
 languageCode = 'en-us'
 title = 'CS Notebook'
 theme = 'csnotebook'
