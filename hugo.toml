@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'CS Notebook'
 theme = 'csnotebook'
 
-
 [markup]
     [markup.highlight]
         style = "bw"
