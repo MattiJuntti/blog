@@ -15,7 +15,8 @@ Renders a menu for the given menu ID.
                 <ul>
                     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
                 </ul>
-            </nav>{{- end }}
+            </nav>
+{{- end }}
 
 {{- define "partials/inline/menu/walk.html" }}
             {{- $page := .page }}
