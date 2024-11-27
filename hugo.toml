@@ -1,4 +1,4 @@
-baseURL = 'https://mattijuntti.me/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'CS Notebook'
 theme = 'csnotebook'
