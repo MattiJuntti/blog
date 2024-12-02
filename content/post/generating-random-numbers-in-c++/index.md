@@ -33,7 +33,7 @@ When $\mu = 0$ and $\sigma = 1$, $(1)$ can be written
 $$
     \phantom{.} \
         f(x \ | \ 0, 1)
-            = \dfrac{1}{\sqrt{2 \pi (1)^2}} \exp \left( - \dfrac{0 - x)^2}{2 (1)^2} \right)
+            = \dfrac{1}{\sqrt{2 \pi (1)^2}} \exp \left( - \dfrac{(0 - x)^2}{2 (1)^2} \right)
             = \dfrac{1}{\sqrt{2 \pi}} \exp \left( \dfrac{1}{2} x^2 \right) \ .
     \tag{2}
 $$
@@ -43,7 +43,7 @@ $$
 $$
     \begin{array}{ c c c }
         \phantom{=} & f(x \ | \ 0, 1) &
-            \\[1em] = & \dfrac{1}{\sqrt{2 \pi (1)^2}} \exp \left( - \dfrac{0 - x)^2}{2 (1)^2} \right) &
+            \\[1em] = & \dfrac{1}{\sqrt{2 \pi (1)^2}} \exp \left( - \dfrac{(0 - x)^2}{2 (1)^2} \right) &
             \\[1em] = & \dfrac{1}{\sqrt{2 \pi}} \exp \left( \dfrac{1}{2} x^2 \right) \ . &
     \end{array}
     \tag{2}
