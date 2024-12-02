@@ -60,13 +60,21 @@ $$
 $$
 </widescreen>
 
+<smallscreen>
+$$
+    \begin{array}{r c l}
+        \dfrac{d}{dx} 1 + e^{-x} & = & \dfrac{d}{dx} 1 + \dfrac{d}{dx} e^{-x} 
+        \\[1em] & = & 0 - e^{-x}
+        \\[1em] & = & -e^{-x} \ ,
+    \end{array}
+$$
+</smallscreen>
+
 the nominator of $(2)$ can be written as
 
-<widescreen>
 $$
     \dfrac{d}{dx} \sigma(x) = \dfrac{e^{-x}}{(1 + e^{-x})^2}.
 $$
-</widescreen>
 
 Continuing from the previous expression, next steps are then
 applying common algebraic transformations as follows;
@@ -84,19 +92,41 @@ $$
 $$
 </widescreen>
 
+<smallscreen>
+$$
+    \begin{array}{r c l}
+        \dfrac{d}{dx} \sigma(x)
+            & = & \dfrac{0 + e^{-x}}{(1 + e^{-x})^2} \\[1em]
+            & = & \dfrac{(1 - 1) + e^{-x}}{(1 + e^{-x})^2} \\[1em]
+            & = & \dfrac{1 + e^{-x}}{(1 + e^{-x})^2} - \dfrac{1}{(1 + e^{-x})^2} \\[1em]
+            & = & \dfrac{1}{1 + e^{-x}} - \dfrac{1}{(1 + e^{-x})^2} \\[1em]
+            & = & \dfrac{1}{(1 + e^{-x})} \left( 1 - \dfrac{1}{1 + e^{-x}} \right) \ ,
+    \end{array}
+$$
+</smallscreen>
+
 and because
 
-<widescreen>
 $$
     \dfrac{1}{(1 + e^{-x})} = \sigma(x) \ ,
 $$
-</widescreen>
 
 the next to last step shows that
 
+<widescreen>
 $$
     \dfrac{d}{dx} \sigma(x) = \dfrac{1}{(1 + e^{-x})} \left( 1 - \dfrac{1}{1 + e^{-x}} \right) = \sigma(x)(1 - \sigma(x))
 $$
+</widescreen>
+
+<smallscreen>
+$$
+    \begin{array}{r c l}
+        \dfrac{d}{dx} \sigma(x) & = & \dfrac{1}{(1 + e^{-x})} \left( 1 - \dfrac{1}{1 + e^{-x}} \right)
+            \\[1em] & = & \sigma(x)(1 - \sigma(x))
+    \end{array}
+$$
+</smallscreen>
 
 <div align = "right">
     $\square$
