@@ -388,4 +388,6 @@ $$
 $$
 
 The following is lazy answer, but changing the first and the second row
-will not break the requirement for $\mathbf{S}$.
+will not break the requirement for $\mathbf{S}$. So if the row exchanges
+are done within the boundaries of a horizontal blocks, then it is possible
+to have multiple Sudoku-matrices, but there might be other ways too.
