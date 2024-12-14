@@ -79,7 +79,7 @@ time {
     margin-bottom : 1rem;
 }
 
-.exercise-tag {
+.exercise-tag, .exnum {
     text-align       : center;
     font-weight      : bold;
     color            : var(--white);
