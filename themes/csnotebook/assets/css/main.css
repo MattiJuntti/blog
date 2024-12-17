@@ -61,6 +61,11 @@ h3.list_link {
     margin-bottom : 0;
 }
 
+h4.list_link {
+    margin-top    : 0;
+    margin-bottom : 0;
+}
+
 ul.navigator {
     margin       : 0;
     padding-left : 0;
