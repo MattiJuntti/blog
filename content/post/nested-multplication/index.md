@@ -332,11 +332,10 @@ Comparing the number of operations, as is shown in the next figure,
 it can be seen that in &ldquo;$\text{more common}$&rdquo; and
 &ldquo;$\text{nested}$&rdquo; method for polynomials of $1 \leq n \leq 50$
 degrees, the former is computationally more intensive as the degree of
-polynomial increases. This is because the &ldquo;$\text{more
-common}$&rdquo; method is of $\mathcal{O}(n^2)$, that is, of quadratic
-complexity, due to the $n^2$ term in $(3)$, whereas the
-&ldquo;$\text{nested}$&rdquo; method is of $\mathcal{O}(n)$, that is, of
-linear complexity.
+polynomial increases. This is because the &ldquo;$\text{more common}$&rdquo;
+method is of $\mathcal{O}(n^2)$, that is, of quadratic complexity, due to
+the $n^2$ term in $(3)$, whereas the &ldquo;$\text{nested}$&rdquo; method
+is of $\mathcal{O}(n)$, that is, of linear complexity.
 
 Because of this, when considering a computational routine for evaluating
 polynomials, it can be beneficial to make use of the nested multiplication
