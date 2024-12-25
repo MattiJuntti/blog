@@ -7,15 +7,9 @@
 
     {{ .Content }}
 
-    <div class = "comment-section">
-        <script async
-            src  = "https://talk.hyvor.com/embed/embed.js"
-            type = "module">
-        </script>
-        <hyvor-talk-comments
-            website-id = "12334"
-            page-id    = "{{ .Page.Permalink }}">
-        </hyvor-talk-comments>
-    </div>
+    {{ if strings.Contains .Page.Permalink "localhost" }}
+    {{ else }}
+    {{ partial "hyvortalk.html" }}
+    {{ end }}
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}
