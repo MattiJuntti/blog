@@ -223,6 +223,17 @@ code {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    header nav {
+        width          : 100%;
+    }
+
+    .header__center {
+        display        : flex;
+        width          : 100%;
+        flex-direction : column;
+        align-items    : center;
+    }
+
     .header__center, .main__center, .footer__center {
         /* background : var(--red); */
         min-width   : 90%;
