@@ -4,4 +4,7 @@ Session.vim
 # pdflatex intermediate files
 *.aux
 *.log
+
+# PDF-files ignored for not being needed.
+# PDFs are used for creating more fitting website graphics.
 *.pdf

@@ -1,0 +1,20 @@
+\documentclass[tikz, margin = 3mm]{standalone}
+\usepackage{amsmath,pgfplots,pgfplotstable}
+\pgfplotsset{compat = 1.18}
+\pgfplotsset{every axis plot/.append style={mark size = 1pt, line width = 0}}
+
+\begin{document}
+    \def\maxdim{2cm}
+    \begin{tikzpicture}[x = \maxdim, y = \maxdim]
+        \begin{axis}[
+            legend cell align = left,
+            legend pos = north west
+        ]
+            \addplot table [x = x, y = y, col sep = comma] {num-of-ops.csv};
+            \addlegendentry{ \ more common}
+
+            \addplot table [x = x, y = y, col sep = comma] {num-of-ops-nested-mult.csv};
+            \addlegendentry{ \ nested}
+        \end{axis}
+    \end{tikzpicture}
+\end{document}
