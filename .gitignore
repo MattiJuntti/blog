@@ -1,2 +1,7 @@
 /public/
 Session.vim
+
+# pdflatex intermediate files
+*.aux
+*.log
+*.pdf
