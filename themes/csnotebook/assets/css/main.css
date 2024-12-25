@@ -124,6 +124,10 @@ pre span span::before {
     counter-increment : linenumber 0;
 }
 
+.comment-section {
+    margin-top : 64px;
+}
+
 header, main, footer {
     flex-direction : row;
 }
@@ -201,7 +205,7 @@ main {
 }
 
 footer {
-    margin-top: 300px;
+    /* ... */
 }
 
 a {
