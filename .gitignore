@@ -1,5 +1,10 @@
-/public/
+# File: .gitignore
+
 Session.vim
+
+# No need to include locally built website.
+# Website is built at Gitlab and published.
+/public/
 
 # pdflatex intermediate files
 *.aux
