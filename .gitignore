@@ -1,5 +1,4 @@
 # File: .gitignore
-
 Session.vim
 
 # No need to include locally built website.
