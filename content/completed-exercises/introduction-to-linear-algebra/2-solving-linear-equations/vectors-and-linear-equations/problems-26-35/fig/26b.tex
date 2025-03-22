@@ -1,0 +1,54 @@
+\documentclass[tikz, margin = 3mm]{standalone}
+\usepackage{amsmath,xcolor}
+
+\begin{document}
+    % Color defs
+    \definecolor{red}{HTML}{FF6868}
+    \definecolor{redl}{HTML}{FF8C8C}
+    \definecolor{redd}{HTML}{E34141}
+    \definecolor{blue}{HTML}{6953AF}
+    \definecolor{green}{HTML}{53CC53}
+    \definecolor{yellow}{HTML}{FFE568}
+
+    \def\maxdim{2cm}
+    \def\xdim{3}
+    \def\ydim{3}
+
+    \Huge % Text size in diagram
+
+    \begin{tikzpicture}[
+        x = \maxdim, y = \maxdim,
+        rvec/.style  = {-latex, red,    ultra thick},
+        rlvec/.style = {-latex, redl,   ultra thick},
+        rdvec/.style = {-latex, redd,   ultra thick},
+        bvec/.style  = {-latex, blue,   ultra thick},
+        gvec/.style  = {-latex, green,  ultra thick},
+        yvec/.style  = {-latex, yellow, ultra thick}
+    ]
+        % Axes
+        \draw [-latex, ultra thick] (0,0,0) -- (\xdim,0,0) node [right] {$x$};
+        \draw [latex-latex, ultra thick] (0,-\ydim,0) -- (0,\ydim,0) node [left]  {$y$};
+
+        % Tics
+        \foreach \i in {1.0, 2.0} {
+            \draw [thick] (\i, -0.05, 0.0) -- ++ (0.0, 0.10, 0.0); % x-axis
+        }
+
+        \foreach \i in {-2.0, ..., 2.0} {
+            \draw [thick] (-0.05, \i, 0.0) -- ++ (0.10, 0.0, 0.0); % y-axis
+        }
+
+        \draw [rvec] (0,0) -- (1,-2);
+        \node at (2,-2) { $\begin{bmatrix} 1 & -2 \end{bmatrix}\begin{bmatrix} x \\ y \end{bmatrix}$ };
+
+        \draw [bvec] (0,0) -- (1,1);
+        \node at (1.5,1.5) {$
+            \begin{bmatrix}
+                1 \ & 1
+            \end{bmatrix}
+            \begin{bmatrix}
+                x \\ y
+            \end{bmatrix}
+        $};
+    \end{tikzpicture}
+\end{document}
