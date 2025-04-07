@@ -3,34 +3,34 @@ title  = "1. Introduction and Overview"
 layout = "solution-single"
 +++
 
-<span class = "exnum">1</span> (a) Excluding the row and column keys, the
-associative array has $m = 4$ rows and $n = 4$ columns, so (b) the number
+<span class = "exnum">1</span> **(a)** Excluding the row and column keys, the
+associative array has $m = 4$ rows and $n = 4$ columns, so **(b)** the number
 of entries $mn = 4 \cdot 4 = 16$. The array has $0$ empty entries and the
 number of filld entries is $mn = 4 \cdot 4 = 16$.
 
-<span class = "exnum">2</span> (a) Each entry has a associated vertex, so
-the number of vertices is $20$. (b) The vertices through which the line
+<span class = "exnum">2</span> **(a)** Each entry has a associated vertex, so
+the number of vertices is $20$. **(b)** The vertices through which the line
 passes are $v_{09}, v_{11}, v_{02}, v_{16}, v_{06}$ and $v_{29}$.
 
-<span class = "exnum">3</span> (a) The array is called square because the
-number of rows ($m$) is equal to the number of columns ($n$). (b) The array
+<span class = "exnum">3</span> **(a)** The array is called square because the
+number of rows ($m$) is equal to the number of columns ($n$). **(b)** The array
 is called symmetric because the entries above the main diagonal are a
 transpose of the entries below the main diagonal.
 
-<span class = "exnum">4</span> (a) The number of rows ($m$) in the
-associative array is $3$ and the number of columns ($n$) is $3$. (b) There
-are $3$ genre vertices and artist vertices in the graph. (c) The total
-number of entries is $mn = 3 \cdot 3 = 9$. (d) The number of empty entries
+<span class = "exnum">4</span> **(a)** The number of rows ($m$) in the
+associative array is $3$ and the number of columns ($n$) is $3$. **(b)** There
+are $3$ genre vertices and artist vertices in the graph. **(c)** The total
+number of entries is $mn = 3 \cdot 3 = 9$. **(d)** The number of empty entries
 are those entries that are left blank is $mn - (1 + 1 + 1 + 1)$ $=$ $9 - 4$
 $=$ $5$, where $(1 + 1 + 1 + 1)$ $=$ $4$ is the number of filled entries.
-(d) The number of edges correlates to the number of filled entries, i.e.
+**(d)** The number of edges correlates to the number of filled entries, i.e.
 the number of edges is $4$.
 
-<span class = "exnum">5</span> Expression that illustrates (a)
-associativity and (c) distributivity of $\oplus$ and $\otimes$ among
+<span class = "exnum">5</span> Expression that illustrates **(a)**
+associativity and **(c)** distributivity of $\oplus$ and $\otimes$ among
 $\mathbf{A}$, $\mathbf{B}$ and $\mathbf{C}$ is $\mathbf{A} \otimes
 (\mathbf{B} \oplus \mathbf{C})$ $=$ $(\mathbf{A} \otimes \mathbf{B})$
-$\oplus$ $(\mathbf{A} \otimes \mathbf{B})$. Expression that illustrates (b)
+$\oplus$ $(\mathbf{A} \otimes \mathbf{B})$. Expression that illustrates **(b)**
 commutativity is $(\mathbf{A} \oplus,\otimes \mathbf{B})$ $\oplus,\otimes$
 $\mathbf{C}$ $=$ $(AB)C$ $=$ $A(BC)$ $=$ $\mathbf{A} \oplus,\otimes
 (\mathbf{B}$ $\oplus,\otimes$ $\mathbf{C})$.
