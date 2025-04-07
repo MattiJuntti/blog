@@ -26,14 +26,15 @@ empty entries are those entries that are left blank is $mn - (1 + 1 + 1 +
 filled entries.  **(d)** The number of edges correlates to the number of
 filled entries, i.e.  the number of edges is $4$.
 
-<span class = "exnum">5</span> Expression that illustrates **(a)**
+<span class = "exnum">5</span> Expression that illustrates **(a)*
 associativity and **(c)** distributivity of $\oplus$ and $\otimes$ among
 $\mathbf{A}$, $\mathbf{B}$ and $\mathbf{C}$ is $\mathbf{A} \otimes
 (\mathbf{B} \oplus \mathbf{C})$ $=$ $(\mathbf{A} \otimes \mathbf{B})$
 $\oplus$ $(\mathbf{A} \otimes \mathbf{B})$. Expression that illustrates
 **(b)** commutativity is $(\mathbf{A} \oplus,\otimes \mathbf{B})$
-$\oplus,\otimes$ $\mathbf{C}$ $=$ $(AB)C$ $=$ $A(BC)$ $=$ $\mathbf{A}
-\oplus,\otimes (\mathbf{B}$ $\oplus,\otimes$ $\mathbf{C})$.
+$\oplus,\otimes$ $\mathbf{C}$ $=$ $(\textbf{AB})\textbf{C}$ $=$
+$\textbf{A}(\textbf{BC})$ $=$ $\mathbf{A} \oplus,\otimes (\mathbf{B}$
+$\oplus,\otimes$ $\mathbf{C})$.
 
 <span class = "exnum">6</span> It is reasonable to assume that the need for
 storing data into tables happened as a application of writing. It is also
