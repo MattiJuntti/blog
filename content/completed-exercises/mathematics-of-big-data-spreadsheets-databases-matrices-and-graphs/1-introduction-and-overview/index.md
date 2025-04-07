@@ -65,5 +65,3 @@ multiplications in nanoseconds, i.e. in a one billionth of a second.
 <span class = "exnum">10</span> Defining summation and multiplication for
 associative arrays allows the application of a lot of well known theory to
 associative arrays. This allows a lot of research and applications.
-
-<span class = "exnum"></span>
