@@ -1,5 +1,6 @@
 # File: .gitignore
-Session.vim
+# Ignore vim session files
+*.vim
 
 # No need to include locally built website.
 # Website is built at Gitlab and published.
