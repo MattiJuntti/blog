@@ -1,5 +1,5 @@
 +++
-title  = "01: Evaluating a Polynomial"
+title  = "0.1: Evaluating a Polynomial"
 layout = "solution-single"
 +++
 
