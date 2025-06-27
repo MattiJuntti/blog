@@ -1,4 +1,4 @@
 +++
-title  = "01: Numbers and functions"
+title  = "1: Numbers and functions"
 layout = "solution-list"
 +++

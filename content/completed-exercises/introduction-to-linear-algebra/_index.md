@@ -1,4 +1,4 @@
 +++
-title = "Introduction to Linear Algebra. Strang (2016)"
+title = "Introduction to linear algebra. Strang (2016)."
 layout = "solution-list"
 +++
