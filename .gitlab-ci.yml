@@ -9,7 +9,7 @@ test:  # builds and tests your site
 
 create-pages:  # a user-defined job that builds your pages and saves them to the specified path.
   script:
-    - hugo --cleanDestinationDir
+    - hugo --cleanDestinationDir --ignoreCache --disableFastRender
   pages: true  # specifies that this is a Pages job
   artifacts:
     paths:
