@@ -1,4 +1,4 @@
-baseURL      = 'https://mattijuntti.gitlab.io/blog/'
+baseURL      = 'https://mattijuntti.gitlab.io/'
 languageCode = 'en-us'
 title        = 'CS Notebook'
 theme        = 'csnotebook'
