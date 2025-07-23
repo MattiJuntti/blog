@@ -8,7 +8,7 @@ layout = "solution-single"
 When head is denoted as $\text{H}$ and $\text{T}$, the sample space for three
 coin tosses is
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \left\{ \
@@ -19,9 +19,9 @@ $$
     \ \right\}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \phantom{.} \
     \left\{ \
@@ -34,7 +34,7 @@ $$
     \ \right\}
     \ .
 $$
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">02</span>
 
@@ -211,7 +211,7 @@ $$
 
 <span class = "exercise-tag">08</span>
 
-<widescreen>
+<div class = "widescreen">
 $$
     \begin{array}{r c l}
         P(V) & = & 1 - P(I) - P(II) - P(III) - P(IV) \\[1em]
@@ -219,9 +219,9 @@ $$
              & = & 0.18 \ .
     \end{array}
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{r c l}
         P(V) & = & 1 - P(I) - P(II) - P(III) \\[1em] & & \quad - \ P(IV) \\[1em]
@@ -229,13 +229,13 @@ $$
              & = & 0.18 \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">09</span>
 
 If $P(IV)$ and $P(V)$ are equally likely and mean
 
-<widescreen>
+<div class = "widescreen">
 $$
     \begin{array}{r c l}
         P(IV) + P(V) & = & 1 - P(I) - P(II) - P(III) \\[1em]
@@ -243,9 +243,9 @@ $$
             & = & 0.38 \ ,
     \end{array}
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c l}
         &   & P(IV) + P(V) \\[1em]
@@ -254,7 +254,7 @@ $$
         & = & 0.38 \ ,
     \end{array}
 $$
-</smallscreen>
+</div>
 
 then the probability for both $P(IV)$ and $P(V)$ is their sum divided by
 $2$, i.e. $0.19$.
@@ -270,7 +270,7 @@ $$
 
 then
 
-<widescreen>
+<div class = "widescreen">
 $$
     \begin{array}{c l}
           P(\text{I}) + P(\text{II}) + P(\text{III})
@@ -281,9 +281,9 @@ $$
         & = & 1 \ ,
     \end{array} 
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c l}
         &   & P(\text{I}) + P(\text{II}) + P(\text{III}) \\[1em]
@@ -294,7 +294,7 @@ $$
         & = & 1 \ ,
     \end{array} 
 $$
-</smallscreen>
+</div>
 
 from where it can be seen that $x = \frac{1}{10}$. Substituting $x$ back to
 $6x + 3x + x = 1$, shows that the probabilities of the outcomes are

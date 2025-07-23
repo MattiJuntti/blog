@@ -40,11 +40,11 @@ $$
 to $(1)$. Letting $f(x) = 1$ and $g(x) = 1 + e^{-x}$ the quotient
 rule can be written
 
-<widescreen>
+<div class = "widescreen">
 $$
     \dfrac{d}{dx} \sigma(x) = \dfrac{ (1 + e^{-x})\left( \dfrac{d}{dx}1 \right) - (1)\left( \dfrac{d}{dx} 1 + e^{-x} \right) }{(1 + e^{-x})^2}. \tag{2}
 $$
-</widescreen>
+</div>
 
 Because
 
@@ -54,13 +54,13 @@ $$
 
 and
 
-<widescreen>
+<div class = "widescreen">
 $$
     \dfrac{d}{dx} 1 + e^{-x} = \dfrac{d}{dx} 1 + \dfrac{d}{dx} e^{-x} = 0 - e^{-x} = -e^{-x} \ ,
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{r c l}
         \dfrac{d}{dx} 1 + e^{-x} & = & \dfrac{d}{dx} 1 + \dfrac{d}{dx} e^{-x} 
@@ -68,7 +68,7 @@ $$
         \\[1em] & = & -e^{-x} \ ,
     \end{array}
 $$
-</smallscreen>
+</div>
 
 the nominator of $(2)$ can be written as
 
@@ -79,7 +79,7 @@ $$
 Continuing from the previous expression, next steps are then
 applying common algebraic transformations as follows;
 
-<widescreen>
+<div class = "widescreen">
 $$
     \begin{array}{r c l}
         \dfrac{d}{dx} \sigma(x)
@@ -90,9 +90,9 @@ $$
             & = & \dfrac{1}{(1 + e^{-x})} \left( 1 - \dfrac{1}{1 + e^{-x}} \right) \ ,
     \end{array}
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{r c l}
         \dfrac{d}{dx} \sigma(x)
@@ -103,7 +103,7 @@ $$
             & = & \dfrac{1}{(1 + e^{-x})} \left( 1 - \dfrac{1}{1 + e^{-x}} \right) \ ,
     \end{array}
 $$
-</smallscreen>
+</div>
 
 and because
 
@@ -113,20 +113,20 @@ $$
 
 the next to last step shows that
 
-<widescreen>
+<div class = "widescreen">
 $$
     \dfrac{d}{dx} \sigma(x) = \dfrac{1}{(1 + e^{-x})} \left( 1 - \dfrac{1}{1 + e^{-x}} \right) = \sigma(x)(1 - \sigma(x))
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{r c l}
         \dfrac{d}{dx} \sigma(x) & = & \dfrac{1}{(1 + e^{-x})} \left( 1 - \dfrac{1}{1 + e^{-x}} \right)
             \\[1em] & = & \sigma(x)(1 - \sigma(x))
     \end{array}
 $$
-</smallscreen>
+</div>
 
 <div align = "right">
     $\square$

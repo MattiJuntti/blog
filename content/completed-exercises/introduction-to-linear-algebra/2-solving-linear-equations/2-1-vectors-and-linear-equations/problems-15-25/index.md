@@ -18,7 +18,7 @@ $$
 
 the matrix multiplication
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \mathbf{Ix}
@@ -51,9 +51,9 @@ $$
     \mathbf{b}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
     \begin{array}{c c c}
         \phantom{=} &
         \mathbf{Ix}
@@ -85,7 +85,7 @@ $$
         & \phantom{=} \\[1em] = &
         \phantom{.} \ \mathbf{b} \ .
     \end{array}
-</smallscreen>
+</div>
 
 **(b)** When
 
@@ -100,7 +100,7 @@ $$
 
 the matrix multiplication
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \mathbf{Px}
@@ -133,9 +133,9 @@ $$
     \mathbf{b}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
     \begin{array}{c c c}
         \phantom{=} &
         \mathbf{Px}
@@ -167,7 +167,7 @@ $$
         & \phantom{=} \\[1em] = &
         \phantom{.} \ \mathbf{b} \ .
     \end{array}
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">16</span>
 
@@ -184,7 +184,7 @@ $$
 
 the matrix multiplication
 
-<widescreen>
+<div class = "widescreen">
 $$
     \mathbf{Rx}
     =
@@ -215,9 +215,9 @@ $$
         y \\ -x
     \end{bmatrix}
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     \phantom{=} &
@@ -251,11 +251,11 @@ $$
         \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 As an example, let
 
-<widescreen>
+<div class = "widescreen">
 $$
     \mathbf{x}_1 = \begin{bmatrix}
         1 \\ 1
@@ -274,9 +274,9 @@ $$
     \end{bmatrix}
     , \quad
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
     \begin{array}{c}
         \mathbf{x}_1 = \begin{bmatrix}
             \phantom{-}1 \\ \phantom{-}1
@@ -295,7 +295,7 @@ $$
         \end{bmatrix}
         , \quad
     \end{array}
-</smallscreen>
+</div>
 
 then
 
@@ -367,7 +367,7 @@ $$
 radians is equal to matrix that rotates the $\mathbf{x}$ vector twice
 $\pi/2$ radians. That is
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
         \mathbf{R}(\mathbf{Rx})
@@ -399,9 +399,9 @@ $$
         \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ c c c }
         & \mathbf{R}(\mathbf{Rx})
@@ -433,7 +433,7 @@ $$
         \end{bmatrix} \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">17</span>
 
@@ -457,7 +457,7 @@ $$
 
 because
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \begin{bmatrix}
@@ -492,9 +492,9 @@ $$
     \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ c c c }
     &
@@ -530,7 +530,7 @@ $$
         \end{bmatrix} \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 A matrix $\mathbf{Q}$ that brings back the $[y,x,z]^\top$ to $[x,y,z]^\top$
 is a matrix
@@ -547,7 +547,7 @@ $$
 
 because
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \begin{bmatrix}
@@ -582,9 +582,9 @@ $$
     \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     \phantom{=} &
@@ -621,7 +621,7 @@ $$
     \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">18</span>
 
@@ -640,7 +640,7 @@ $$
 Observing the coefficients in the above two equations, and rewriting the
 computations in a matrix form leads to matrix multiplication
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
         \begin{bmatrix}
@@ -678,9 +678,9 @@ $$
         \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ c c c }
     \phantom{=} &
@@ -720,7 +720,7 @@ $$
         \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 The situation is similar to the second equation. Written in anohter way,
 the equations are
@@ -741,7 +741,7 @@ $$
 
 so the subtracting matrix computation becomes
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
         \begin{bmatrix}
@@ -784,9 +784,9 @@ $$
         \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ c c c }
     \phantom{=} &
@@ -831,7 +831,7 @@ $$
         \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">19</span>
 
@@ -847,7 +847,7 @@ $$
     \ ,
 $$
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
         \mathbf{E}^{-1} \begin{bmatrix}
@@ -878,9 +878,9 @@ $$
         \end{bmatrix}
     \ ,
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ c c c }
         \phantom{=} &
@@ -913,7 +913,7 @@ $$
         \ ,
     \end{array}
 $$
-</smallscreen>
+</div>
 
 and when
 
@@ -927,7 +927,7 @@ $$
     \ ,
 $$
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
         \mathbf{E}^{-1} \begin{bmatrix}
@@ -958,9 +958,9 @@ $$
         \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ c c c }
         \phantom{=} &
@@ -993,11 +993,11 @@ $$
         \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 The next multiplication brings the original vector back, because
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
         \mathbf{E} \begin{bmatrix}
@@ -1026,9 +1026,9 @@ $$
         \end{bmatrix}
         \ ,
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ c c c }
         \phantom{=} &
@@ -1059,11 +1059,11 @@ $$
             \ ,
     \end{array}
 $$
-</smallscreen>
+</div>
 
 and
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
         \mathbf{E}^{-1} \begin{bmatrix}
@@ -1092,9 +1092,9 @@ $$
         \end{bmatrix}
         \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ c c c }
         \phantom{=} &
@@ -1125,7 +1125,7 @@ $$
             \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">20</span>
 
@@ -1204,7 +1204,7 @@ $\mathbf{0}$.
 
 The equation written  as a linear combinarion is
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
         \mathbf{Ax} = \begin{bmatrix}
@@ -1221,9 +1221,9 @@ $$
         \mathbf{0}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ c c c }
         \phantom{=} & \mathbf{Ax} & \phantom{=}
@@ -1242,7 +1242,7 @@ $$
             \phantom{.} \ \mathbf{0} \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">23</span>
 

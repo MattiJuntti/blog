@@ -192,7 +192,7 @@ $$
 Now chcking the values of all rows, columns, and the diagonal and the
 anti-diagonal add up to 15, a table can be written such that
 
-<widescreen>
+<div class = "widescreen">
 $$
     \begin{array}{ | c | c | c | }
         \begin{array}{r c}
@@ -214,9 +214,9 @@ $$
         \end{array}
     \end{array}
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ c }
         \begin{array}{r c}
@@ -238,7 +238,7 @@ $$
         \end{array}
     \end{array}
 $$
-</smallscreen>
+</div>
 
 from where it can be seen that the matrix the exercise is asking for is
 
@@ -256,7 +256,7 @@ $$
 
 The
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
         \mathbf{M}_3 \begin{bmatrix}
@@ -283,9 +283,9 @@ $$
         \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
         \begin{array}{ c c c }
             \phantom{=} &
@@ -315,7 +315,7 @@ $$
                 \ .
         \end{array}
 $$
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">32</span>
 

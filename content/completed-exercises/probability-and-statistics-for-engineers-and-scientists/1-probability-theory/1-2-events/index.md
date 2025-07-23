@@ -77,13 +77,13 @@ probability is the cumulative probability of those probabilities where it
 is true that at least one company is in state $\uparrow$. Adding those
 probabilities are
 
-<widescreen>
+<div class = "widescreen">
 $$
     p(A\uparrow \text{ and } B\uparrow) + p(A\uparrow \text{ and } B\downarrow) + p(A\downarrow \text{ and } B\uparrow) \ = \ 0.38 + 0.35 + 0.16 = 0.89.
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ r c }
           & p(A\uparrow \text{ and } B\uparrow)   \\[0.5em]
@@ -93,7 +93,7 @@ $$
         = & 0.89.
     \end{array}
 $$
-</smallscreen>
+</div>
 
 <span class = "exnum">6</span> Writing out explicitly all the combinations
 of outcomes when rolling two fair six sided dices are given in the Table 2:

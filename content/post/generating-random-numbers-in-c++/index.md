@@ -8,16 +8,16 @@ distribution**, which is a distribution that describes a
 distribution of a random variable ($x$), given a [mean][1] ($\mu$)
 and [variance][2] ($\sigma$) as
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{,} \
     f(x \ | \ \mu, \ \sigma)
     = \dfrac{1}{\sqrt{2 \pi \sigma^2}} \exp \left( - \dfrac{(\mu - x)^2}{2 \sigma^2} \right)
     \ . \tag{1}
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
         \phantom{=} & f(x \ | \ \mu, \ \sigma) & \phantom{=}
@@ -25,11 +25,11 @@ $$
     \end{array}
     \tag{1}
 $$
-</smallscreen>
+</div>
 
 When $\mu = 0$ and $\sigma = 1$, $(1)$ can be written
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
         f(x \ | \ 0, 1)
@@ -37,9 +37,9 @@ $$
             = \dfrac{1}{\sqrt{2 \pi}} \exp \left( \dfrac{1}{2} x^2 \right) \ .
     \tag{2}
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ c c c }
         \phantom{=} & f(x \ | \ 0, 1) &
@@ -48,7 +48,7 @@ $$
     \end{array}
     \tag{2}
 $$
-</smallscreen>
+</div>
 
 Equation $(2)$ can be expressed in C++ by initializing the
 [`std::normal_distribution`][6] class, defined in the `<random>`

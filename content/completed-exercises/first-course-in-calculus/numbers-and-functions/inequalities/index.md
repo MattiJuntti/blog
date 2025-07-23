@@ -85,7 +85,7 @@ which is at the interval.
 Lastly let $x = 1 + \epsilon$, then substituting $x$ to $x^2 + x - 2$ leads
 to
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     (1 + \epsilon)^2 + (1 + \epsilon) - 2
@@ -93,9 +93,9 @@ $$
         = \epsilon^2 + 3 \epsilon
     \ ,
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c l}
                 & (1 + \epsilon)^2 + (1 + \epsilon) - 2
@@ -103,7 +103,7 @@ $$
             \\= & \epsilon^2 + 3 \epsilon \ ,
     \end{array}
 $$
-</smallscreen>
+</div>
 
 which obviously is not greater than $1$ so $x \not > 1$.
 

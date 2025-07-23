@@ -22,7 +22,7 @@ that row.
 
 In other words
 
-<widescreen>
+<div class = "widescreen">
 $$
     \begin{array}{c l}
           & \left\{ \
@@ -38,9 +38,9 @@ $$
         \right. \quad ,
     \end{array}
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c l}
         & \left\{ \
@@ -56,7 +56,7 @@ $$
         \right. \quad ,
     \end{array}
 $$
-</smallscreen>
+</div>
 
 where the pivots are boldened.
 

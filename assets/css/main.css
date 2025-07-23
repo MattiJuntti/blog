@@ -26,11 +26,11 @@
 *, html, header, main, footer {
 }
 
-widescreen {
+.widescreen {
     display: block;
 }
 
-smallscreen {
+.smallscreen {
     display: none;
 }
 
@@ -282,11 +282,11 @@ code {
         min-width   : 90%;
     }
 
-    widescreen {
+    .widescreen {
         display: none;
     }
 
-    smallscreen {
+    .smallscreen {
         display: block;
     }
 }

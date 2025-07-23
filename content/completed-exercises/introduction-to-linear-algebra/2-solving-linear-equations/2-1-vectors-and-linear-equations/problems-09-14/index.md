@@ -22,7 +22,7 @@ $$
 
 by dot products of the rows with the column vector
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \mathbf{Ax}
@@ -46,9 +46,9 @@ $$
     \mathbf{b}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     & &
@@ -73,11 +73,11 @@ $$
         \phantom{.} \ \mathbf{b} \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 **(b)** Similarily
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \mathbf{Ax}
@@ -106,9 +106,9 @@ $$
     \mathbf{b}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     &
@@ -138,14 +138,14 @@ $$
         \phantom{.} \ \mathbf{b} \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">10</span>
 
 Computing the $\mathbf{Ax}$ of <span class = "exercise-tag">9</span> as a
 compination of column means that
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \mathbf{Ax}
@@ -179,9 +179,9 @@ $$
     \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     &
@@ -218,7 +218,7 @@ $$
         \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 No matter what method one uses to multiply matrices, the nuber of
 multiplications is the same. However, the computation of as a combination
@@ -230,7 +230,7 @@ of column can be taken to be clearer notationally.
 
 By rows:
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \begin{bmatrix}
@@ -257,9 +257,9 @@ $$
     \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     \phantom{=} &
@@ -289,11 +289,11 @@ $$
         \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 By column:
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \begin{bmatrix}
@@ -323,9 +323,9 @@ $$
     \end{bmatrix}
     \ .
 $$ 
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
         \begin{array}{r c l}
@@ -360,13 +360,13 @@ $$
         \end{array}
     \end{array}
 $$ 
-</smallscreen>
+</div>
 
 **(b)**
 
 By rows:
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \begin{bmatrix}
@@ -393,9 +393,9 @@ $$
     \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     &
@@ -425,11 +425,11 @@ $$
         \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 By column:
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \begin{bmatrix}
@@ -459,9 +459,9 @@ $$
     \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     \phantom{=} &
@@ -494,13 +494,13 @@ $$
         \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 **(c)**
 
 By rows:
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \begin{bmatrix}
@@ -526,11 +526,11 @@ $$
     \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
 asdasd
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     &
@@ -557,11 +557,11 @@ $$
         \end{bmatrix}
     \end{array}
 $$
-</smallscreen>
+</div>
 
 By column:
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \begin{bmatrix}
@@ -594,9 +594,9 @@ $$
     \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     \phantom{=} &
@@ -632,11 +632,11 @@ $$
         \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">12</span>
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \begin{bmatrix}
@@ -665,9 +665,9 @@ $$
     \end{bmatrix}
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     &
@@ -699,7 +699,7 @@ $$
         \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 <span class = "exercise-tag">13</span>
 
@@ -707,7 +707,7 @@ $$
 components to produce a vector with $n$ components. As an example, let $n =
 3$ and $n = 2$, then
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{.} \
     \begin{bmatrix}
@@ -740,9 +740,9 @@ $$
     \end{bmatrix}
     \ ,
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
     &
@@ -776,7 +776,7 @@ $$
         \end{bmatrix} \ ,
     \end{array}
 $$
-</smallscreen>
+</div>
 
 from where it can be seen that $\mathbf{b}$ has $n = 6$ components.
 
@@ -798,7 +798,7 @@ in a matrix form is to gather the coefficients into a matrix $\textbf{A}$
 and the variables into vector and then multiply the variable vector with
 the coefficient matrix. In other words,
 
-<widescreen>
+<div class = "widescreen">
 $$
     \phantom{,} \
         \mathbf{Ax}
@@ -830,9 +830,9 @@ $$
     = 8
     \ .
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{c c c}
             & \mathbf{Ax} &
@@ -867,6 +867,6 @@ $$
             \phantom{.} \ \mathbf{b} \ .
     \end{array}
 $$
-</smallscreen>
+</div>
 
 The multiplying matrix $\mathbf{A}$ then has $1$ row.

@@ -396,7 +396,7 @@ $$
 
 and
 
-<widescreen>
+<div class = "widescreen">
 $$
     \begin{array}{ l c r c l c c }
         0.141592653589793 & \times & 2 & = & 0.283185307179586 & + & 0 \\
@@ -416,8 +416,8 @@ $$
         0.854036415168512 & \times & 2 & = & 0.708072830337024 & + & 1 \\
     \end{array}
 $$
-</widescreen>
-<smallscreen>
+</div>
+<div class = "smallscreen">
 $$
     \begin{array}{ l c r c l c c }
         0.1415\ldots & \times & 2 & = & 0.2831\ldots & + & 0 \\
@@ -437,7 +437,7 @@ $$
         0.8540\ldots & \times & 2 & = & 0.7080\ldots & + & 1 \\
     \end{array}
 $$
-</smallscreen>
+</div>
 
 so $\pi$ in binary when computing its first fifteen digits are
 
@@ -463,7 +463,7 @@ $$
 
 and for the decimal part
 
-<widescreen>
+<div class = "widescreen">
 $$
     \begin{array}{ l c r c l c c }
         0.718281828459045 & \times & 2 & = & 0.436563656918090 & + & 1 \\
@@ -484,9 +484,9 @@ $$
         0.658954945986560 & \times & 2 & = & 0.317909891973120 & + & 0
     \end{array}
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{ l c r c l c c }
         0.7182\ldots & \times & 2 & = & 0.4365\ldots & + & 1 \\
@@ -507,7 +507,7 @@ $$
         0.6589\ldots & \times & 2 & = & 0.3179\ldots & + & 0
     \end{array}
 $$
-</smallscreen>
+</div>
 
 which means that $e$ approximated to first fifteen digits is
 
@@ -519,7 +519,7 @@ $$
 
 **(a)**
 
-<widescreen>
+<div class = "widescreen">
 $$
     (1010101)_2 =
         1 \cdot 2^6 +
@@ -530,9 +530,9 @@ $$
         0 \cdot 2^1 +
         1 \cdot 2^0 = 85.
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{r c l}
         (1010101)_2 & = & 1 \cdot 2^6 + 0 \cdot 2^5 + 1 \cdot 2^4 \\[0.2em]
@@ -541,11 +541,11 @@ $$
                     & = & 85.
     \end{array}
 $$
-</smallscreen>
+</div>
 
 **(b)**
 
-<widescreen>
+<div class = "widescreen">
 $$
     \begin{array}{r c l}
         (1011.101)_2 & = & 1 \cdot 2^3
@@ -559,9 +559,9 @@ $$
             & = & 11.6525.
     \end{array}
 $$
-</widescreen>
+</div>
 
-<smallscreen>
+<div class = "smallscreen">
 $$
     \begin{array}{r c l}
         (1011.101)_2 & = & 1 \cdot 2^3 + 0 \cdot 2^2           \\[0.2em]
@@ -571,7 +571,7 @@ $$
             & = & 11.6525.
     \end{array}
 $$
-</smallscreen>
+</div>
 
 **(c)**
 
