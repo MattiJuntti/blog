@@ -1,3 +1,6 @@
 <meta charset = "utf-8">
     <meta name = "viewport" content = "width = device-width">
-    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>{{ partialCached "head/css.html" . }}{{ $syntax_light_css := resources.Get "syntax-light.css" | minify }}    <link rel = "stylesheet" as = "style" href = "{{ $syntax_light_css.Permalink }}"/>{{ partialCached "head/js.html" . }}
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+    <link rel = "stylesheet" href = "{{ absURL "css/main.css" }}">
+    {{ $syntax_light_css := resources.Get "syntax-light.css" | minify }}<link rel = "stylesheet" href = "{{ $syntax_light_css.Permalink }}"/>
+{{ partialCached "head/js.html" . }}
