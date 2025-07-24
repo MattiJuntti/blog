@@ -1,6 +1,6 @@
 <meta charset = "utf-8">
     <meta name = "viewport" content = "width = device-width">
     <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-    <link rel = "stylesheet" href = "{{ absURL "css/main.css" }}">
-    {{ $syntax_light_css := resources.Get "syntax-light.css" | minify }}<link rel = "stylesheet" href = "{{ $syntax_light_css.Permalink }}"/>
-{{ partialCached "head/js.html" . }}
+    {{ with resources.Get "css/main.css" }}<link rel = "stylesheet" href = "{{ absURL .RelPermalink }}">{{ end }}
+    {{ with resources.Get "css/syntax-light.css" }}<link rel = "stylesheet" href = "{{ absURL .RelPermalink }}">{{ end }}
+    {{ with resources.Get "js/main.js" }}<script src = "{{ absURL "js/main.js"  }}"></script>{{ end }}
