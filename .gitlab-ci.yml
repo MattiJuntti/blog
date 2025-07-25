@@ -3,7 +3,7 @@ default:
 
 test:  # builds and tests your site
   script:
-    - hugo
+    - hugo --cleanDestinationDir --ignoreCache
   rules:
     - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
 
