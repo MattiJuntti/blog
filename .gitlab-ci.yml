@@ -11,6 +11,7 @@ create-pages:
   stage: deploy
   script:
     - ls -la
+    - rm -v .hugo_build.lock
     - hugo --cleanDestinationDir --ignoreCache
   pages: true
   rules:
