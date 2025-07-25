@@ -1,6 +1,6 @@
 +++
 title = 'Generating random numbers in C++'
-date = 2024-11-10T14:03:15+02:00
+date  = 2024-11-10T14:03:15+02:00
 +++
 
 As is described in Forsyth (2018), the definition of **normal
