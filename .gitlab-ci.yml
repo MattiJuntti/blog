@@ -1,5 +1,5 @@
 default:
-  image: "hugomods/hugo:latest"
+  image: hugomods/hugo:exts
 
 test:  # builds and tests your site
   script:
@@ -7,13 +7,10 @@ test:  # builds and tests your site
   rules:
     - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
 
-create-pages:  # a user-defined job that builds your pages and saves them to the specified path.
+create-pages:
+  stage: deploy
   script:
     - hugo --cleanDestinationDir --ignoreCache
-  pages: true  # specifies that this is a Pages job
-  artifacts:
-    paths:
-      - public
+  pages: true
   rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-  environment: production
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
