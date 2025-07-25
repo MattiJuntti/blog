@@ -12,6 +12,7 @@ create-pages:
   script:
     - pwd
     - ls -la
+    - ls -la /builds
     - rm -v .hugo_build.lock
     - hugo --cleanDestinationDir --ignoreCache --gc
   pages: true
