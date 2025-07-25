@@ -1,5 +1,6 @@
 +++
-title = "Problems 01-08"
+title  = "Problems 01-08"
+date   = "2025-01-01T00:00:00+03:00"
 layout = "solution-single"
 +++
 
