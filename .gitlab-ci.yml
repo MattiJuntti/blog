@@ -10,6 +10,7 @@ test:  # builds and tests your site
 create-pages:
   stage: deploy
   script:
+    - ls -la
     - hugo --cleanDestinationDir --ignoreCache
   pages: true
   rules:
