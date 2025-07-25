@@ -3,7 +3,7 @@ default:
 
 test:  # builds and tests your site
   script:
-    - hugo --cleanDestinationDir --ignoreCache
+    - hugo --cleanDestinationDir --ignoreCache --environment development
   rules:
     - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
 
@@ -12,8 +12,7 @@ create-pages:
   script:
     - pwd
     - hugo version
-
-    - hugo --cleanDestinationDir --ignoreCache --gc
+    - hugo --cleanDestinationDir --ignoreCache --environment development
   pages: true
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
