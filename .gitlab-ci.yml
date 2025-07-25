@@ -1,5 +1,5 @@
 default:
-  image: "hugomods/hugo:exts"
+  image: "hugomods/hugo:latest"
 
 test:  # builds and tests your site
   script:
