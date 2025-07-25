@@ -13,6 +13,7 @@ create-pages:
     - pwd
     - ls -la
     - ls -la /builds/MattiJuntti
+    - ls -la /builds/MattiJuntti/blog.tmp
     - rm -v .hugo_build.lock
     - hugo --cleanDestinationDir --ignoreCache --gc
   pages: true
