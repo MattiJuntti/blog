@@ -11,7 +11,8 @@ create-pages:
   stage: deploy
   script:
     - pwd
-    - git log -1
+    - hugo version
+
     - hugo --cleanDestinationDir --ignoreCache --gc
   pages: true
   rules:
