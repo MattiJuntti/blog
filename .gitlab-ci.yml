@@ -13,7 +13,7 @@ create-pages:
     - pwd
     - ls -la
     - rm -v .hugo_build.lock
-    - hugo --cleanDestinationDir --ignoreCache
+    - hugo --cleanDestinationDir --ignoreCache --gc
   pages: true
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
