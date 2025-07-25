@@ -4,7 +4,7 @@
 
 # No need to include locally built website.
 # Website is built at Gitlab and published.
-/public/
+public/
 
 # pdflatex intermediate files
 *.aux
