@@ -101,7 +101,7 @@ time {
     color            : var(--white);
     border           : 1px solid var(--red);
     background-color : var(--red);
-    border-radius    : 5px;
+    border-radius    : 3px;
     padding          : 2px 5px 2px 5px;
 }
 
