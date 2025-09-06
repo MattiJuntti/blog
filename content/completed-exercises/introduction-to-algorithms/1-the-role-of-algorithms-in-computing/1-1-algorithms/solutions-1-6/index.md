@@ -5,7 +5,7 @@ layout = "solution-single"
 +++
 
 <span class = "exnum">1</span> Example of a real world problem that
-requires sorting is phonebook application of a phone, where
+requires sorting is phone book application of a phone, where
 contacts are required to be sorted in alphabetical order. Another
 on is recommendation streams of the social media, where information
 is sorted via sorting algorithms that are based on user's browsing
@@ -14,10 +14,10 @@ are some web traffic routing algorithms.
 
 <span class = "exnum">2</span> Along with speed, other measures for
 efficiency for success of a algorithm are memory, energy and
-user satisfaction effiency, for example.
+user satisfaction efficiency, for example.
 
 <span class = "exnum">3</span> Example of a data structure I've
-seen is the C++'s [`std::vector`][1]. Its strenghts are
+seen is the C++'s [`std::vector`][1]. Its strengths are
 versatility, ease-of-use, speed, etc. Given that `std::vector` is a
 dynamically allocated data structure, it might fall behind the
 efficiency of [`std::array`][2].
