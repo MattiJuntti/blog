@@ -102,7 +102,7 @@ time {
     border           : 1px solid var(--red);
     background-color : var(--red);
     border-radius    : 3px;
-    padding          : 2px 5px 2px 5px;
+    padding          : 2px 2px 0px 2px;
 }
 
 pre {
