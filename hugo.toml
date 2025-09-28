@@ -1,6 +1,6 @@
 baseURL      = 'https://mattijuntti.gitlab.io/blog'
 languageCode = 'en-us'
-title        = 'CS Notebook'
+title        = "Matti's CS Notebook"
 
 [markup]
     [markup.highlight]
