@@ -155,12 +155,13 @@ header nav ul {
     /* background : var(--green); */
     display         : flex;
     flex            : 1;
-    flex-direction  : row;
-    justify-content : space-evenly;
-    width           : 30%;
     margin          : 0;
     padding         : 0;
     list-style-type : none;
+}
+
+header nav ul a {
+    margin-right    : var(--padding-m);
 }
 
 .header__left   , .main__left   , .footer__left    ,
@@ -190,7 +191,7 @@ header nav ul {
 }
 
 .header__center {
-    flex-direction  : row;
+    flex-direction  : column;
     justify-content : space-between;
 }
 
