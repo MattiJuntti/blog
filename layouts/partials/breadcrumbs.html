@@ -1,5 +1,5 @@
 <ul class = "navigator">
-    {{- range after 1 .Ancestors.Reverse }}
+    {{- range after 2 .Ancestors.Reverse }}
         <li class = "nav-link"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{- end }}
     </ul>
