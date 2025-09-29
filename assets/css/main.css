@@ -272,6 +272,10 @@ code {
         width          : 100%;
     }
 
+    header nav ul {
+        flex           : none;
+    }
+
     .header__center, .main__center, .footer__center {
         /* background : var(--red); */
         min-width      : 90%;
