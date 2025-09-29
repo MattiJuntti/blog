@@ -279,6 +279,7 @@ code {
     .header__center, .main__center, .footer__center {
         /* background : var(--red); */
         min-width      : 90%;
+        padding-bottom : var(--padding-m);
     }
 
     .header__center {
