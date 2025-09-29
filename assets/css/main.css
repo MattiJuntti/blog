@@ -193,6 +193,7 @@ header nav ul a {
 .header__center {
     flex-direction  : column;
     justify-content : space-between;
+    border-bottom   : 1px solid var(--gray);
 }
 
 main {
@@ -271,16 +272,16 @@ code {
         width          : 100%;
     }
 
+    .header__center, .main__center, .footer__center {
+        /* background : var(--red); */
+        min-width      : 90%;
+    }
+
     .header__center {
         display        : flex;
         width          : 100%;
         flex-direction : column;
         align-items    : center;
-    }
-
-    .header__center, .main__center, .footer__center {
-        /* background : var(--red); */
-        min-width   : 90%;
     }
 
     .widescreen {
