@@ -91,6 +91,10 @@ ul.navigator li.nav-link + li.nav-link:before {
     content: "\003E\00a0";
 }
 
+time {
+    font-weight      : bold;
+}
+
 .exercise-tag, .exnum {
     text-align       : center;
     font-weight      : bold;
