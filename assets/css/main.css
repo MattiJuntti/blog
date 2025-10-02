@@ -206,10 +206,6 @@ main {
     text-align: justify;
 }
 
-.main__center h2 {
-    height : 34px; 
-}
-
 .main__center ul {
     margin       : 0;
     padding-left : 0;
