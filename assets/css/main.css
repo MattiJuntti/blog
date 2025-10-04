@@ -1,4 +1,5 @@
 :root {
+    --black  : #202020;
     --white  : #FFFFFF;
     --red    : #FF6868;
     --green  : #CBFFA9;
@@ -49,7 +50,7 @@ body, header, main, footer {
 body {
     display        : flex;
     flex-direction : column;
-    color          : #222;
+    color          : var(--black);
     background     : var(--white);
     font-family    : sans-serif;
     line-height    : 1.75;
