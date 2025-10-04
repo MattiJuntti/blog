@@ -8,13 +8,10 @@
     --gray   : #A9A9A9;
     --gray-light : #E9E9E9;
 
-    --accent : var(--red);
-
-    --link-color : var(--red);
-
-    --table-header-bg : var(--red);
-    --table-even-bg : var(--gray-light);
-
+    --accent             : var(--red);
+    --link-color         : var(--red);
+    --table-header-bg    : var(--red);
+    --table-even-bg      : var(--gray-light);
     --code-comment-color : #A9A9A9;
     --code-indentation   : "  ";
     --code-line-hl-color : var(--green);
