@@ -50,6 +50,7 @@ body {
     display        : flex;
     flex-direction : column;
     color          : #222;
+    background     : var(--white);
     font-family    : sans-serif;
     line-height    : 1.75;
     margin         : 0;
