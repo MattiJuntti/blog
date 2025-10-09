@@ -1,4 +1,4 @@
-baseURL      = 'https://mattijuntti.gitlab.io/blog'
+baseURL      = 'https://mattijuntti.net'
 languageCode = 'en-us'
 title        = "Matti's CS Notebook"
 
