@@ -29,7 +29,7 @@ pageRef = '/'
 weight  = 10
 
 [[menus.main]]
-name    = 'Completed Exercises'
+name    = 'Completed exercises'
 pageRef = '/completed-exercises'
 weight  = 20
 
