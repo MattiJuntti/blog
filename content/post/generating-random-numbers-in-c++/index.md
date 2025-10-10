@@ -23,11 +23,10 @@ $$
         \phantom{=} & f(x \ | \ \mu, \ \sigma) & \phantom{=}
         \\[1em] = & \dfrac{1}{\sqrt{2 \pi \sigma^2}} \exp \left( - \dfrac{(\mu - x)^2}{2 \sigma^2} \right) & \phantom{=}
     \end{array}
-    \tag{1}
 $$
 </div>
 
-When $\mu = 0$ and $\sigma = 1$, $(1)$ can be written
+When $\mu = 0$ and $\sigma = 1$, the previous equation can be written
 
 <div class = "widescreen">
 $$
@@ -46,11 +45,10 @@ $$
             \\[1em] = & \dfrac{1}{\sqrt{2 \pi (1)^2}} \exp \left( - \dfrac{(0 - x)^2}{2 (1)^2} \right) &
             \\[1em] = & \dfrac{1}{\sqrt{2 \pi}} \exp \left( \dfrac{1}{2} x^2 \right) \ . &
     \end{array}
-    \tag{2}
 $$
 </div>
 
-Equation $(2)$ can be expressed in C++ by initializing the
+This equation can be expressed in C++ by initializing the
 [`std::normal_distribution`][6] class, defined in the `<random>`
 header, by writing
 
