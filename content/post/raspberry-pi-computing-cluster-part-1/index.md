@@ -34,10 +34,21 @@ $\text{\texttt{RPI0}$N$}$ is hostname for $N$th computing unit,
 thick lines are Ethernet cable connections and
 &ldquo;$\text{E}$&rdquo; is connection to the electric grid:
 
-<div align = "center">
-    <img src = "img/raspberry-pi-computing-cluster.png">
-    <br>
-    <caption>Figure 1: RPCC Hardware setup</caption>
+<div class = "widescreen">
+    <div align = "center">
+        <img src = "img/raspberry-pi-computing-cluster.png">
+        <br>
+        <caption>Figure 1: RPCC Hardware setup</caption>
+    </div>
+</div>
+
+<div class = "smallscreen">
+    <div align = "center">
+        <img src = "img/raspberry-pi-computing-cluster-rot-90.png"
+             width = "60%">
+        <br>
+        <caption>Figure 1: RPCC Hardware setup</caption>
+    </div>
 </div>
 
 [06]:https://en.wikipedia.org/wiki/USB_hardware#Micro_connectors
