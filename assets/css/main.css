@@ -283,6 +283,12 @@ code {
         text-align: left;
     }
 
+    ul.navigator {
+        display        : flex;
+        flex-direction : column;
+        text-align     : left;
+    }
+
     header nav {
         width          : 100%;
     }
