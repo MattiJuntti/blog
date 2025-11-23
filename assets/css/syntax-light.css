@@ -66,7 +66,7 @@
 /* Punctuation */ .chroma .p {  }
 /* Comment */ .chroma .c { font-style:normal; }
 /* CommentHashbang */ .chroma .ch { font-style:normal }
-/* CommentMultiline */ .chroma .cm { font-style:normal }
+/* CommentMultiline */ .chroma .cm { font-style:normal;color:var(--code-comment-color) }
 /* CommentSingle */ .chroma .c1 { font-style:normal;color:var(--code-comment-color) }
 /* CommentSpecial */ .chroma .cs { font-style:normal }
 /* CommentPreproc */ .chroma .cp {  }
