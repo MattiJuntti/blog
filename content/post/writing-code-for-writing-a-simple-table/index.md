@@ -40,10 +40,10 @@ $$
 These tables can be then be stylized by horizontal or vertical
 separators. If the first row and column of the above table needs to
 be separated from the rest of the rows and columns, one can add
-`\hline` and `|` ([vertical bar][03]) to the $\LaTeX$ markdown by
-writing
+`\hline` and `|` (i.e., the [vertical bar][03]) to the $\LaTeX$
+markdown by writing
 
-[03]: http://localhost:1313/post/writing-code-for-writing-a-simple-table/
+[03]:https://en.wikipedia.org/wiki/Vertical_bar
 
 ```latex
 \begin{array}{c | c c}
