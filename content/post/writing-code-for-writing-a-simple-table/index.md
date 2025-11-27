@@ -20,8 +20,7 @@ elements, additional pair of can be written immediately after the
 \end{array}
 ```
 
-Column are separated with &ldquo;`&`&rdquo; and new line is started
-with &ldquo;`\\`&rdquo;.
+Column are separated with `&` and new line is started with `\\`.
 
 When this $\LaTeX$ is then given to suitable $\LaTeX$ engine, like
 [pdfTeX][01] or [MathJax][02], the engine outputs a table like
