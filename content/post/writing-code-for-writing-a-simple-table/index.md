@@ -85,9 +85,8 @@ $$
 
 where $f(t)$ is a predefined function of maximum size input $n$
 that can be computed in a given time duration $t$ in milliseconds,
-listed in the rest of the six columns. For example, let $f(n)$ be
-equal to $n$ at one row and $f(n)$ be equal to $\frac{1}{2}n$ at
-second.
+listed in the rest of the six columns. For example, $f(n)$ could be
+equal to $n$ at one row and to $\frac{1}{2}n$ at second.
 
 Even with two rows, this results in twelve calculations to be done
 for each column at each row for each time duration $t$. And if the
