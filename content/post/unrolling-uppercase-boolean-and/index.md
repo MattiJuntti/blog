@@ -14,6 +14,8 @@ is true if and only if at most one of $p_1$, $p_2$, $\ldots$, $p_n$
 is true &rdquo; Solving this task requires understanding the
 notation, so let's unwrap the thing.
 
+<!--more-->
+
 First step of unwinding $(1)$ is just making the order of
 operations obvious by explicitly writing out the enclosing
 parentheses as
