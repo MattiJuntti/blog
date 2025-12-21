@@ -4,8 +4,9 @@ date   = 2025-01-01T00:00:00+03:00
 layout = "solution-single"
 +++
 
-<span class = "exnum">1</span> **(a)** Since $\left( \frac{1}{4} \right)_{10} =
-(0.25)_{10}$, the fractional part can converted to binary as follows;
+<span class = "exnum">1</span> **(a)** Because $\left( \frac{1}{4}
+\right)_{10} = (0.25)_{10}$, the fractional part can converted to
+binary as follows;
 
 $$
     \begin{array}{r c l}
@@ -15,9 +16,9 @@ $$
     \end{array}
 $$
 
-Reading the last column from top to bottom, it can be seen that
-$(0.25)_{10}$ $=$ $(0.01)_2$. Verifying the result can be done by
-evaluating the binary fraction by summing the values
+Reading the ones and zeros at right from top to bottom, it can be
+seen that $(0.25)_{10}$ $=$ $(0.10)_2$. Verifying the result can be
+done by evaluating the binary fraction by summing the values
 
 $$
     \phantom{.} \ 0 \cdot 2^{-1} + 1 \cdot 2^{-2} = \frac{1}{2^2} = \frac{1}{4} \ ,
@@ -48,8 +49,8 @@ $$
 
 [01]:https://simple.wikipedia.org/wiki/Radix_point
 
-**(b)** Similarly as above, the value $\frac{1}{3}$ can be written as
-$0.\overline{3}$. The values binary representation is,
+**(b)** As above, $\frac{1}{3}$ can be written in decimal form as
+$0.\overline{3}$, so the value's binary representation is then
 
 $$
     \begin{array}{r c l}
@@ -63,8 +64,8 @@ $$
     \end{array}
 $$
 
-that is $(0.\overline{0}\overline{1})_2$. Moving the radix to left by two
-indices leads to exponent of $2^{-2}$. With this information the double
+that is, $(0.\overline{0}\overline{1})_2$. Moving radix to the left
+by two indices leads to exponent of $2^{-2}$, so the double
 precision IEEE-754 binary representation of $\frac{1}{3}$ is
 
 <div class = "widescreen">
@@ -85,16 +86,17 @@ $$
 $$
 </div>
 
-**(c)** The logic is the same for as it was for **(a)** and **(b)**:
-Convert to decimal, normalize the radix, repeat the pattern and see if the
-$53$the binary value is $0$ or $1$. In the case of $0$ do nothing and in
-the case of $1$, add $1$ to the $52$th bit. Therefore, when
+**(c)** The logic is the same for as it was for **(a)** and
+**(b)**: Convert to decimal, normalize radix, repeat the pattern
+and see if the $53$the binary value is $0$ or $1$. In the case of
+$0$ do nothing and in the case of $1$, add $1$ to the $52$th bit,
+unless all bits after the $53$rd are zero. Thus
 
 $$
-    \frac{2}{3} = 0.\overline{6},
+    \frac{2}{3} = 0.\overline{6}
 $$
 
-the binary representation is
+has the binary representation
 
 $$
     \begin{array}{r c l}
@@ -108,8 +110,9 @@ $$
     \end{array}
 $$
 
-Reading from top to bottom, the $(\frac{2}{3})_{10} =
-(0.\overline{1}\overline{0})_2$, so the floating point representation is
+Reading from top to bottom tells that $(\frac{2}{3})_{10} =
+(0.\overline{1}\overline{0})_2$, so the floating point
+representation is
 
 <div class = "widescreen">
 $$
@@ -150,8 +153,8 @@ $$
 $$
 </div>
 
-**(d)** Steps for the value $0.9$ are the same. Converting the value to
-binary
+**(d)** Steps for the value $0.9$ are the same. Converting the
+value to binary
 
 $$
     \begin{array}{r c l}
@@ -168,8 +171,9 @@ $$
     \end{array}
 $$
 
-so the binary representation of $0.9$ is $0.1\overline{1}\overline{1}\overline{0}\overline{0}$,
-and the floating point is then
+so the binary representation of $(0.9)_{10}$ is
+$0.1\overline{1}\overline{1}\overline{0}\overline{0}$, and the
+floating point is then
 
 <div class = "widescreen">
 $$
@@ -189,9 +193,9 @@ $$
 $$
 </div>
 
-<span class = "exnum">2</span> **(a)** Converting $9.5$ to binary means
-applying the binarization routine to the whole and fractional parts of the
-number:
+<span class = "exnum">2</span> **(a)** Converting $9.5$ to binary
+means applying the binarization routine to the whole and fractional
+parts of the number:
 
 $$
     \begin{array}{r c c c c c c}
@@ -211,9 +215,10 @@ $$
     \end{array}
 $$
 
-So $(9.5)_{10} = (1001.1\overline{0})_2$. Normalizing the radix means that
-the binary becomes $1.0011\overline{0}$, making the exponent to be $2^{3}$,
-and so, the floating point representation is
+So $(9.5)_{10} = (1001.1\overline{0})_2$. Normalizing the radix
+means that the binary becomes $1.0011\overline{0}$, making the
+exponent to be $2^{3}$, and so, the floating point representation
+is
 
 <div class = "widescreen">
 $$
@@ -233,8 +238,8 @@ $$
 $$
 </div>
 
-**(b)** The steps for the number $9.6$ are the same: The decimal part of
-the number is $(1001)_2$ and the fractional part is
+**(b)** The steps for the number $9.6$ are the same: The decimal
+part of the number is $(1001)_2$ and the fractional part is
 
 $$
     \begin{array}{r c c c c c c}
@@ -315,9 +320,9 @@ $$
 $$
 
 so the value in binary is $(1100100.\overline{0011})_2$. Moving the
-radix to left by six indices leads to exponent of $2^{-6}$. With
-this information the double precision IEEE-754 binary
-representation of $\frac{1}{3}$ is
+radix to the left by six indices leads to exponent of $2^{-6}$, so
+the double precision IEEE-754 binary representation of
+$\frac{1}{3}$ is
 
 <div class = "widescreen">
 $$
@@ -337,10 +342,11 @@ $$
 $$
 </div>
 
-**(c)** The logic is the same for as it was for **(a)** and **(b)**:
-Convert to decimal, normalize the radix, repeat the pattern and see if the
-$53$the binary value is $0$ or $1$. In the case of $0$ do nothing and in
-the case of $1$, add $1$ to the $52$th bit. Therefore, when
+**(c)** The logic is the same for as it was for **(a)** and
+**(b)**: Convert to decimal, normalize the radix, repeat the
+pattern and see if the $53$the binary value is $0$ or $1$. In the
+case of $0$ do nothing and in the case of $1$, add $1$ to the
+$52$th bit. Therefore, when
 
 $$
     \frac{2}{3} = 0.\overline{6},
@@ -361,7 +367,8 @@ $$
 $$
 
 Reading from top to bottom, the $(\frac{2}{3})_{10} =
-(0.\overline{1}\overline{0})_2$, so the floating point representation is
+(0.\overline{1}\overline{0})_2$, so the floating point
+representation is
 
 <div class = "widescreen">
 $$
@@ -381,8 +388,9 @@ $$
 $$
 </div>
 
-but in this case the $53$th bit is $1$, so one bit is needed to be added to
-$52$th bit, which means that the floating point representation becomes
+but in this case the $53$th bit is $1$, so one bit is needed to be
+added to $52$th bit, which means that the floating point
+representation becomes
 
 <div class = "widescreen">
 $$
@@ -402,8 +410,8 @@ $$
 $$
 </div>
 
-**(d)** Steps for the value $0.9$ are the same. Converting the value to
-binary
+**(d)** Steps for the value $0.9$ are the same. Converting the
+value to binary
 
 $$
     \begin{array}{r c l}
@@ -420,8 +428,9 @@ $$
     \end{array}
 $$
 
-so the binary representation of $0.9$ is $0.1\overline{1}\overline{1}\overline{0}\overline{0}$,
-and the floating point is then
+so the binary representation of $0.9$ is
+$0.1\overline{1}\overline{1}\overline{0}\overline{0}$, and the
+floating point is then
 
 <div class = "widescreen">
 $$
@@ -441,8 +450,8 @@ $$
 $$
 </div>
 
-The $53$th bit is $1$, so $1$ can be added to $52$nd bit, meaning that the
-binary becomes
+The $53$th bit is $1$, so $1$ can be added to $52$nd bit, meaning
+that the binary becomes
 
 <div class = "widescreen">
 $$
@@ -507,15 +516,15 @@ $$
 $$
 </div>
 
-**(b)** The steps for the number $9.6$ are the same: The decimal part of
-the number is $(1001)_2$ and the fractional part is
+**(b)** The steps for the number $9.6$ are the same: The decimal
+part of the number is $(1001)_2$ and the fractional part is
 
 $$
     \begin{array}{r c c c c c c}
         0.6 & \times & 2 & =      & 0.2 & + & 1 \\
         0.2 & \times & 2 & =      & 0.4 & + & 0 \\
         0.4 & \times & 2 & =      & 0.8 & + & 0 \\
-        0.8 & \times & 2 % =      & 0.6 & + & 1 \\
+        0.8 & \times & 2 & =      & 0.6 & + & 1 \\
         0.6 & \times & 2 & =      & 0.2 & + & 1 \\
         0.2 & \times & 2 & =      & 0.4 & + & 0 \\
         0.4 & \times & 2 & =      & 0.8 & + & 0 \\
@@ -524,9 +533,9 @@ $$
     \end{array}
 $$
 
-so $(9.6)_{10} = (1001.\overline{1}\overline{0}\overline{1})_2$. The
-exponent is the same as in **(a)**, that is, $2^{3}$. The IEEE 754 floating
-representation of $9.6$ is
+so $(9.6)_{10} = (1001.\overline{1}\overline{0}\overline{1})_2$.
+The exponent is the same as in **(a)**, that is, $2^{3}$. The IEEE
+754 floating representation of $9.6$ is
 
 <div class = "widescreen">
 $$
@@ -717,10 +726,10 @@ $$
 
 that is $(0.\overline{0}\overline{1}\overline{0})_2$, so
 $(6.\overline{2}\overline{8}\overline{5}\overline{7}\overline{1}\overline{4})_{10}$
-$=$ $(110.\overline{0}\overline{1}\overline{0})_2$. Normalising the value
-means moving the radix to left two steps, making the exponent (multiplier)
-$2^2$, so the floating point binary representation of
-$(0.\overline{0}\overline{1}\overline{0})_2$ is
+$=$ $(110.\overline{0}\overline{1}\overline{0})_2$. Normalising the
+value means moving the radix to the left two steps, making the
+exponent (multiplier) $2^2$, so the floating point binary
+representation of $(0.\overline{0}\overline{1}\overline{0})_2$ is
 
 <div class = "widescreen">
 $$
