@@ -190,8 +190,6 @@ function evaluatetable(str)
     res +=  ` ` + `\\\\ \\hline` + `\n` + `   \\end{array}`
          + `\n` + `$$`;
 
-    console.log(res)
-
     document.getElementById("resulttable_ws").innerHTML = res;
 
     // Compute for smallscreen.
