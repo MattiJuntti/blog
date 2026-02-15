@@ -194,7 +194,7 @@ function evaluatetable(str)
 
     // Compute for smallscreen.
     res = `$$ \\small`
-        + `\n` + `   \\begin{array}{ | c | r | } \\hline`
+        + `\n` + `   \\begin{array}{ | c | l | } \\hline`
         + `\n` + `       \\text{Dur.} & \\text{Result}` + ` \\\\ \\hline`;
 
     for (const i in durations)
