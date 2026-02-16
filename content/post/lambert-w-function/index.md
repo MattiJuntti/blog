@@ -98,9 +98,9 @@ $$
     \phantom{.} \ n = e^{W(t \ln 2)} \ . \tag{1}
 $$
 
-As stated in the beginning of this text, (Lambert) $W$ has a
-compact numerical approximation (Iacono & Boyd, 2017) that can be
-written in C++ as
+As stated in the beginning of this text, Lambert $W$ has a compact
+numerical approximation (Iacono & Boyd, 2017) that can be written
+in C++ as
 
 ```c++ {class = listing}
 auto W(const double& t) -> double
@@ -235,12 +235,12 @@ respectively.
 
 ### References
 
-Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022).
+Cormen, T. H., Leiserson, C. E., Rivest, R. L. & Stein, C. (2022).
 [_Introduction to algorithms_][press22]. MIT press.
 
 [press22]:https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/
 
-Iacono, R., & Boyd, J. P. (2017). New approximations to the principal
+Iacono, R. & Boyd, J. P. (2017). New approximations to the principal
 real-valued branch of the Lambert W-function. _Advances in Computational
 Mathematics_, 43(6), 1403-1436. [https://doi.org/10.1007/s10444-017-9530-3][iacono17]
 
