@@ -38,7 +38,7 @@ Therefore, the solution to this problem is twofold:
 Here's how the solution goes. Solving
 
 $$
-    t = n \ln n
+    t = n \lg n
 $$
 
 can be started by first noticing that via the [change of basis][01]
