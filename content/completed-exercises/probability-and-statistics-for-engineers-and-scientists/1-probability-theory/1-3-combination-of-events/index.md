@@ -1,5 +1,5 @@
 +++
-title  = "1.3 Combination of Events"
+title  = "1.3 Combination of events"
 layout = "solution-single"
 +++
 
