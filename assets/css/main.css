@@ -102,7 +102,7 @@ ul.navigator li.nav-link + li.nav-link:before {
 }
 
 time {
-    font-weight      : bold;
+    font-weight      : normal;
 }
 
 .exercise-tag, .exnum {
