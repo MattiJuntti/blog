@@ -102,8 +102,8 @@ ul.navigator li.nav-link + li.nav-link:before {
 }
 
 time {
-    font-weight      : normal;
-    font-style : italic;
+    font-weight : normal;
+    font-style  : italic;
 }
 
 .exercise-tag, .exnum {
@@ -177,7 +177,7 @@ header nav ul {
 }
 
 header nav ul a {
-    margin-right    : var(--padding-m);
+    margin-right : var(--padding-m);
 }
 
 .header__left   , .main__left   , .footer__left    ,
@@ -234,14 +234,14 @@ main {
 }
 
 .main__center table {
-    text-align : center;
-    margin : var(--padding-m) 0 var(--padding-m) 0;
+    text-align     : center;
+    margin         : var(--padding-m) 0 var(--padding-m) 0;
     border-spacing : 0;
-    border : 1px var(--gray-light) solid;
+    border         : 1px var(--gray-light) solid;
 }
 
 .main__center table th {
-    padding : var(--padding-s) var(--padding-m);
+    padding    : var(--padding-s) var(--padding-m);
     background : var(--table-header-bg);
 }
 
