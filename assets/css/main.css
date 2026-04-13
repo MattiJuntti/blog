@@ -103,6 +103,7 @@ ul.navigator li.nav-link + li.nav-link:before {
 
 time {
     font-weight      : normal;
+    font-style : italic;
 }
 
 .exercise-tag, .exnum {
