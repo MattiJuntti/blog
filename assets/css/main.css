@@ -24,6 +24,8 @@
     --padding-xs :  4px;
     --padding-s  :  8px;
     --padding-m  : 16px;
+
+    --margin-pseudocode : 38px;
 }
 
 *, html, header, main, footer {
@@ -89,6 +91,10 @@ h4.list_link {
 
 p {
     margin-bottom : 0;
+}
+
+p.pseudocode {
+    margin-left : var(--margin-pseudocode);
 }
 
 ul.navigator {
