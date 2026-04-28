@@ -109,15 +109,13 @@ time {
 .exercise-tag, .exnum {
     display          : inline-block;
     text-align       : center;
-    width            : 28px;
-    height           : 24px;
     font-weight      : bold;
+    font-size        : small;
     color            : var(--white);
-    border           : 1px solid var(--red);
     background-color : var(--red);
     border-radius    : 3px;
-    padding          : 0;
-    margin-right     : 4px;
+    width            : 30px;
+    margin-right     : 2px;
 }
 
 pre {
