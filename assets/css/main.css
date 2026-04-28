@@ -4,13 +4,13 @@
 }
 
 :root {
-    --black  : #202020;
-    --white  : #FFFFFF;
-    --red    : #FF6868;
-    --green  : #CBFFA9;
-    --orange : #FFD6A5;
-    --yellow : #FFFEC4;
-    --gray   : #A9A9A9;
+    --black      : #202020;
+    --white      : #FFFFFF;
+    --red        : #FF6868;
+    --green      : #CBFFA9;
+    --orange     : #FFD6A5;
+    --yellow     : #FFFEC4;
+    --gray       : #A9A9A9;
     --gray-light : #E9E9E9;
 
     --accent             : var(--red);
