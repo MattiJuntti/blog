@@ -311,6 +311,10 @@ code {
         flex           : none;
     }
 
+    p.pseudocode {
+        margin-left : 0;
+    }
+
     .header__center, .main__center, .footer__center {
         /* background : var(--red); */
         min-width      : 90%;
