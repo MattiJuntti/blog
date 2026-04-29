@@ -95,6 +95,7 @@ p {
 
 p.pseudocode {
     margin-left : var(--margin-pseudocode);
+    overflow-x  : auto;
 }
 
 ul.navigator {
