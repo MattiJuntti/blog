@@ -24,6 +24,9 @@
     --padding-xs :  4px;
     --padding-s  :  8px;
     --padding-m  : 16px;
+    --padding-l  : 32px;
+    --padding-xl : 64px;
+    --padding-xxl : 128px;
 
     --margin-pseudocode : 38px;
 }
@@ -110,6 +113,19 @@ ul.navigator li.nav-link {
 
 ul.navigator li.nav-link + li.nav-link:before {
     content: "\003E\00a0";
+}
+
+ul.pagination {
+    display         : flex;
+    justify-content : center;
+}
+
+ul.pagination li {
+    margin : 0 var(--padding-s);
+}
+
+ul.pagination li a {
+    font-size : x-large;
 }
 
 time {
