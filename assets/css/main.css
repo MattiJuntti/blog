@@ -21,11 +21,11 @@
     --code-indentation   : "  ";
     --code-line-hl-color : var(--green);
 
-    --padding-xs :  4px;
-    --padding-s  :  8px;
-    --padding-m  : 16px;
-    --padding-l  : 32px;
-    --padding-xl : 64px;
+    --padding-xs  :  4px;
+    --padding-s   :  8px;
+    --padding-m   : 16px;
+    --padding-l   : 32px;
+    --padding-xl  : 64px;
     --padding-xxl : 128px;
 
     --margin-pseudocode : 38px;
