@@ -43,6 +43,45 @@ $$
 
 so $X$ $=$ $22$.
 
-**(b)**
+**(b)** When $(x,y)$ $=$ $(2,5)$ or $(3,7)$ and the slope-intersect
+form of a line is the well known $y$ $=$ $mx$ $+$ $c$, a linear
+equation represented as
 
-...
+$$
+    \left[
+        \begin{array}{c c | c}
+            2 & 5 & m \\
+            3 & 7 & c \\
+        \end{array}
+    \right]
+    \Longleftrightarrow
+    \left\{
+        \begin{array}{l}
+            5 = 2m + c \\
+            7 = 3m + c.
+        \end{array}
+    \right.
+$$
+
+Subtracting first row $\frac{3}{2}$ times from the second leads to
+
+$$
+    \begin{array}{c l}
+        &
+        \left\{
+            \begin{array}{l l l}
+                5                  & = & 2m + c                                    \\
+                7 - \frac{3}{2}(5) & = & 3m - \frac{3}{2}(3m) + c - \frac{3}{2}(c) \\
+            \end{array}
+        \right.
+        \\[0.5em] = & \left\{
+            \begin{array}{l l l}
+                5             & = & 2m + c           \\
+                - \frac{1}{2} & = & -\frac{1}{2}(c), \\
+            \end{array}
+        \right.
+    \end{array}
+$$
+
+so $c$ $=$ $1$ and subsituting it back to, say, $5$ $=$ $2m$ $+$
+$c$, shows that $2m$ $+$ $1$ $=$ $5$, so $m$ $=$ $2$.
