@@ -65,6 +65,12 @@ body {
     margin         : 0;
 }
 
+/* MathJax element container */
+mjx-container {
+    overflow-x : scroll;
+    overflow-y : hidden; /* Could cause problems, because it's a hack */
+}
+
 pre code {
     font-family : "inconsolata", monospace;
 }

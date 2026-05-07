@@ -66,22 +66,50 @@ $$
 Subtracting first row $\frac{3}{2}$ times from the second leads to
 
 $$
-    \begin{array}{c l}
-        &
         \left\{
             \begin{array}{l l l}
                 5                  & = & 2m + c                                    \\
                 7 - \frac{3}{2}(5) & = & 3m - \frac{3}{2}(3m) + c - \frac{3}{2}(c) \\
             \end{array}
         \right.
-        \\[0.5em] = & \left\{
+        \ = \
+        \left\{
             \begin{array}{l l l}
-                5             & = & 2m + c           \\
-                - \frac{1}{2} & = & -\frac{1}{2}(c), \\
+                5             & = & 2m + c          \\
+                - \frac{1}{2} & = & -\frac{1}{2}(c) \\
             \end{array}
-        \right.
-    \end{array}
+        \right. \quad ,
 $$
 
 so $c$ $=$ $1$ and subsituting it back to, say, $5$ $=$ $2m$ $+$
-$c$, shows that $2m$ $+$ $1$ $=$ $5$, so $m$ $=$ $2$.
+$c$, shows that $2m$ $+$ $1$ $=$ $5$, so $m$ $=$ $2$. In matrix
+speak the product
+
+$$
+    \begin{array}{r c l}
+        \begin{bmatrix}
+            1            & 0 \\
+            -\frac{3}{2} & 1 \\
+        \end{bmatrix}
+        \left[
+            \begin{array}{c c | c}
+                2 & 5 & m \\
+                3 & 7 & c \\
+            \end{array}
+        \right]
+        & = &
+        \left[
+            \begin{array}{c c | c}
+                2(1)            + 3(0) & 5(1)            + 7(0) & m(1)            + c(0) \\
+                2(-\frac{3}{2}) + 3(1) & 5(-\frac{3}{2}) + 7(1) & m(-\frac{3}{2}) + c(1) \\
+            \end{array}
+        \right]
+        \\[1em] & = &
+        \left[
+            \begin{array}{c c | c}
+                5 & 12            & m                  \\
+                0 & - \frac{1}{2} & -\frac{3}{2} m + c \\
+            \end{array}
+        \right]
+    \end{array}
+$$
