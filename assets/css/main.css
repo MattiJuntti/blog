@@ -67,7 +67,7 @@ body {
 
 /* MathJax element container */
 mjx-container {
-    overflow-x : scroll;
+    overflow-x : auto;
     overflow-y : hidden; /* Could cause problems, because it's a hack */
     margin-bottom : 0;
 }
