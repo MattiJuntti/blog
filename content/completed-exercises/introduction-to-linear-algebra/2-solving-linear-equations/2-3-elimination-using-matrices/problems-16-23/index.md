@@ -82,37 +82,7 @@ $$
 $$
 
 so $c$ $=$ $1$ and subsituting it back to, say, $5$ $=$ $2m$ $+$
-$c$, shows that $2m$ $+$ $1$ $=$ $5$, so $m$ $=$ $2$. In matrix
-speak the product
-
-$$
-    \begin{array}{r c l}
-        \begin{bmatrix}
-            1            & 0 \\
-            -\frac{3}{2} & 1 \\
-        \end{bmatrix}
-        \left[
-            \begin{array}{c c | c}
-                2 & 5 & m \\
-                3 & 7 & c \\
-            \end{array}
-        \right]
-        & = &
-        \left[
-            \begin{array}{c c | c}
-                2(1)            + 3(0) & 5(1)            + 7(0) & m(1)            + c(0) \\
-                2(-\frac{3}{2}) + 3(1) & 5(-\frac{3}{2}) + 7(1) & m(-\frac{3}{2}) + c(1) \\
-            \end{array}
-        \right]
-        \\[1em] & = &
-        \left[
-            \begin{array}{c c | c}
-                5 & 12            & m                  \\
-                0 & - \frac{1}{2} & -\frac{3}{2} m + c \\
-            \end{array}
-        \right]
-    \end{array}
-$$
+$c$, shows that $2m$ $+$ $1$ $=$ $5$, so $m$ $=$ $2$.
 
 <span class = "exnum">17</span> When parabola $y$ $=$ $a$ $+$ $bx$
 $+$ $cx^2$ goes through points $(1,4)$, $(2,8)$, $(3,14)$ and a
