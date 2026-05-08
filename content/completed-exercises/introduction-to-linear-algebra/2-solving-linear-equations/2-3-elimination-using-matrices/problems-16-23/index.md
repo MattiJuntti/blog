@@ -81,7 +81,7 @@ $$
         \right. \quad ,
 $$
 
-so $c$ $=$ $1$ and subsituting it back to, say, $5$ $=$ $2m$ $+$
+so $c$ $=$ $1$ and substituting it back to, say, $5$ $=$ $2m$ $+$
 $c$, shows that $2m$ $+$ $1$ $=$ $5$, so $m$ $=$ $2$.
 
 <span class = "exnum">17</span> When parabola $y$ $=$ $a$ $+$ $bx$
@@ -213,7 +213,7 @@ $$
 Third row shows that $2c$ $=$ $2$, so $c$ $=$ $1$. Substituting $c$
 back to second row, leads to $-b$ $-$ $5c$ $=$ $-$ $b$ $-$ $5$ =
 $-6$, so multiplying with $-1$ and subtracting $5$, shows that $b$
-$=$ $1$. Substuting $b$ and $c$ to first row shows that, $a$ $+$
+$=$ $1$. Substituting $b$ and $c$ to first row shows that, $a$ $+$
 $3b$ $+$ $9c$ $=$ $a$ $+$ $3$ $+$ $9$ $=$ $a$ $+$ $12$ $=$ $14$, so
 $a$ $=$ $2$.
 
@@ -245,4 +245,4 @@ $$
     \end{bmatrix}
 $$
 
-as was to be exptected.
+as was to be expected.
