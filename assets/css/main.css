@@ -69,6 +69,7 @@ body {
 mjx-container {
     overflow-x : scroll;
     overflow-y : hidden; /* Could cause problems, because it's a hack */
+    margin-bottom : 0;
 }
 
 pre code {
