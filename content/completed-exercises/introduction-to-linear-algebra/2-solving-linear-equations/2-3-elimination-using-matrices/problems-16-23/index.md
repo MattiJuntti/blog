@@ -246,3 +246,131 @@ $$
 $$
 
 as was to be expected.
+
+<span class = "exnum">18</span> When given matrices are
+
+$$
+    \mathbf{E} = \begin{bmatrix}
+        1 & 0 & 0 \\
+        a & 1 & 0 \\
+        b & 0 & 1 \\
+    \end{bmatrix}
+    \quad , \quad
+    \mathbf{F} = \begin{bmatrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & c & 1 \\
+    \end{bmatrix}
+    ,
+$$
+
+then
+
+$$
+    \begin{array}{c c c c}
+        \mathbf{EF} & = & \begin{bmatrix}
+            1(1) + 0(0) + 0(0) & 0(1) + 1(0) + c(0) & 0(1) + 0(0) + 1(0) \\
+            1(a) + 0(1) + 0(0) & 0(a) + 1(1) + c(0) & 0(a) + 0(1) + 1(0) \\
+            1(b) + 0(0) + 0(1) & 0(b) + 1(0) + c(1) & 0(b) + 0(0) + 1(1) \\
+        \end{bmatrix}
+        & \\[1em] & = & \begin{bmatrix}
+            1 & 0 & 0 \\
+            a & 1 & 0 \\
+            b & c & 1 \\
+        \end{bmatrix}
+        & \\[1em] & = & \begin{bmatrix}
+            1(1) + a(0) + b(0) & 0(1) + 1(0) + 0(0) & 0(1) + 0(0) + 1(0) \\
+            1(0) + a(1) + b(0) & 0(0) + 1(1) + 0(0) & 0(0) + 0(1) + 1(0) \\
+            1(0) + a(c) + b(1) & 0(0) + 1(c) + 0(1) & 0(0) + 0(c) + 1(1) \\
+        \end{bmatrix}
+        & = & \mathbf{FE}.
+    \end{array}
+$$
+
+Also
+
+$$
+    \begin{array}{r c l}
+        \mathbf{E}^2 & = & \begin{bmatrix}
+            1 & 0 & 0 \\
+            a & 1 & 0 \\
+            b & 0 & 1 \\
+        \end{bmatrix}
+        \begin{bmatrix}
+            1 & 0 & 0 \\
+            a & 1 & 0 \\
+            b & 0 & 1 \\
+        \end{bmatrix}
+        \\[1em] & = & \begin{bmatrix}
+            1(1) + a(0) + b(0) & 0(1) + 1(0) + 0(0) & 0(1) + 0(0) + 1(0) \\
+            1(a) + a(1) + b(0) & 0(a) + 1(1) + 0(0) & 0(a) + 0(1) + 1(0) \\
+            1(b) + a(0) + b(1) & 0(b) + 1(0) + 0(1) & 0(b) + 0(0) + 1(1) \\
+        \end{bmatrix}
+        \\[1em] & = & \begin{bmatrix}
+                1 & 0 & 0 \\
+            a + a & 1 & 0 \\
+            b + b & 0 & 1 \\
+        \end{bmatrix}
+   \end{array}
+$$
+
+and
+
+$$
+    \begin{array}{r c l}
+        \mathbf{F}^3 & = & \mathbf{FFF}
+        \\[1em] & = & \mathbf{F(FF)}
+        \\[1em] & = & \mathbf{F} \left( 
+            \begin{bmatrix}
+                1 & 0 & 0 \\
+                0 & 1 & 0 \\
+                0 & c & 1 \\
+            \end{bmatrix}
+            \begin{bmatrix}
+                1 & 0 & 0 \\
+                0 & 1 & 0 \\
+                0 & c & 1 \\
+            \end{bmatrix}
+        \right)
+        \\[1em] & = & \mathbf{F} \left(
+            \begin{bmatrix}
+                1(1) + 0(0) + 0(0) & 0(1) + 1(0) + c(0) & 0(1) + 0(0) + 1(0) \\
+                1(0) + 0(1) + 0(0) & 0(0) + 1(1) + c(0) & 0(0) + 0(1) + 1(0) \\
+                1(0) + 0(c) + 0(1) & 0(0) + 1(c) + c(1) & 0(0) + 0(c) + 1(1) \\
+            \end{bmatrix}
+        \right)
+        \\[1em] & = & \mathbf{F} \left(
+            \begin{bmatrix}
+                1 & 0     & 0 \\
+                0 & 1     & 0 \\
+                0 & c + c & 1 \\
+            \end{bmatrix}
+        \right)
+        =
+            \begin{bmatrix}
+                1 & 0 & 0 \\
+                0 & 1 & 0 \\
+                0 & c & 1 \\
+            \end{bmatrix}
+            \begin{bmatrix}
+                1 & 0     & 0 \\
+                0 & 1     & 0 \\
+                0 & c + c & 1 \\
+            \end{bmatrix}
+        \\[1em] & = & \begin{bmatrix}
+                1 & 0         & 0 \\
+                0 & 1         & 0 \\
+                0 & c + c + c & 1 \\
+            \end{bmatrix}.
+   \end{array}
+$$
+
+So then it's possible to guess that
+
+$$
+    \mathbf{F}^{100} = \begin{bmatrix}
+        1 & 0       & 0 \\
+        0 & 1       & 0 \\
+        0 & c^{100} & 1
+    \end{bmatrix}.
+$$
