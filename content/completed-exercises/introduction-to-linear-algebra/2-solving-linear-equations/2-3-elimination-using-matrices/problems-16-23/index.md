@@ -113,3 +113,166 @@ $$
         \right]
     \end{array}
 $$
+
+<span class = "exnum">17</span> When parabola $y$ $=$ $a$ $+$ $bx$
+$+$ $cx^2$ goes through points $(1,4)$, $(2,8)$, $(3,14)$ and a
+given unknown solution is $(a,b,c)$, the problem can be modeled as
+a system of linear functions
+
+<div class = "widescreen">
+$$
+\begin{array}{r c l}
+    \left\{
+        \begin{array}{r c r}
+            a & + &  b & + &  c^2 & = & 4  \\
+            a & + & 2b & + & 2c^2 & = & 8  \\
+            a & + & 3b & + & 3c^2 & = & 14 \\
+        \end{array}
+    \right.
+    & \Longleftrightarrow &
+    \begin{bmatrix}
+        1 & 1 & 1 \\
+        1 & 2 & 4 \\
+        1 & 3 & 9 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        a \\
+        b \\
+        c \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        4 \\
+        8 \\
+       14 \\
+    \end{bmatrix}
+    \\[0.5em] & \Longleftrightarrow &
+    \left[
+        \begin{array}{c c c | c}
+            1 & 1 & 1 &  4 \\
+            1 & 2 & 4 &  8 \\
+            1 & 3 & 9 & 14 \\
+        \end{array}
+    \right]
+    .
+\end{array}
+$$
+</div>
+
+<div class = "smallscreen">
+$$
+\begin{array}{c}
+    \left\{
+        \begin{array}{r c r}
+            a & + &  b & + &  c & = & 4  \\
+            a & + & 2b & + & 4c & = & 8  \\
+            a & + & 3b & + & 9c & = & 14 \\
+        \end{array}
+    \right.
+    \\[1em] \Big\Updownarrow \\[1em]
+    \begin{bmatrix}
+        1 & 1 & 1 \\
+        1 & 2 & 4 \\
+        1 & 3 & 9 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        a \\
+        b \\
+        c \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        4 \\
+        8 \\
+       14 \\
+    \end{bmatrix}
+    \\[1em] \Big\Updownarrow \\[1em]
+    \left[
+        \begin{array}{c c c | c}
+            1 & 1 & 1 &  4 \\
+            1 & 2 & 4 &  8 \\
+            1 & 3 & 9 & 14 \\
+        \end{array}
+    \right]
+    .
+\end{array}
+$$
+</div>
+
+and then just applying elimination operations
+
+$$
+\begin{array}{c c}
+    \xrightarrow{\mathbf{E}_{31} \cdot} &
+    \left[
+        \begin{array}{c c c | c}
+            1 & 3 & 9 & 14 \\
+            1 & 2 & 4 &  8 \\
+            1 & 1 & 1 &  4 \\
+        \end{array}
+    \right]
+    \\[1em] \xrightarrow{2_3 - R_1} &
+    \left[
+        \begin{array}{c c c | c}
+            1 &  3 &  9 & 14 \\
+            0 & -1 & -5 & -6 \\
+            1 &  1 &  1 &  4 \\
+        \end{array}
+    \right]
+    \\[1em] \xrightarrow{R_3 - R_1} &
+    \left[
+        \begin{array}{c c c | c}
+            1 &  3 &  9 &  14 \\
+            0 & -1 & -5 &  -6 \\
+            0 & -2 & -8 & -10 \\
+        \end{array}
+    \right]
+    \\[1em] \xrightarrow{R_3 + 2R_2} &
+    \ \phantom{.}
+    \left[
+        \begin{array}{c c c | c}
+            1 &  3 &  9 &  14 \\
+            0 & -1 & -5 &  -6 \\
+            0 &  0 &  2 &   2 \\
+        \end{array}
+    \right]
+    \ .
+\end{array}
+$$
+
+Third row shows that $2c$ $=$ $2$, so $c$ $=$ $1$. Substituting $c$
+back to second row, leads to $-b$ $-$ $5c$ $=$ $-$ $b$ $-$ $5$ =
+$-6$, so multiplying with $-1$ and subtracting $5$, shows that $b$
+$=$ $1$. Substuting $b$ and $c$ to first row shows that, $a$ $+$
+$3b$ $+$ $9c$ $=$ $a$ $+$ $3$ $+$ $9$ $=$ $a$ $+$ $12$ $=$ $14$, so
+$a$ $=$ $2$.
+
+Substituting $a$ $=$ $2$, $b$ $=$ $1$ and $c$ $=$ $1$ to the first
+matrix equation and evaluating the product shows that
+
+$$
+    \begin{bmatrix}
+        1 & 1 & 1 \\
+        1 & 2 & 4 \\
+        1 & 3 & 9 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        2 \\
+        1 \\
+        1 \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        2(1) + 1(1) + 1(1) \\
+        2(1) + 1(2) + 1(4) \\
+        2(1) + 1(3) + 1(9) \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        4 \\
+        8 \\
+        14 \\
+    \end{bmatrix}
+$$
+
+as was to be exptected.
