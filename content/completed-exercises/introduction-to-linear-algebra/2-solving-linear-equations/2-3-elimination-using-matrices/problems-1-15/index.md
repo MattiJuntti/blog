@@ -1,5 +1,6 @@
 +++
 title  = "Problems 1-15"
+date   = 2025-05-07T12:06:48+03:00
 layout = "solution-single"
 +++
 

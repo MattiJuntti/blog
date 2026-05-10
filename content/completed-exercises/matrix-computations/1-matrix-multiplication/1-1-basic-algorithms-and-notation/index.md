@@ -1,5 +1,6 @@
 +++
 title  = "1.1. Basic algorithms and notation"
+date   = 2025-05-05T10:33:35+03:00
 layout = "solution-single"
 +++
 
