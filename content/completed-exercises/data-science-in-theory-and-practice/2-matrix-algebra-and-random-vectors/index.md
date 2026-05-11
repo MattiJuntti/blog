@@ -109,3 +109,126 @@ rearranging terms.
 **(b)**
 
 ...
+
+<span class = "exnum">3</span> When
+
+$$
+    \mathbf{A} = \begin{bmatrix}
+        1 & 4 & 8 \\
+        0 & 4 & 9 \\
+    \end{bmatrix}
+    \ , \qquad
+    \mathbf{B} = \begin{bmatrix}
+         2 & 4 \\
+         1 & 8 \\
+        -3 & 9 \\
+    \end{bmatrix}
+    \ ,
+$$
+
+**(a)** then
+
+$$
+    \mathbf{A} + \mathbf{B} = \begin{bmatrix}
+        1 + 2 & 4 + 4 & 8 - 3 \\
+        0 + 1 & 4 + 8 & 9 + 9 \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        3 &  8 &  5 \\
+        1 & 12 & 19 \\
+    \end{bmatrix}
+    ,
+$$
+
+**(b)**
+
+$$
+    \mathbf{A} + \mathbf{B} = \begin{bmatrix}
+        1 - 2 & 4 - 4 & 8 - 3 \\
+        0 - 1 & 4 - 8 & 9 - 9 \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        -1 &  0 & 5 \\
+        -1 & -4 & 0 \\
+    \end{bmatrix}
+    ,
+$$
+
+**(c)**
+
+<div class = "widescreen">
+$$
+    \begin{array}{r c l}
+        \mathbf{AA}^\top & = & \begin{bmatrix}
+            1 & 4 & 8 \\
+            0 & 4 & 9 \\
+        \end{bmatrix} \begin{bmatrix}
+            1 & 0 \\
+            4 & 4 \\
+            8 & 9 \\
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            1(1) + 4(4) + 8(8) & 0(1) + 4(4) + 9(8) \\
+            1(0) + 4(4) + 8(9) & 0(0) + 4(4) + 9(9) \\
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            81 & 88 \\
+            88 & 97 \\
+        \end{bmatrix},
+    \end{array}
+$$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{r c c}
+        \mathbf{AA}^\top & = & \begin{bmatrix}
+            1 & 4 & 8 \\
+            0 & 4 & 9 \\
+        \end{bmatrix} \begin{bmatrix}
+            1 & 0 \\
+            4 & 4 \\
+            8 & 9 \\
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            \begin{array}{c c}
+               1(1) \\   
+             + 4(4) \\
+             + 8(8) 
+            \end{array} &
+            \begin{array}{c}
+               0(1) \\   
+             + 4(4) \\
+             + 9(8) 
+            \end{array} \\[0.5em]
+            \begin{array}{c}
+               1(0) \\   
+             + 4(4) \\
+             + 8(9) 
+            \end{array} &
+            \begin{array}{c}
+               0(0) \\   
+             + 4(4) \\
+             + 9(9) 
+            \end{array}
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            81 & 88 \\
+            88 & 97 \\
+        \end{bmatrix},
+    \end{array}
+$$
+</div>
+
+and
+
+**(d)** 
+
+...
+
