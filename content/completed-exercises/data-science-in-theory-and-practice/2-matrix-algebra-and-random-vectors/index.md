@@ -11,7 +11,7 @@ of square matrix $\mathbf{A}$, that is,
 [01]: https://en.wikipedia.org/wiki/Trace_(linear_algebra)
 
 $$
-    \operatorname{tr}(\mathbf{A}) = \sum_{i=1}^{n} a_{ii}.
+    \operatorname{tr}(\mathbf{A}) = \sum_{i=1}^{n} a_{ii}. \tag{1}
 $$
 
 Then, to show that $\operatorname{tr}(\mathbf{AB})$ $=$
@@ -69,3 +69,43 @@ shown that $\operatorname{tr}(c\mathbf{A})$ $=$ $\sum_{i=1}^n
 ca_{ii}$ $=$ $ca_{11}$ $+$ $ca_{22}$ $+$ $\cdots$ $+$ $ca_{ii}$ $=$
 $c(a_{11}$ $+$ $a_{22}$ $+$ $\cdots$ $+$ $a_{ii})$ $=$ $c
 \sum_{i=1}^n a_{ii}$ $=$ $c\operatorname{tr}(\mathbf{A})$.
+
+<span class = "exnum">2</span> Definition of the [determinant][02]
+is
+
+$$
+    \operatorname{det} \mathbf{A}
+        = a_{i1}\mathbf{C}_{i1}
+        + a_{i2}\mathbf{C}_{i2}
+          \cdots
+        + a_{in}\mathbf{C}_{in},
+        \tag{2}
+$$
+
+[02]: https://en.wikipedia.org/wiki/Determinant
+
+where the &ldquo;cofactors&rdquo;
+
+$$
+    \mathbf{C}_{ij} = (-1)^{i+j} \operatorname{det} \mathbf{M}_{i,j}
+$$
+
+where $\mathbf{M}$ is known as &ldquo;minor matrix&rdquo; that is
+given when row $i$ and column $j$ is deleted from the original
+matrix$\mathbf{A}$.
+
+**(a)** Then in order to show that $\operatorname{det}\mathbf{A}$
+$=$ $\operatorname{det}\mathbf{A}^\top$, is enough know that no
+matter if the $\operatorname{det}$ is taken from $\mathbf{A}$ or
+$\mathbf{A}^\top$, the operations ends up in same expression of
+summations and multiplications that are equal due to the
+associativity and commutativity properties of these operations.  In
+other words, the proof is then just to show compute the determinant
+for both $\mathbf{A}$ and $\mathbf{A}^\top$ to find the (possibly
+very) long expression that contain all summations and
+multiplications of the determinant, and then make them equal by
+rearranging terms.
+
+**(b)**
+
+...
