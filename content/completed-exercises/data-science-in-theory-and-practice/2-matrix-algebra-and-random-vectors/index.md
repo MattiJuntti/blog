@@ -232,3 +232,102 @@ and
 
 ...
 
+<span class = "exnum">4</span> If
+
+$$
+    \mathbf{A} = \begin{bmatrix}
+        1 & 4 & 8 \\
+        0 & 4 & 9 \\
+    \end{bmatrix}
+$$
+
+and
+
+$$
+    \mathbf{B} = \begin{bmatrix}
+         2 & 4 \\
+         1 & 3 \\
+        -3 & 9 \\
+    \end{bmatrix},
+$$
+
+**(a)** then
+
+<div class = "widescreen">
+$$
+    \mathbf{AB}
+    =
+    \begin{bmatrix}
+        2(1) + 1(4) - 3(8) & 4(1) + 3(4) + 9(8) \\
+        2(0) + 1(4) - 3(9) & 4(0) + 3(4) + 9(9) \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        -18 & 88 \\
+        -23 & 93 \\
+    \end{bmatrix}
+$$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{r c c}
+        \mathbf{AB}
+        & = &
+        \begin{bmatrix}
+            \begin{array}{c c}
+                2(1) \\ + 1(4) \\ - 3(8)    
+            \end{array}
+            &
+            \begin{array}{c c}
+                4(1) \\ + 3(4) \\ + 9(8) 
+            \end{array}
+            \\[1em]
+            \begin{array}{c c}
+                2(0) \\ + 1(4) \\ - 3(9)    
+            \end{array}
+            &
+            \begin{array}{c c}
+                4(0) \\ + 3(4) \\ + 9(9) 
+            \end{array}
+        \end{bmatrix}
+        \\[1em] & = &
+        \begin{bmatrix}
+            -18 & 88 \\
+            -23 & 93 \\
+        \end{bmatrix}
+        ,
+    \end{array}
+$$
+</div>
+
+and **(b)**
+
+$$
+\begin{array}{r c l}
+    \mathbf{BA}
+        & = & \begin{bmatrix}
+            \mathbf{Ba}_1 & \mathbf{Ba}_2 & \mathbf{Ba}_3
+        \end{bmatrix}
+        \\[0.5em] & = & \begin{bmatrix}
+            1( 2) + 0(4) & 4( 2) + 4(4) & 8( 2) + 9(4) \\
+            1( 1) + 0(3) & 4( 1) + 4(3) & 8( 1) + 9(3) \\
+            1(-3) + 0(9) & 4(-3) + 4(9) & 8(-9) + 9(9) \\
+        \end{bmatrix}
+        \\[0.5em] & = & \begin{bmatrix}
+            2 & 24 & 52 \\
+            1 & 16 & 35 \\
+           -3 & 24 & 57 \\
+        \end{bmatrix}.
+\end{array}
+$$
+
+**(c)** The
+
+$$
+    \operatorname{tr}(\mathbf{AB})
+        = -18 + 93
+        = 75
+        = 2 + 16 + 57
+        = \operatorname{tr}(\mathbf{BA}).
+$$
