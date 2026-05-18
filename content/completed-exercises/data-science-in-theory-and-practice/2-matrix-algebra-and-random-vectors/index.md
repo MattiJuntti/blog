@@ -331,3 +331,115 @@ $$
         = 2 + 16 + 57
         = \operatorname{tr}(\mathbf{BA}).
 $$
+
+<span class = "exnum">5</span> When
+
+$$
+    \mathbf{A} = \begin{bmatrix}
+        5 & 4 & 8 \\
+        0 & 4 & 3 \\
+    \end{bmatrix}
+$$
+
+and
+
+$$
+    \mathbf{B} = \begin{bmatrix}
+        0 & 4 \\
+        1 & 3 \\
+       -3 & 2 \\
+    \end{bmatrix}
+$$
+
+**(a)** and ignoring the possible possibility of using
+Moore-Penrose pseudoinverse, matrix $\mathbf{A}^{-1}$ does not
+exist because $\mathbf{A}$ is not a square matrix. However, **(b)**
+the $(\mathbf{BA})^{-1}$ could exist. This can be checked by first
+observing that
+
+$$
+    \mathbf{BA}
+    =
+    \begin{bmatrix}
+        0 & 4 \\
+        1 & 3 \\
+       -3 & 2 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        5 & 4 & 8 \\
+        0 & 4 & 3 \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+          0  & 16 & 32 \\
+          5  & 16 & 32 \\
+        -15  & -4 & -8 \\
+    \end{bmatrix}.
+$$
+
+Exchanging the first row ($R_1$) with third ($R_3$) leads to
+
+$$
+    \begin{bmatrix}
+        -15  & -4 & -8 \\
+          5  & 16 & 32 \\
+          0  & 16 & 32 \\
+    \end{bmatrix}.
+$$
+
+Then the steps for reducing the matrix into upper triangular form
+start by subtracting $R_1$ from the second row ($R_2$)
+$\frac{5}{-15}$ $=$ $-\frac{1}{3}$ times, that is, adding $R_1$ to
+$R_2$ $\frac{1}{3}$ times gives
+
+$$
+\begin{array}{c c}
+    &
+    \begin{bmatrix}
+        -15                 & -4                  & -8                  \\
+        5 - (\frac{1}{3})15 & 16 - (\frac{1}{3})4 & 32 - (\frac{1}{3})8 \\
+        0                   & 16                  & 32                  \\
+    \end{bmatrix}
+    \\[1em] = &
+    \begin{bmatrix}
+        -15 & -4           & -8           \\
+          0 & \frac{44}{3} & \frac{88}{3} \\
+          0 & 16           & 32           \\
+    \end{bmatrix}.
+    \\[1em] \xrightarrow{R_3 - \frac{16}{1} \left( \frac{3}{44} \right) R_2} &
+    \begin{bmatrix}
+        -15 & -4                                                                        & -8                                                           \\
+          0 & \frac{44}{3}                                                              & \frac{88}{3}                                                 \\
+          0 & 16 - \frac{44}{3} \left( \frac{16}{1} \right) \left( \frac{3}{44} \right) & 32 - \left( \frac{16}{1} \right) \left( \frac{3}{44} \right) \\
+    \end{bmatrix}
+    \\[1em] = &
+    \begin{bmatrix}
+        -15 & -4           & -8             \\
+          0 & \frac{44}{3} & \frac{88}{3}   \\
+          0 & 0            & \frac{340}{11} \\
+    \end{bmatrix}.
+\end{array}
+$$
+
+Since, say, $z$ $=$ $\frac{340}{11}$, then $\frac{44}{3}y$ $+$
+$\frac{88}{3}z$ $=$ $\frac{44}{3}y$ $+$ $\frac{88}{3}$ $\left(
+\frac{340}{11} \right)$ $=$ $\frac{44}{3}y$ $+$ $\frac{2720}{3}$.
+So when $\frac{44}{3}y$ $+$ $\frac{2720}{3}$ $=$ $0$, $y$ $=$
+$-\frac{2720}{3}$ $\left( \frac{3}{44} \right)$ $=$
+$-\frac{680}{11}$. Substituting $y$ and $z$ back to first equation,
+means that $-15x$ $+$ $4 \left( \frac{680}{11} \right)$ $-$ $8
+\left( \frac{340}{11} \right)$ $=$ $-15x$ $+$ $\frac{2720}{11}$ $-$
+$\frac{2720}{11}$ $=$ $-15x$. So when $-15x$ $=$ $0$, $x$ $=$ $0$.
+
+Now, since $x$, $y$ and $z$ are known, it can be said the the
+previous matrix,
+
+$$
+    \begin{bmatrix}
+        -15 & -4           & -8             \\
+          0 & \frac{44}{3} & \frac{88}{3}   \\
+          0 & 0            & \frac{340}{11} \\
+    \end{bmatrix}
+    =
+    (\mathbf{BA})^{-1}.
+$$
