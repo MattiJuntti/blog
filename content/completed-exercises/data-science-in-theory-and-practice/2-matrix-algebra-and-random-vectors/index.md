@@ -468,6 +468,7 @@ $$
 
 Then
 
+<div class = "widescreen">
 $$
     \begin{array}{r c l}
         \mathbf{u}^\top \mathbf{Au}
@@ -500,13 +501,67 @@ $$
             3u_1^2 + 3u_2^2 + 3u_3^2 - 2 u_1u_2 - 2u_2u_3.
     \end{array}
 $$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{c l}
+        & \mathbf{u}^\top \mathbf{Au}
+        \\[1em] = & \begin{bmatrix}
+            u_1 & u_2 & u_3
+        \end{bmatrix}
+        \begin{bmatrix}
+             3 & -1 &  0 \\
+            -1 &  3 & -1 \\
+             0 & -1 &  3 \\
+        \end{bmatrix}
+        \begin{bmatrix}
+            u_1 \\ u_2 \\ u_3
+        \end{bmatrix}
+        \\[1em] = & \begin{bmatrix}
+            u_1 & u_2 & u_3
+        \end{bmatrix}
+        \begin{bmatrix}
+             3u_1 -  u_2        \\
+             -u_1 + 3u_2 -  u_3 \\
+                  -  u_2 + 3u_3 \\
+        \end{bmatrix}
+        \\[1em] = &
+            u_1(3u_1 - u_2)
+        \\[0.25em] &
+            + u_2(-u_1 + 3u_2 - u_3)
+        \\[0.25em] &
+            + u_3(-u_2 + 3u_3)
+        \\[1em] = &
+            3u_1^2 - u_1u_2 - u_1u_2
+        \\[0.25em] &
+            + 3u_2^2 - u_2u_3 - u_2u_3 + 3u_3^2
+        \\[1em] = &
+            3u_1^2 -2 u_1u_2 + 3u_2^2 - 2u_2u_3 + 3u_3^2
+        \\[1em] = &
+            3u_1^2 + 3u_2^2 + 3u_3^2 - 2 u_1u_2 - 2u_2u_3.
+    \end{array}
+$$
+</div>
 
 Now splitting the $3u_i^2$ and grouping all terms of the received
 expression leads to
 
+<div class = "widescreen">
 $$
     (u_1^2 + u_2^2 - 2u_1u_2) + (u_2^2 + u_3^2 - 2u_2u_3) + 2u_1^2 + u_2^2 + 2u_3^2,
 $$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{l}
+        (u_1^2 + u_2^2 - 2u_1u_2)   \\[0.5em]
+        + (u_2^2 + u_3^2 - 2u_2u_3) \\[0.5em]
+        + 2u_1^2 + u_2^2 + 2u_3^2,
+    \end{array}
+$$
+</div>
 
 and because
 
@@ -516,9 +571,22 @@ $$
 
 the previous to last expression becomes
 
+<div class = "widescreen">
 $$
     (u_1 - u_2)^2 + (u_2 - u_3)^2 + 2u_1^2 + u_2^2 + 2u_3^2 = \mathbf{u}^\top \mathbf{A} \mathbf{u}.
 $$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{ cl}
+          & (u_1 - u_2)^2                          \\[0.5em]
+          & + (u_2 - u_3)^2                        \\[0.5em]
+          & + 2u_1^2 + u_2^2 + 2u_3^2              \\[0.5em]
+        = & \mathbf{u}^\top \mathbf{A} \mathbf{u}.
+    \end{array}
+$$
+</div>
 
 Therefore, $\mathbf{u}^\top \mathbf{Au}$ $>$ $0$ and $\mathbf{A}$
 is positive definite for any non-zero column vector.
