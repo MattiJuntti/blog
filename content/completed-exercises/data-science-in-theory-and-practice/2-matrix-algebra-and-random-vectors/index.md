@@ -590,3 +590,9 @@ $$
 
 Therefore, $\mathbf{u}^\top \mathbf{Au}$ $>$ $0$ and $\mathbf{A}$
 is positive definite for any non-zero column vector.
+
+<span class = "exnum">7</span> If $\mathbf{A}$ and $\mathbf{B}$ are
+positive definite matrices, then $\mathbf{u}^\top \mathbf{Au}$ $>$
+$0$ and $\mathbf{u}^\top \mathbf{Bu}$ $>$ $0$, but so is
+$\mathbf{u}^\top(\mathbf{A}+\mathbf{B})\mathbf{u}$ $>$ $0$, for
+some non-zero column vector $\mathbf{u}$.
