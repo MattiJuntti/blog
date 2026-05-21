@@ -595,4 +595,9 @@ is positive definite for any non-zero column vector.
 positive definite matrices, then $\mathbf{u}^\top \mathbf{Au}$ $>$
 $0$ and $\mathbf{u}^\top \mathbf{Bu}$ $>$ $0$, but so is
 $\mathbf{u}^\top(\mathbf{A}+\mathbf{B})\mathbf{u}$ $>$ $0$, for
-some non-zero column vector $\mathbf{u}$.
+some non-zero column vector $\mathbf{u}$. Also the sum of two
+positive definite matrices is positive semidefinite. In other
+words, if $\mathbf{A}$ $=$ $\mathbf{A}^\top$ and $\mathbf{B}$ $=$
+$\mathbf{B}^\top$ are positive semidefinite matrices, then
+$(\mathbf{A}$ $+$ $\mathbf{B})$ $=$ $(\mathbf{A}$ $+$
+$\mathbf{B})^\top$, which is also a positive semidefinite matrix.
