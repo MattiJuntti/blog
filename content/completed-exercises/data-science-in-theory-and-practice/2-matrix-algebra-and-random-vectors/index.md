@@ -520,5 +520,5 @@ $$
     (u_1 - u_2)^2 + (u_2 - u_3)^2 + 2u_1^2 + u_2^2 + 2u_3^2 = \mathbf{u}^\top \mathbf{A} \mathbf{u}.
 $$
 
-Therefore, $\mathbf{u}^\top \mathbf{Au}$ $>$ $0$ and
-$\mathbf{A}$ is positive definite for any non-zero column vector.
+Therefore, $\mathbf{u}^\top \mathbf{Au}$ $>$ $0$ and $\mathbf{A}$
+is positive definite for any non-zero column vector.
