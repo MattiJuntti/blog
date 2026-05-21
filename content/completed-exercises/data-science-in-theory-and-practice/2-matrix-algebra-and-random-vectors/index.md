@@ -443,3 +443,82 @@ $$
     =
     (\mathbf{BA})^{-1}.
 $$
+
+<span class = "exnum">6</span> To show that
+
+$$
+    \mathbf{A} = \begin{bmatrix}
+         3 & -1 &  0 \\
+        -1 &  3 & -1 \\
+         0 & -1 &  3 \\
+    \end{bmatrix}
+$$
+
+is positive definite for any non-zero column vector, it's needed to
+be shown that $\mathbf{u^\top A u}$ $>$ $0$, for vector
+$\mathbf{u}$ $\in$ $\mathbb{R}^3$ nonidentically zero.
+
+$$
+    \mathbf{u} = \begin{bmatrix}
+        u_1 \\
+        u_2 \\
+        u_3 \\
+    \end{bmatrix}.
+$$
+
+Then
+
+$$
+    \begin{array}{r c l}
+        \mathbf{u}^\top \mathbf{Au}
+        & = & \begin{bmatrix}
+            u_1 & u_2 & u_3
+        \end{bmatrix}
+        \begin{bmatrix}
+             3 & -1 &  0 \\
+            -1 &  3 & -1 \\
+             0 & -1 &  3 \\
+        \end{bmatrix}
+        \begin{bmatrix}
+            u_1 \\ u_2 \\ u_3
+        \end{bmatrix}
+        \\[1em] & = & \begin{bmatrix}
+            u_1 & u_2 & u_3
+        \end{bmatrix}
+        \begin{bmatrix}
+             3u_1 -  u_2        \\
+             -u_1 + 3u_2 -  u_3 \\
+                  -  u_2 + 3u_3 \\
+        \end{bmatrix}
+        \\[1em] & = &
+            u_1(3u_1 - u_2) + u_2(-u_1 + 3u_2 - u_3) + u_3(-u_2 + 3u_3)
+        \\[1em] & = &
+            3u_1^2 - u_1u_2 - u_1u_2 + 3u_2^2 - u_2u_3 - u_2u_3 + 3u_3^2
+        \\[1em] & = &
+            3u_1^2 -2 u_1u_2 + 3u_2^2 - 2u_2u_3 + 3u_3^2
+        \\[1em] & = &
+            3u_1^2 + 3u_2^2 + 3u_3^2 - 2 u_1u_2 - 2u_2u_3.
+    \end{array}
+$$
+
+Now splitting the $3u_i^2$ and grouping all terms of the received
+expression leads to
+
+$$
+    (u_1^2 + u_2^2 - 2u_1u_2) + (u_2^2 + u_3^2 - 2u_2u_3) + 2u_1^2 + u_2^2 + 2u_3^2,
+$$
+
+and because
+
+$$
+    u_i^2 - 2u_iu_j + u_j^2 = (u_i - u_j)^2, \quad i \neq j,
+$$
+
+the previous to last expression becomes
+
+$$
+    (u_1 - u_2)^2 + (u_2 - u_3)^2 + 2u_1^2 + u_2^2 + 2u_3^2 = \mathbf{u}^\top \mathbf{A} \mathbf{u}.
+$$
+
+Therefore, $\mathbf{u}^\top \mathbf{Au}$ $>$ $0$ and
+$\mathbf{A}$ is positive definite for any non-zero column vector.
