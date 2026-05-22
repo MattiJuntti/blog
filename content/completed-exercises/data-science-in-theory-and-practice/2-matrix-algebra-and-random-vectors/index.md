@@ -617,7 +617,7 @@ is positive semidefinite needs to be solved for $a$. One way to
 solve the problem is to figure out the eigenvalues of $\mathbf{A}$
 and see if they are nonnegative.
 
-Figuring out the eigenvalues are the values that makes the eqution
+Figuring out the eigenvalues are the values that makes the equation
 
 $$
     \mathbf{Ax} = \lambda \mathbf{x}
