@@ -601,3 +601,185 @@ words, if $\mathbf{A}$ $=$ $\mathbf{A}^\top$ and $\mathbf{B}$ $=$
 $\mathbf{B}^\top$ are positive semidefinite matrices, then
 $(\mathbf{A}$ $+$ $\mathbf{B})$ $=$ $(\mathbf{A}$ $+$
 $\mathbf{B})^\top$, which is also a positive semidefinite matrix.
+
+<span class = "exnum">8</span> To find out for what values of $a$
+of matrix
+
+$$
+    \mathbf{A} = \begin{bmatrix}
+         4 & -1 &  a \\
+        -1 &  4 & -1 \\
+         a & -1 &  4 \\
+    \end{bmatrix}
+$$
+
+is positive semidefinite needs to be solved for $a$. One way to
+solve the problem is to figure out the eigenvalues of $\mathbf{A}$
+and see if they are nonnegative.
+
+Figuring out the eigenvalues are the values that makes the eqution
+
+$$
+    \mathbf{Ax} = \lambda \mathbf{x}
+$$
+
+hold true for the matrix $\mathbf{A}$ and figuring out the
+$\lambda$s comes form noticing first that $\lambda \mathbf{x}$ $=$
+$\lambda \mathbf{Ix}$ and subtracting $\lambda \mathbf{Ix}$, from
+both sides of the equation leads to $\mathbf{Ax}$ $-$ $\lambda
+\mathbf{Ix}$ $=$ $(\mathbf{A}$ $-$ $\lambda \mathbf{I}) \mathbf{x}$
+
+<div class = "widescreen">
+$$
+    = \left(
+        \begin{bmatrix}
+             4 & -1 &  a \\
+            -1 &  4 & -1 \\
+             a & -1 &  4 \\
+        \end{bmatrix}
+        -
+        \begin{bmatrix}
+            \lambda & 0 & 0 \\
+            0 & \lambda & 0 \\
+            0 & 0 & \lambda
+        \end{bmatrix}
+    \right)
+    \mathbf{x}
+    =
+    \begin{bmatrix}
+        (4 - \lambda) & -1            & a \\
+        -1            & (4 - \lambda) & -1 \\
+        a             & -1            & (4 - \lambda) \\
+    \end{bmatrix}
+    \mathbf{x}
+    =
+    \mathbf{0}
+$$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{c l}
+        = & \left(
+            \begin{bmatrix}
+                 4 & -1 &  a \\
+                -1 &  4 & -1 \\
+                 a & -1 &  4 \\
+            \end{bmatrix}
+            -
+            \begin{bmatrix}
+                \lambda & 0 & 0 \\
+                0 & \lambda & 0 \\
+                0 & 0 & \lambda
+            \end{bmatrix}
+        \right)
+        \mathbf{x}
+        \\[1em] = &
+            \begin{bmatrix}
+                (4 - \lambda) & -1            & a \\
+                -1            & (4 - \lambda) & -1 \\
+                a             & -1            & (4 - \lambda) \\
+            \end{bmatrix}
+        \mathbf{x}
+        \\[1em] = & \mathbf{0}
+    \end{array}
+$$
+</div>
+
+and then figuring out the determinant of $(\mathbf{A} - \lambda
+\mathbf{I})$. Consequently
+
+$$
+    \operatorname{det} \begin{bmatrix}
+        (4 - \lambda) & -1            & a \\
+        -1            & (4 - \lambda) & -1 \\
+        a             & -1            & (4 - \lambda) \\
+    \end{bmatrix}
+$$
+
+is equal to the sum
+
+$$
+    \begin{array}{ c l }
+        &
+        (4 - \lambda) \cdot \operatorname{det} \begin{bmatrix}
+            (4 - \lambda) & -1            \\
+            -1            & (4 - \lambda) \\
+        \end{bmatrix}
+        +
+        \operatorname{det} \begin{bmatrix}
+            -1 & -1            \\
+            a  & (4 - \lambda) \\
+        \end{bmatrix}
+        +
+        \operatorname{det} \begin{bmatrix}
+            -1 & (4 - \lambda) \\
+            a  & -1            \\
+        \end{bmatrix}
+        \\[1em] = &
+            (4 - \lambda) \left[ (4 - \lambda)^2 - 1 \right]
+            - \left[ (4 - \lambda) - a \right]
+            + a \left[ 1 - (a(4 - \lambda)) \right]
+        \\[1em] = &
+            (4 - \lambda)^3 - (4 - \lambda)
+            - (4 - \lambda) - a
+            + a - a^2(4 - \lambda)
+        \\[1em] = &
+            (4 - \lambda)^3 - 2(4 - \lambda) - a^2(4 - \lambda) + 2a
+        \\[1em] = &
+            (4 - \lambda)^3 - (2 + a^2)(4 - \lambda) + 2a.
+    \end{array}
+$$
+
+If $(4 - \lambda)$ is set to equal $a$, then the right hand-side of
+the previous equation becomes
+
+$$
+    a^3 - (2+a^2)a + 2a
+        = a^3 - 2a - a^3 + 2a
+        = a^3 - a^3 - 2a + 2a
+        = 0,
+$$
+
+so $(4 - \lambda) - a$ is a factor and one $\lambda$ is equal to
+$4-a$ and the same right hand-side can be written as
+
+$$
+    \left[ (4 - \lambda) - a \right] \left[ (4 - \lambda)^2 + a(4 - \lambda) - 2 \right] = 0.
+$$
+
+Diving both sides with $\left[ (4 - \lambda) - a \right]$ makes the
+equation
+
+$$
+    (4 - \lambda)^2 + a(4 - \lambda) - 2 = 0,
+$$
+
+equivalent to
+
+$$
+    \left[ (4 - \lambda) + 2 \right] \left[ (4 - \lambda) - 1 \right] = 0,
+$$
+
+from where the last two factors can be read into a polynomial
+solution to the determinant above,
+
+$$
+    \left[ (4 - \lambda) - a \right] \left[ (4 - \lambda) + 2 \right] \left[ (4 - \lambda) - 1 \right] = 0.
+$$
+
+Now applying the [zero-product property][01] the eigenvalues are:
+
+[01]: https://en.wikipedia.org/wiki/Zero-product_property
+
+$$
+    \begin{array}{r l c c l}
+        \text{i})   : & (4 - \lambda) - a & = & 0 & \Longrightarrow & \lambda = 4 - a \\[0.5em]
+        \text{ii})  : & (4 - \lambda) + 2 & = & 0 & \Longrightarrow & \lambda = 6     \\[0.5em]
+        \text{iii}) : & (4 - \lambda) - 1 & = & 0 & \Longrightarrow & \lambda = 3     \\[0.5em]
+    \end{array}
+$$
+
+From these values it can be seen that when $\lambda$ $=$ $4-a$
+$\geq$ $0$, that is, when $a$ $\leq$ $4$, the matrix $\mathbf{A}$
+is positive semidefinite.
