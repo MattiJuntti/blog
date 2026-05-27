@@ -76,3 +76,16 @@ and is evaluated as
 [01]:https://en.wikipedia.org/wiki/Operator_associativity
 [02]:developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#difference_between_statements_and_declarations
 [03]:https://www.w3schools.com/js/js_precedence.asp
+
+<span class = "exnum">2</span> The given expression
+
+$$
+    \frac{(5 + 4 + (2 - (3 - (6 + \frac{4}{5}))))}{3(6 - 2)(2 - 7)}
+$$
+
+can be translated into Javascript by writing
+
+```javascsript
+    (5 + 4 + (2 - (3 - (6 + (4 / 5)))))
+        / 3 * (6 - 2) * (2 - 7)
+```
