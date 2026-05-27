@@ -127,3 +127,48 @@ grouping `(b` `>=` `0` `?` `plus` `:` `minus)` is resolved. This
 results in a function call to `plus` or `minus` to which the set of
 arguments group `(a,b)` are used. The first group is grouping
 resolution and the second a function call of `plus` or `minus`.
+
+<span class = "exnum">5</span> If Ben Bitdiddle uses the
+interpreter with _applicative-order evaluation_ the function call
+
+```javascript
+test(0,p());
+```
+
+where `p` is defined as
+
+```javascript
+function p() { return p(); }
+```
+
+and `test` as
+
+```javascript
+function test(x, y)
+{
+    return x === 0 ? 0 : y;
+}
+```
+
+Bitdiddle will see the &ldquo;_evaluate the arguments and then
+apply_&rdquo; behaviour where the function call `test()` evaluates
+to `RangeError`, because the intepreter will first evaluate `0` as
+zero, and then interpreter evaluates `p()` that by definition is a
+infinite recursion.
+
+However if the interpreter uses &ldquo;_normal-order
+evaluation_&rdquo;, the call `p()` means that the function will be
+&ldquo;_fully expanded and then reduced_&rdquo;, which means that
+the call `test(0,p())` is evaluated as
+
+```
+    0 === (0 ? 0 : p())
+```
+
+which leads to
+
+```
+    0 === p()
+```
+
+which also yields `RangeError`.
