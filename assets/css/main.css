@@ -76,6 +76,12 @@ pre code {
     font-family : "inconsolata", monospace;
 }
 
+/* Ad-hoc solution for retracting bottom border of code listings
+ * The <div> "highlight" class is what Hugo server calls codelistings */
+.highlight {
+    margin-bottom : -16px;
+}
+
 h1 {
     margin-bottom : 0;
 }
