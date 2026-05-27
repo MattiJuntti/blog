@@ -89,3 +89,41 @@ can be translated into Javascript by writing:
     (5 + 4 + (2 - (3 - (6 + (4 / 5)))))
         / 3 * (6 - 2) * (2 - 7)
 ```
+
+<span class = "exnum">3</span>
+
+...
+
+<span class = "exnum">4</span> If
+
+```javascript
+function plus(a,b)
+{
+    return a + b;
+}
+```
+
+and
+
+```javascript
+function minus(a,b)
+{
+    return a - b;
+}
+```
+
+then the function
+
+```javascript
+function a_plus_abs_b(a,b)
+{
+    return (b >= 0 ? plus : minus)(a,b);
+}
+```
+
+is evaluated by first checking the condition `(b >= 0)`. On `true`
+or `false`, either `plus` or `minus` is returned, that is, the
+grouping `(b` `>=` `0` `?` `plus` `:` `minus)` is resolved. This
+results in a function call to `plus` or `minus` to which the set of
+arguments group `(a,b)` are used. The first group is grouping
+resolution and the second a function call of `plus` or `minus`.
