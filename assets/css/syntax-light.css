@@ -64,7 +64,7 @@
 /* Operator */ .chroma .o {  }
 /* OperatorWord */ .chroma .ow { font-weight:normal }
 /* Punctuation */ .chroma .p {  }
-/* Comment */ .chroma .c { font-style:normal; }
+/* Comment */ .chroma .c { font-style:normal; color:var(--code-comment-color); }
 /* CommentHashbang */ .chroma .ch { font-style:normal }
 /* CommentMultiline */ .chroma .cm { font-style:normal;color:var(--code-comment-color) }
 /* CommentSingle */ .chroma .c1 { font-style:normal;color:var(--code-comment-color) }
