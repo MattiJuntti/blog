@@ -431,3 +431,67 @@ $$
         \end{bmatrix}
     \end{array}
 $$
+
+<span class = "exnum">20</span> 
+
+**(a)** If all elements of a matrix $\mathbf{B}$ are the same, then
+all columns of $\mathbf{EB}$ are the same, because each one is
+
+$$
+    \mathbf{Eb}_i, \quad \mathbf{b}_i \in \mathbf{B}, \quad i = 1, 2, \ldots, n.
+$$
+
+For example, if
+
+$$
+    \mathbf{E} = \begin{bmatrix}
+        0 & 1 \\
+        1 & 0 \\
+    \end{bmatrix}
+$$
+
+then
+
+<div class = "widescreen">
+$$
+    \mathbf{EB}
+    = \begin{bmatrix}
+        0(b) + 1(b) & 0(b) + 1(b) \\
+        1(b) + 0(b) & 1(b) + 0(b)
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        b & b \\
+        b & b
+    \end{bmatrix}
+    =
+    \mathbf{B}.
+$$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{r c l}
+        \mathbf{EB}
+        & = & \begin{bmatrix}
+            0(b) + 1(b) & 0(b) + 1(b) \\
+            1(b) + 0(b) & 1(b) + 0(b)
+        \end{bmatrix}
+        \\[0.5em] & = &
+        \begin{bmatrix}
+            b & b \\
+            b & b
+        \end{bmatrix}
+        \\[0.5em] & = &
+        \mathbf{B}.
+    \end{array}
+$$
+</div>
+
+It could be said that rows are exchanged by multiplication with
+$\mathbf{E}$, but since all values of $\mathbf{B}$ are $b$, the
+outcome results with identical or same matrix as $\mathbf{B}$, so
+multiplying this homogenous matrix is idempotent operation.
+
+**(b)** If all rows of $B$ are not $[1 2 4]$, the multiplication
+$\mathbf{EB}$ results in matrix where rows are permuted.
