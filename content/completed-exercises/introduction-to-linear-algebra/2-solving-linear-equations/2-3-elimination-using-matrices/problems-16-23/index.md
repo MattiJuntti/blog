@@ -495,3 +495,61 @@ multiplying this homogenous matrix is idempotent operation.
 
 **(b)** If all rows of $B$ are not $[1 2 4]$, the multiplication
 $\mathbf{EB}$ results in matrix where rows are permuted.
+
+<span class = "exnum">21</span> If $\mathbf{E}$ adds row $1$ to row
+$2$ and $\mathbf{F}$ adds row $2$ to row $1$, that is,
+
+$$
+    \mathbf{E} = \begin{bmatrix}
+        1 & 0 & 0 \\
+        1 & 1 & 0 \\
+        0 & 0 & 1
+    \end{bmatrix}
+$$
+
+and
+
+$$
+    \mathbf{F} = \begin{bmatrix}
+        1 & 1 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{bmatrix}
+$$
+
+Then
+
+$$
+    \begin{array}{r c l}
+        \mathbf{EF}
+        & = & \begin{bmatrix}
+            1(1) + 0(0) + 0(0) & 1(1) + 0(1) + 0(0) & 1(0) + 0(0) + 0(1) \\
+            1(1) + 1(0) + 0(0) & 1(1) + 1(1) + 0(0) & 1(0) + 1(0) + 0(1) \\
+            0(1) + 0(0) + 1(0) & 0(1) + 0(1) + 1(0) & 0(0) + 0(0) + 1(1)
+        \end{bmatrix}
+        \\[0.5em] & = & \begin{bmatrix}
+            1 & 1 & 0 \\
+            1 & 2 & 0 \\
+            0 & 0 & 1
+        \end{bmatrix}
+    \end{array}
+$$
+
+and
+
+$$
+    \begin{array}{r c l}
+        \mathbf{FE} & = & \begin{bmatrix}
+            1(1) + 1(1) + 0(0) & 1(0) + 1(1) + 0(0) & 1(0) + 1(0) + 0(1) \\
+            0(1) + 1(1) + 0(0) & 0(0) + 1(1) + 0(0) & 0(0) + 1(0) + 0(1) \\
+            0(1) + 0(1) + 1(0) & 0(0) + 0(1) + 1(0) & 0(0) + 0(0) + 1(1)
+        \end{bmatrix}
+        \\[0.5em] & = & \begin{bmatrix}
+            2 & 1 & 0 \\
+            1 & 1 & 0 \\
+            0 & 0 & 1
+        \end{bmatrix} ,
+    \end{array}
+$$
+
+so $\mathbf{EF} \neq \mathbf{FE}$.
