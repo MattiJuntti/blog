@@ -562,3 +562,39 @@ e_{2j}a_{j1}$. **(c)** The entry $(2,1)$ of
 $\mathbf{E}_{21}(\mathbf{E}_{21}\mathbf{A})$ is $\sum
 e_{2j}(a_{2j}a_{j1})_{j1}$. **(d)** The first component of
 $\mathbf{E}_{21}\mathbf{Ax}$ is $\sum e_{1j}a_{1j}x_j$.
+
+<span class = "exnum">23</span> The given elimination matrix
+
+$$
+    \mathbf{E} = \begin{bmatrix}
+        1 & 0 \\
+       -2 & 1
+    \end{bmatrix}
+$$
+
+subtracts row one two times from the second, so computation
+
+$$
+    \mathbf{E}(\mathbf{EA}) = \begin{bmatrix}
+        a           & a           \\
+        a - 2a - 2a & a - 2a - 2a
+    \end{bmatrix}.
+$$
+
+The opposite order product is
+
+$$
+    \begin{array}{r c l}
+        \mathbf{AE} & = & \begin{bmatrix}
+            a(1) + a(-2) & a(0) + a(1) \\
+            a(1) + a(-2) & a(0) + a(1) \\
+        \end{bmatrix}
+        & = & \begin{bmatrix}
+            -a & a \\
+            -a & a
+        \end{bmatrix},
+    \end{array}
+$$
+
+so in this computation column two is subtracted two times from
+column one.
