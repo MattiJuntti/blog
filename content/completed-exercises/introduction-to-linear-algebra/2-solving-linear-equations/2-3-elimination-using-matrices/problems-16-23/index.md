@@ -589,7 +589,7 @@ $$
             a(1) + a(-2) & a(0) + a(1) \\
             a(1) + a(-2) & a(0) + a(1) \\
         \end{bmatrix}
-        & = & \begin{bmatrix}
+        \\[0.5em] & = & \begin{bmatrix}
             -a & a \\
             -a & a
         \end{bmatrix},
