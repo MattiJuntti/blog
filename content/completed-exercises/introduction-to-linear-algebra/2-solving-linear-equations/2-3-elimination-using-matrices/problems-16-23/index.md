@@ -553,3 +553,12 @@ $$
 $$
 
 so $\mathbf{EF} \neq \mathbf{FE}$.
+
+<span class = "exnum">22</span> Because the entries of $\mathbf{A}$
+and $\mathbf{x}$ are $a_{ij}$ and $x_i$, respectively, then **(a)**
+the third component of $\mathbf{Ax}$ is $\sum a_{3j}x_{j}$.
+**(b)** The $(2,1)$ entry of $\mathbf{E}_{21}\mathbf{A}$ is $\sum
+e_{2j}a_{j1}$. **(c)** The entry $(2,1)$ of
+$\mathbf{E}_{21}(\mathbf{E}_{21}\mathbf{A})$ is $\sum
+e_{2j}(a_{2j}a_{j1})_{j1}$. **(d)** The first component of
+$\mathbf{E}_{21}\mathbf{Ax}$ is $\sum e_{1j}a_{1j}x_j$.
