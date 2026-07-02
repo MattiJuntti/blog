@@ -375,3 +375,59 @@ $$
         0 & c^{100} & 1
     \end{bmatrix}.
 $$
+
+<span class = "exnum">19</span> When
+
+$$
+    \mathbf{P} = \begin{bmatrix}
+        0 & 1 & 0 \\
+        1 & 0 & 0 \\
+        0 & 0 & 1
+    \end{bmatrix}
+$$
+
+and
+
+$$
+    \mathbf{Q} = \begin{bmatrix}
+        0 & 0 & 1 \\
+        0 & 1 & 0 \\
+        1 & 0 & 0
+    \end{bmatrix}
+$$
+
+then
+
+$$
+    \begin{array}{r l}
+        \mathbf{PQ} & = & \begin{bmatrix}
+            0(0) + 1(0) + 0(1) & 0(0) + 1(1) + 0(0) & 0(1) + 1(0) + 0(0) \\
+            1(0) + 0(0) + 0(1) & 1(0) + 0(1) + 0(0) & 1(1) + 0(0) + 0(0) \\
+            0(0) + 0(0) + 1(1) & 0(0) + 0(1) + 1(0) & 0(1) + 0(0) + 1(0)
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            0 & 1 & 0 \\
+            0 & 0 & 1 \\
+            1 & 0 & 0
+        \end{bmatrix}
+    \end{array}
+$$
+
+and
+
+$$
+    \begin{array}{r l}
+        \mathbf{QP} & = & \begin{bmatrix}
+            0(0) + 0(1) + 1(0) & 0(1) + 0(0) + 1(0) & 0(0) + 0(0) + 1(1) \\
+            0(0) + 1(1) + 0(0) & 0(1) + 1(0) + 0(0) & 0(0) + 1(0) + 0(1) \\
+            1(0) + 0(1) + 0(0) & 1(1) + 0(0) + 0(0) & 1(0) + 0(0) + 0(1)
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            0 & 0 & 1 \\
+            1 & 0 & 0 \\
+            0 & 1 & 0
+        \end{bmatrix}
+    \end{array}
+$$
