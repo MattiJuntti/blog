@@ -145,3 +145,74 @@ $$
         6
     \end{bmatrix}.
 $$
+
+<span class = "exnum">26</span> Solving the equations
+
+$$
+    \begin{bmatrix}
+        1 & 4 \\
+        2 & 7
+    \end{bmatrix}
+    \begin{bmatrix}
+        x \\
+        y
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        1 \\
+        0
+    \end{bmatrix}
+    \qquad
+    \begin{bmatrix}
+        1 & 4 \\
+        2 & 7
+    \end{bmatrix}
+    \begin{bmatrix}
+        u \\
+        v
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        0 \\
+        1
+    \end{bmatrix}
+$$
+
+at the same time can be used by solving by using &ldquo;doubly
+augmented&rdquo; matrix
+
+$$
+    \left[
+        \begin{array}{c c | c c}
+            1 & 4 & 1 & 0 \\
+            2 & 7 & 0 & 1
+        \end{array}
+    \right].
+$$
+
+The solution starts by subtracting the first row from the second
+twice. This means that the matrix becomes
+
+$$
+    \left[
+        \begin{array}{c c | c c}
+            1 &  4 &  1 & 0 \\
+            0 & -1 & -2 & 1
+        \end{array}
+    \right].
+$$
+
+revealing that $y$ $=$ $2$ and $v$ $=$ $-1$. Substituting $y$ and
+$v$ back to the first equations gives two equations:
+
+$$
+    \begin{array}{ c l c c l }
+          & x + 4y   & \quad &   & u + 4v    \\
+        = & x + 4(2) & \quad & = & u + 4(-1) \\
+        = & x + 8    & \quad & = & u - 4     \\
+        = & 1        & \quad & = & 0
+    \end{array}
+$$
+
+From these outcomes it can be seen that $x$ $=$ $-7$ and $u$ $=$
+$4$.
