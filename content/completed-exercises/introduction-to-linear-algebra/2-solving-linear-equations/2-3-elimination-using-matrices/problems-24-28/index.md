@@ -216,3 +216,19 @@ $$
 
 From these outcomes it can be seen that $x$ $=$ $-7$ and $u$ $=$
 $4$.
+
+<span class = "exnum">27</span> If augmented matrix is
+
+$$
+    \left[
+        \begin{array}{ c c c c }
+            1 & 2 & 3 & a \\
+            0 & 4 & 5 & b \\
+            0 & 0 & d & c
+        \end{array}
+    \right],
+$$
+
+then **(a)** if $d$ $=$ $0$ anc $c$ $\neq$ $0$, the matrix of the
+augmented matrix does not have solutions. **(b)** If the $c$
+something else than zero, the matrix has infinitely many solutions.
