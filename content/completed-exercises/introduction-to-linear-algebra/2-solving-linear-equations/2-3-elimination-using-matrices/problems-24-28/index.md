@@ -232,3 +232,8 @@ $$
 then **(a)** if $d$ $=$ $0$ anc $c$ $\neq$ $0$, the matrix of the
 augmented matrix does not have solutions. **(b)** If the $c$
 something else than zero, the matrix has infinitely many solutions.
+
+<span class = "exnum">28</span> Since $\mathbf{AB}$ $=$
+$\mathbf{I}$ and $\mathbf{BC}$ $=$ $\mathbf{I}$, then $\mathbf{A}$
+$=$ $\mathbf{AI}$ $=$ $\mathbf{A}(\mathbf{BC})$ $=$
+$(\mathbf{AB})\mathbf{C}$ $=$ $\mathbf{IC}$ $=$ $\mathbf{C}$.
