@@ -31,12 +31,18 @@ $$
     \end{array}
 $$
 
+so
+
+\begin{equation}
+    \operatorname{mean}(\{kx\}) = k \operatorname{mean}(\{x\}).
+\end{equation}
+
 <span class = "exnum">2</span> Using the definition
 \eqref{eq:mean} to show that
 
-$$
+\begin{equation} \label{eq:meanconst}
     \operatorname{mean}(\{ x + c \}) = \operatorname{mean}(\{x\}) + c
-$$
+\end{equation}
 
 goes as follows:
 
