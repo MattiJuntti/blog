@@ -69,3 +69,9 @@ $$
             \operatorname{mean}(\{x\}) + c.
     \end{array}    
 $$
+
+<span class = "exnum">3</span>
+
+...
+
+
