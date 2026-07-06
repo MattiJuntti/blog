@@ -30,3 +30,36 @@ $$
         k\operatorname{mean}(\{x\}).
     \end{array}
 $$
+
+<span class = "exnum">2</span> Using the definition
+\eqref{eq:mean} to show that
+
+$$
+    \operatorname{mean}(\{ x + c \}) = \operatorname{mean}(\{x\}) + c
+$$
+
+goes as follows:
+
+$$
+    \begin{array}{r c l}
+        \operatorname{mean}(\{x + c\})
+        & = &
+            \dfrac{1}{N}\displaystyle\sum_{i=1}^N (x + c)
+        \\[0.5em] & = &
+            \dfrac{1}{N}\left((x_1 + c) + (x_2 + c) + \cdots + (x_n + c)\right)
+        \\[0.5em] & = &
+            \dfrac{1}{N}(x_1 + c + x_2 + c + \cdots + x_n + c)
+        \\[0.5em] & = &
+            \dfrac{1}{N}(x_1 + x_2 + \cdots + x_n + c + c + \cdots + c)
+        \\[0.5em] & = &
+            \dfrac{1}{N}(x_1 + x_2 + \cdots + x_n + Nc)
+        \\[0.5em] & = &
+            \dfrac{1}{N}(x_1 + x_2 + \cdots + x_n) + \dfrac{1}{N}Nc
+        \\[0.5em] & = &
+            \dfrac{1}{N}(x_1 + x_2 + \cdots + x_n) + c
+        \\[0.5em] & = &
+            \dfrac{1}{N} \displaystyle\sum_{i=1}^N x_i + c
+        \\[0.5em] & = &
+            \operatorname{mean}(\{x\}) + c.
+    \end{array}    
+$$
