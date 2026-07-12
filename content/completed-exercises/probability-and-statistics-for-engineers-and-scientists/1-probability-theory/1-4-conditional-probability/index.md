@@ -101,3 +101,76 @@ $$
 $$
 
 because $(A \cap B)$ $\in$ $(A \cup B)$.
+
+<span class = "exnum">3</span> **(a)** Let $A$ denote event that
+card is ace of hearts and $B$ that the card is of red suit. Then
+
+$$
+    \begin{array}{r c l}
+        P(A|B)
+        & =       & \dfrac{P(A \cap B)}{P(B)} \\[0.5em]
+        & =       & \dfrac{1/52}{26/52}       \\[0.5em]
+        & =       & \dfrac{1}{26}             \\[0.5em]
+        & \approx & 0.04
+    \end{array}
+$$
+
+**(b)** If card is heart ($A$) and from red suit ($B$), then
+
+$$
+    \begin{array}{r c l}
+        P(A|B)
+        & = & \dfrac{P(A \cap B)}{P(B)} \\[0.5em]
+        & = & \dfrac{13/52}{26/52}      \\[0.5em]
+        & = & \dfrac{1/4}{1/2}          \\[0.5em]
+        & = & \dfrac{1}{8}.
+    \end{array}
+$$
+
+**(c)** If card is from red suit ($A$) and a heart ($B$), then
+
+$$
+    \begin{array}{r c l}
+        P(A|B)
+        & =       & \dfrac{P(A \cap B)}{P(B)} \\[0.5em]
+        & =       & \dfrac{1/26}{13/52}       \\[0.5em]
+        & =       & \dfrac{1/26}{1/4}         \\[0.5em]
+        & \approx & 0.15
+    \end{array}
+$$
+
+**(d)** If card is heart ($A$) and from black suit ($B$), then
+
+$$
+    \begin{array}{r c l}
+        P(A|B)
+        & = & \dfrac{P(A \cap B)}{P(B)} \\[0.5em]
+        & = & \dfrac{0}{26/52}          \\[0.5em]
+        & = & 0.
+    \end{array}
+$$
+
+Card can't be heart if it's from black suit.
+
+**(e)** If card is king ($A$) and from red suit, then
+
+$$
+    \begin{array}{r c l}
+        P(A|B)
+        & =       & \dfrac{P(A \cap B)}{P(B)} \\[0.5em]
+        & =       & \dfrac{2/26}{26/52}       \\[0.5em]
+        & =       & \dfrac{2}{13}             \\[0.5em]
+        & \approx & 0.15.
+    \end{array}
+$$
+
+**(f)** If card is king ($A$) and red picture card ($B$), then
+
+$$
+    \begin{array}{r c l}
+        P(A|B)
+        & =       & \dfrac{P(A \cap B)}{P(B)} \\[0.5em]
+        & =       & \dfrac{1/12}{12/52}       \\[0.5em]
+        & \approx & 0.36.
+    \end{array}
+$$
