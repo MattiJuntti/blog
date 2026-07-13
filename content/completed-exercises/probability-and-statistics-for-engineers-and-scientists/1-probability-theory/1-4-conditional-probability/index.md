@@ -174,3 +174,16 @@ $$
         & \approx & 0.36.
     \end{array}
 $$
+
+<span class = "exnum">4</span> It the complement of $B$ is not
+empty and $A$ $\subset$ $B$, then $P(A)$ is smaller and a proper
+subset of $B$, or the same size as $P(A|B)$ and equal to $B$, but
+not bigger. An intuition why $A$ can't be bigger is that, if it
+was, then
+
+$$
+    \frac{P(A \cap B)}{P(B)} > 1
+$$
+
+which violates the axiom of probability where all events in a event
+space must be less than or equal to $1$.
