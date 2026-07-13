@@ -187,3 +187,15 @@ $$
 
 which violates the axiom of probability where all events in a event
 space must be less than or equal to $1$.
+
+<span class = "exnum">5</span> The probability for ball being blue
+is $\frac{54}{150}$, so there are $150 - 54$ $=$ $96$ red balls in
+the bag. The probability that chosen red and shiny is then
+
+$$
+    \dfrac{36}{96} = \dfrac{3}{8}.
+$$
+
+The probability of a chosen ball being dull red is then $1 -
+\frac{3}{8}$ $=$ $\frac{5}{8}$, where $1$ is the event of ball
+being red.
