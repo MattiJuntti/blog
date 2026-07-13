@@ -199,3 +199,23 @@ $$
 The probability of a chosen ball being dull red is then $1 -
 \frac{3}{8}$ $=$ $\frac{5}{8}$, where $1$ is the event of ball
 being red.
+
+<span class = "exnum">6</span> Let $P(X)$ stand for the probability
+of event that car repair is on time and $P(Y|X)$ stand for the
+probability that the repair is satisfactory, given it's on time.
+From the problem definition it's known that $P(X)$ $=$ $0.77$ and
+$P(Y|X)$ $=$ $0.85$. The probability that repair is on time and is
+satisfactory is
+
+$$
+    \begin{array}{c r c l}
+                            & P(X|Y) & = & \dfrac{P(Y \cap X)}{P(X)} \\[0.5em]
+        \Longleftrightarrow & 0.85   & = & \dfrac{P(Y \cap X)}{0.77}.
+    \end{array}
+$$
+
+Multiplying both sides of the right hand equation shows that
+
+$$
+    P(Y \cap X) = P(X \cap Y) = 0.85 \cdot 0.77 = 0.6545.
+$$
