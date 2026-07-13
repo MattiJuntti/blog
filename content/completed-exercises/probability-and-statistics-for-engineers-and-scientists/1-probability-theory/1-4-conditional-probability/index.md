@@ -229,3 +229,15 @@ black hair, conditioned on that the lottery winner own a red car
 remains unchanged. **(d)** The probability that a lottery winner is
 more than $50$, conditioned on that the lottery winner is more than
 $30$ years old remains unchanged.
+
+<span class = "exnum">8</span> Since the assumption is that births
+are equally like on any day, the probability that a random person
+has a birthday on first day $P(A)$ $=$ $\frac{12}{365}$, because
+there are $12$ first days in a year, one for each month. When
+conditioned on March, i.e. what is the probability that the first
+person is born on first day given that day is in March is
+$\frac{1}{31}$, because there is only one first day on March. If
+the given month is February, the denominator of the previous
+fraction becomes $28$, so the probability for person born on first
+day given the month is February is $\frac{1}{28}$.
+
