@@ -219,3 +219,13 @@ Multiplying both sides of the right hand equation shows that
 $$
     P(Y \cap X) = P(X \cap Y) = 0.85 \cdot 0.77 = 0.6545.
 $$
+
+<span class = "exnum">7</span> **(a)** If it's raining today, the
+probability of raining tomorrow either increases, decreases or
+remains unchanged. **(b)** The probability that lottery winner has
+black hair, conditioned on that the lottery winner has brown eyes
+remains unchanged. **(c)** The probability that lottery winner has
+black hair, conditioned on that the lottery winner own a red car
+remains unchanged. **(d)** The probability that a lottery winner is
+more than $50$, conditioned on that the lottery winner is more than
+$30$ years old remains unchanged.
