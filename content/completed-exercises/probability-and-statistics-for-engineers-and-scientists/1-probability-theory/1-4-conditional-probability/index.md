@@ -301,7 +301,7 @@ $/$ $P(B)$ $=$ $0.03$ $/$ $(0.11 + 0.07 + 0.16 + 0.03)$ $=$ $0.03$
 $/$ $0.37$ $\approx$ $0.08$.
 
 <span class = "exnum">10</span> The given probability values for
-two assembly lines operations are
+two assembly lines operations are,
 
 $$
     \begin{array}{ | c c c | } \hline
