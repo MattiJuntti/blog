@@ -241,3 +241,61 @@ the given month is February, the denominator of the previous
 fraction becomes $28$, so the probability for person born on first
 day given the month is February is $\frac{1}{28}$.
 
+<span class = "exnum">9</span> The events of batteries failing are:
+
+$$
+    \begin{array}{| c c |} \hline
+        E_1                 & E_2                 \\
+        (\text{I, II, III}) & (\text{I, III, II}) \\
+        \text{\small 0.11}  & \text{\small 0.07}  \\[1.0em]
+        E_3                 & E_4                 \\
+        (\text{II, I, III}) & (\text{II, III, I}) \\
+        \text{\small 0.24}  & \text{\small 0.39}  \\[1.0em]
+        E_5                 & E_6                 \\
+        (\text{III, I, II}) & (\text{III, II, I}) \\
+        \text{\small 0.16}  & \text{\small 0.03}  \\ \hline
+    \end{array}
+$$
+
+where a sequence $(A,B,C)$ denotes that battery of type $A$ fails
+first, then type $B$ and finally $C$. Given these the probabilites:
+
+**(a)** Let probability of type $\text{I}$ battery lasting longest
+is $P(A)$. Then it not failing first is $P(A^\prime)$. Given these,
+$A$ conditional on $A^\prime$ is
+
+$$
+    \begin{array}{r c l}
+        P(A|A^\prime)
+            & =       & \dfrac{P(A \cap A^\prime)}{P(A^\prime)}                              \\[0.5em]
+            & =       & \dfrac{P(A \cap \{1 - P(A)\})}{1 - P(A)}                             \\[0.5em]
+            & =       & \dfrac{P(\{E_4,E_6\} \cap \{E_3,E_4,E_5,E_6\})}{\{E_3,E_4,E_5,E_6\}} \\[0.5em]
+            & =       & \dfrac{P(\{E_4,E_6\})}{P(\{E_3,E_4,E_5,E_6\})}                       \\[0.5em]
+            & \approx & 0.51.
+    \end{array}
+$$
+
+**(b)** The probability of type $\text{I}$ battery lasting
+longest ($A$) conditional on type $\text{II}$ failing first ($B$)
+is
+
+$$
+    \begin{array}{r c l}
+        P(A|B)
+            & =       & \dfrac{P(A \cap B)}{P(B)}      \\[0.5em]
+            & =       & \dfrac{P(E_4)}{P(\{E_3,E_4\})} \\[0.5em]
+            & \approx & 0.93.
+    \end{array}
+$$
+
+**(c)** The probability of type $\text{I}$ battery lasting longest
+($A$) conditional on type $\text{II}$ lasting longest ($B$) is $0$
+because $P(A \cap B)$ $=$ $0$ due to $A$ and $B$ being disjoint
+events.
+
+**(d)** The probability of type $\text{I}$ battery lasting longest
+($A$) is $P(A)$ $=$ $P(\{E_4,E_6\})$ and the probability of type
+$\text{II}$ battery not failing first ($B$) is $P(B)$ $=$
+$P(\{E_1,E_2,E_5,E_6)$, so $A$ conditional on $B$ is $P(A \cap B)$
+$/$ $P(B)$ $=$ $0.03$ $/$ $(0.11 + 0.07 + 0.16 + 0.03)$ $=$ $0.03$
+$/$ $0.37$ $\approx$ $0.08$.
