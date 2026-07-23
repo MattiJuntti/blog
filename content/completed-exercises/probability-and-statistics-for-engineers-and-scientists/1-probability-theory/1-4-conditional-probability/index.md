@@ -299,3 +299,49 @@ $\text{II}$ battery not failing first ($B$) is $P(B)$ $=$
 $P(\{E_1,E_2,E_5,E_6)$, so $A$ conditional on $B$ is $P(A \cap B)$
 $/$ $P(B)$ $=$ $0.03$ $/$ $(0.11 + 0.07 + 0.16 + 0.03)$ $=$ $0.03$
 $/$ $0.37$ $\approx$ $0.08$.
+
+<span class = "exnum">10</span> The given probability values for
+two assembly lines operations are
+
+$$
+    \begin{array}{ | c c c | } \hline
+        (S,S)                & (S,P)                & (S,F)          \\[-0.25em]
+        \text{\small 0.02} & \text{\small 0.06} & \text{\small 0.05} \\[1em]
+        (P,S)                & (P,P)                & (P,F)          \\[-0.25em]
+        \text{\small 0.07} & \text{\small 0.14} & \text{\small 0.20} \\[1em]
+        (F,S)                & (F,P)                & (F,F)          \\[-0.25em]
+        \text{\small 0.06} & \text{\small 0.21} & \text{\small 0.19} \\[1em]
+        \hline
+    \end{array}
+$$
+
+where $S$ stands for given line being shutdown, $P$ for line
+running at partial capacity and $F$ for line running at full
+capacity.
+
+**(a)** The event that both lines are at full capacity is $A$ $=$
+$\{ (F,F) \}$ and the event that neither of the lines are shutdown
+is $B$ $=$ $\{ (P,P), (P,F), (F,P), (F,F) \}$, so $A$ conditional
+on $B$ is $P(A|B)$ $=$ $P(A \cap B)$ $/$ $P(B)$ $=$ $0.19$ $/$
+$(0.14$ $+$ $0.20$ $+$ $0.21$ $+$ $0.19)$ $\approx$ $0.26$.
+
+**(b)** If event that at least one line is at full capacity $A$
+$=$ $\{(S,F),$ $(P,F),$ $(F,S),$ $(F,P),$ $(F,F)\}$ and the event
+that neither line being shut is $B$ $=$ $\{(P,P),$ $(P,F),$
+$(F,P),$ $(F,F)\}$, then $A$ conditional on $B$ is $P(A|B)$ $=$
+$P(A \cap B)$ $/$ $P(B)$ $=$ $(0.20$ $+$ $0.21$ $+$ $0.19)$ $/$
+$(0.14$ $+$ $0.20$ $+$ $0.21$ $+$ $0.19)$ $\approx$ $0.81$.
+
+**(c)** When the event that at least one assembly line is running
+at full capacity is $A$ $=$ $\{(S,F),$ $(P,F),$ $(F,S),$ $(F,P),$
+$(F,F)\}$ and the event where exactly one line is being shut down
+$B$ $=$ $\{(S,P),$ $(S,F),$ $(P,S),$ $(F,S)\}$, then $A$
+conditional on $B$ is $P(A|B)$ $=$ $P(A \cap B)$ $/$ $P(B)$ $=$
+$(0.05$ $+$ $0.06)$ $/$ $(0.06$ $+$ $0.05$ $+$ $0.07$ $+$ $0.06)$
+$\approx$ $0.46$.
+
+**(d)** Probability that neither line is at full capacity ($A$)
+conditional on at least one line is operating at partical capacity,
+that is, one line is either $P$ or $F$, or both, or in other words
+is not $(S,S)$ is $P(A|B)$ $=$ $P(A \cap B)$ $/$ $P(B)$ $=$ $(0.02$
+$+$ $0.06$ $+$ $0.07$ $+$ $0.14)$ $/$ $(1 - 0.02)$ $\approx$ $0.30$.
