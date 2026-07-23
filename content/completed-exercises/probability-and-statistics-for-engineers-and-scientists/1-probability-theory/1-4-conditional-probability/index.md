@@ -258,7 +258,7 @@ $$
 $$
 
 where a sequence $(A,B,C)$ denotes that battery of type $A$ fails
-first, then type $B$ and finally $C$. Given these the probabilites:
+first, then type $B$ and finally $C$. Given these the probabilities:
 
 **(a)** Let probability of type $\text{I}$ battery lasting longest
 is $P(A)$. Then it not failing first is $P(A^\prime)$. Given these,
@@ -341,7 +341,7 @@ $(0.05$ $+$ $0.06)$ $/$ $(0.06$ $+$ $0.05$ $+$ $0.07$ $+$ $0.06)$
 $\approx$ $0.46$.
 
 **(d)** Probability that neither line is at full capacity ($A$)
-conditional on at least one line is operating at partical capacity,
+conditional on at least one line is operating at partial capacity,
 that is, one line is either $P$ or $F$, or both, or in other words
 is not $(S,S)$ is $P(A|B)$ $=$ $P(A \cap B)$ $/$ $P(B)$ $=$ $(0.02$
 $+$ $0.06$ $+$ $0.07$ $+$ $0.14)$ $/$ $(1 - 0.02)$ $\approx$ $0.30$.
