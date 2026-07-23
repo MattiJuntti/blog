@@ -51,6 +51,7 @@ $$
 
 **(d)** Because
 
+<div class = "widescreen">
 $$
     \begin{array}{r c l}
         P(B|A \cup B)
@@ -64,11 +65,29 @@ $$
             & = & \dfrac{P(B \cap A) - P(B) - P(A \cap B)}{P(A \cup B)}          \\[0.5em]
     \end{array}
 $$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{c l}
+              & P(B|A \cup B)                                                  \\[0.5em]
+            = & \dfrac{P(B \cap (A \cup B))}{P(A \cup B)}                      \\[0.5em]
+            = & \dfrac{P((B \cap A) \cup (B \cap B))}{P(A \cup B)}             \\[0.5em]
+            = & \dfrac{P((B \cap A) \cup (B))}{P(A \cup B)}                    \\[0.5em]
+            = & \dfrac{P(B \cap A) - P(B) - P((B \cap A) \cap B)}{P(A \cup B)} \\[0.5em]
+            = & \dfrac{P(B \cap A) - P(B) - P(B \cap A \cap B)}{P(A \cup B)}   \\[0.5em]
+            = & \dfrac{P(B \cap A) - P(B) - P(A \cap B \cap B)}{P(A \cup B)}   \\[0.5em]
+            = & \dfrac{P(B \cap A) - P(B) - P(A \cap B)}{P(A \cup B)}          \\[0.5em]
+            = & \dfrac{P(B \cap A) - P(B) - P(A \cap B)}{P(A \cup B)}          \\[0.5em]
+    \end{array}
+$$
+</div>
 
 and $P(B \cap A)$ $=$ $0.01$ $+$ $0.02$ $+$ $0.05$ $=$ $0.08$,
 $P(A)$ $=$ $0.07$ $+$ $0.05$ $+$ $0.01$ $+$ $0.08$ $+$ $0.02$ $+$
 $0.04$ $+$ $0.05$ $=$ $0.32$ and $P(B)$ $=$ $0.46$, then
 
+<div class = "widescreen">
 $$
     \begin{array}{r c l}
         \dfrac{P(B \cap A) + P(B) - P(A \cap B)}{P(A \cup B)}
@@ -81,9 +100,28 @@ $$
                 \end{array}
             }                       \\[0.5em]
             & = & \dfrac{0.46}{0.7} \\[0.5em]
-            & = & 0.6571
+            & = & 0.6571.
     \end{array}
 $$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{c l}
+              & \dfrac{P(B \cap A) + P(B) - P(A \cap B)}{P(A \cup B)} \\[0.5em]
+            = & \dfrac{0.08 + 0.46 - 0.08}{
+                \begin{array}{l}
+                    \phantom{+} 0.07 + 0.05 + 0.01 \\
+                    + 0.08 + 0.02 + 0.04 \\
+                    + 0.05 + 0.11 + 0.06 \\
+                    + 0.08 + 0.13
+                \end{array}
+            }                       \\[0.5em]
+            = & \dfrac{0.46}{0.7} \\[0.5em]
+            = & 0.6571.
+    \end{array}
+$$
+</div>
 
 **(e)**
 
@@ -91,6 +129,7 @@ $$
 
 **(f)** Because
 
+<div class = "widescreen">
 $$
     \begin{array}{r c l}
         P(A \cap B|A \cup B)
@@ -99,6 +138,18 @@ $$
             & = & 1,
     \end{array}
 $$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{c l}
+          & P(A \cap B|A \cup B) \\[0.5em]
+        = & \dfrac{P((A \cap B) \cap (A \cup B))}{P(A \cup B)} \\[0.5em]
+        = & \dfrac{P(A \cup B)}{P(A \cup B)} \\[0.5em]
+        = & 1,
+    \end{array}
+$$
+</div>
 
 because $(A \cap B)$ $\in$ $(A \cup B)$.
 
@@ -216,9 +267,22 @@ $$
 
 Multiplying both sides of the right hand equation shows that
 
+<div class = "widescreen">
 $$
     P(Y \cap X) = P(X \cap Y) = 0.85 \cdot 0.77 = 0.6545.
 $$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{c l}
+          & P(Y \cap X)     \\[0.5em]
+        = & P(X \cap Y)     \\[0.5em]
+        = & 0.85 \cdot 0.77 \\[0.5em]
+        = & 0.6545.
+    \end{array}
+$$
+</div>
 
 <span class = "exnum">7</span> **(a)** If it's raining today, the
 probability of raining tomorrow either increases, decreases or
@@ -264,6 +328,7 @@ first, then type $B$ and finally $C$. Given these the probabilities:
 is $P(A)$. Then it not failing first is $P(A^\prime)$. Given these,
 $A$ conditional on $A^\prime$ is
 
+<div class = "widescreen">
 $$
     \begin{array}{r c l}
         P(A|A^\prime)
@@ -274,6 +339,20 @@ $$
             & \approx & 0.51.
     \end{array}
 $$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{c l}
+                & P(A|A^\prime)                                                        \\[0.5em]
+        =       & \dfrac{P(A \cap A^\prime)}{P(A^\prime)}                              \\[0.5em]
+        =       & \dfrac{P(A \cap \{1 - P(A)\})}{1 - P(A)}                             \\[0.5em]
+        =       & \dfrac{P(\{E_4,E_6\} \cap \{E_3,E_4,E_5,E_6\})}{\{E_3,E_4,E_5,E_6\}} \\[0.5em]
+        =       & \dfrac{P(\{E_4,E_6\})}{P(\{E_3,E_4,E_5,E_6\})}                       \\[0.5em]
+        \approx & 0.51.
+    \end{array}
+$$
+</div>
 
 **(b)** The probability of type $\text{I}$ battery lasting
 longest ($A$) conditional on type $\text{II}$ failing first ($B$)
