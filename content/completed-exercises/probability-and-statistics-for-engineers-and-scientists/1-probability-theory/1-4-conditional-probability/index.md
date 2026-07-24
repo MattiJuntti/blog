@@ -424,3 +424,17 @@ conditional on at least one line is operating at partial capacity,
 that is, one line is either $P$ or $F$, or both, or in other words
 is not $(S,S)$ is $P(A|B)$ $=$ $P(A \cap B)$ $/$ $P(B)$ $=$ $(0.02$
 $+$ $0.06$ $+$ $0.07$ $+$ $0.14)$ $/$ $(1 - 0.02)$ $\approx$ $0.30$.
+
+<span class = "exnum">11</span>
+
+...
+
+<span class = "exnum">12</span> Let gene being dominant or
+recessive be notated as $D$ or $R$, respectively, where gene either
+of type $A$ or $B$. When it's stated that $P(D|B)$ $=$ $0.31$ and
+$P(B \cap D)$ $=$ $0.22$ $=$ $P(D \cap B)$, it can be said that
+$P(D|B)$ $=$ $P(D \cap B)$ $/$ $P(B)$ is equal to $0.31$ $=$ $0.22$
+$/$ $P(B)$. Multiplying both sides with $P(B)$ and dividing with
+$0.31$, it can be seen that $P(B)$ $=$ $0.22$ $/$ $0.31$ $\approx$
+$0.71$. Becaus of this $P(A)$ $=$ $1 - P(B)$ $\approx$ $0.29$,
+which is the probability of a gene being of type $A$.
