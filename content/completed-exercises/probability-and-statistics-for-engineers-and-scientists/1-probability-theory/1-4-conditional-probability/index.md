@@ -438,3 +438,61 @@ $/$ $P(B)$. Multiplying both sides with $P(B)$ and dividing with
 $0.31$, it can be seen that $P(B)$ $=$ $0.22$ $/$ $0.31$ $\approx$
 $0.71$. Becaus of this $P(A)$ $=$ $1 - P(B)$ $\approx$ $0.29$,
 which is the probability of a gene being of type $A$.
+
+<span class = "exnum">13</span> Let the events $A$, $B$ and $C$,
+stand for component passing in performance, appearance and cost,
+respectively. Given probabilites are $P(B \cap C)$ $=$ $0.4$, $P(A
+\cap B \cap C)$ $=$ $0.31$, $P(A)$ $=$ $0.64$, $P(A^\complement
+\cap B^\complement \cap C^\complement)$ $=$ $0.19$ and
+$P(A^\complement \cap B \cap C^\complement)$ $=$ $0.06$.
+
+**(a)** To solve the probability $P(A^\complement \cap B \cap
+C^\complement)$, that is, the probability that component fails
+performance and appearance, but passes on cost, the complement of
+$A$, i.e., component fails on performance needs to be found. Then,
+together with the given probabilities, the event space can be
+partitioned into four disjoint events:
+
+$$
+    \begin{array}{l c c}
+        P(A^\complement, B, C)                         & = & y    \\
+        P(A^\complement, B, C^\complement)             & = & 0.06 \\
+        P(A^\complement, B^\complement, C)             & = & x    \\
+        P(A^\complement, B^\complement, C^\complement) & = & 0.19
+    \end{array}
+$$
+
+where $x$ is the probability under calculation. The probability $y$
+$=$ $P(A^\complement, B, C)$ can be found by observing that it's
+equal to $P(B \cap C)$ $-$ $P(A \cap B \cap C)$ $=$ $0.40$ $-$
+$0.31$ $=$ $0.09$, so the above table of probabilities becomes:
+
+$$
+    \begin{array}{l c c}
+        P(A^\complement, B, C)                         & = & 0.09 \\
+        P(A^\complement, B, C^\complement)             & = & 0.06 \\
+        P(A^\complement, B^\complement, C)             & = & x    \\
+        P(A^\complement, B^\complement, C^\complement) & = & 0.19
+    \end{array}
+$$
+
+and so it can be said that $P(A^\complement)$ $=$ $P(A^\complement,
+B, C)$ $+$ $P(A^\complement, B, C^\complement)$ $+$
+$P(A^\complement, B^\complement, C)$ $+$ $P(A^\complement,
+B^\complement, C^\complement)$ $=$ $0.09$ $+$ $0.06$ $+$ $x$ $+$
+$0.19$. Because $P(A^\complement)$ $=$ $1$ $-$ $P(A)$ $=$ $0.36$,
+then $x$ $=$ $0.36$ $-$ $(0.09$ $+$ $0.06$ $+$ $0.19)$ $=$ $0.02$,
+so the probability that a component fails on performance and
+appearance, but succeeds on cost, that is,
+
+$$
+    P(A^\complement, B^\complement, C) = 0.02.
+$$
+
+**(b)** If a component passes on both appearance and cost, the
+probability that it passes on all three characteristics is $P(A$
+$\cap$ $B$ $\cap$ $C$ $|$ $B$ $\cap$ $C)$ $=$ $P((A$ $\cap$ $B$
+$\cap$ $C)$ $\cap$ $(B$ $\cap$ $C))$ $=$ $P(A$ $\cap$ $B$ $\cap$
+$C$ $\cap$ $B$ $\cap$ $C)$ $/$ $P(B$ $\cap$ $C)$ $=$ $P($$(A \cap
+A)$ $\cap$ $(B \cap B)$ $\cap$ $C)$ $/$ $P(B$ $\cap$ $C)$ $=$ $P(A$
+$\cap$ $B$ $\cap$ $C)$ $/$ $P(B$ $\cap$ $C)$ $=$ $0.775$.
