@@ -439,7 +439,7 @@ $0.31$, it can be seen that $P(B)$ $=$ $0.22$ $/$ $0.31$ $\approx$
 $0.71$. Becaus of this $P(A)$ $=$ $1 - P(B)$ $\approx$ $0.29$,
 which is the probability of a gene being of type $A$.
 
-<span class = "exnum">13</span> Let the events $A$, $B$ and $C$,
+<span class = "exnum-ai-assisted">13</span> <span class = "ai">AI</span> Let the events $A$, $B$ and $C$,
 stand for component passing in performance, appearance and cost,
 respectively. Given probabilites are $P(B \cap C)$ $=$ $0.4$, $P(A
 \cap B \cap C)$ $=$ $0.31$, $P(A)$ $=$ $0.64$, $P(A^\complement
@@ -496,3 +496,30 @@ $\cap$ $C)$ $\cap$ $(B$ $\cap$ $C))$ $=$ $P(A$ $\cap$ $B$ $\cap$
 $C$ $\cap$ $B$ $\cap$ $C)$ $/$ $P(B$ $\cap$ $C)$ $=$ $P($$(A \cap
 A)$ $\cap$ $(B \cap B)$ $\cap$ $C)$ $/$ $P(B$ $\cap$ $C)$ $=$ $P(A$
 $\cap$ $B$ $\cap$ $C)$ $/$ $P(B$ $\cap$ $C)$ $=$ $0.775$.
+
+<span class = "exnum">14</span> When vegetable is good in taste
+($T$), in size ($S$) and in appearance ($A$) and the given
+probabilities are $P(T)$ $=$ $0.78$, $P(T \cap S)$ $=$ $0.69$,
+$P(T \cap S^\complement \cap A)$ $=$ $0.5$ and $P(S \cup A)$ $=$
+$P(S)$ $+$ $P(A)$ $-$ $P(S \cap P)$ $=$ $0.84$.
+
+**(a)** If the $P(S|T)$ $=$ $P(S \cap T)$ $/$ $P(T)$ $=$ $P(T \cap
+S)$ $/$ $P(T)$ $\approx$ $0.88$.
+
+**(b)** To find out the probablity of vegetable being good taste,
+if a vegetable has bad size, that is, probablity
+$P(T|(S^\complement \cap A^\complement))$
+
+$$
+    \begin{array}{c l}
+        = & \dfrac{P(T \cap (S^\complement \cap A^\complement))}{P(S^\complement \cap A^\complement)} \\[0.5em]
+        = & \dfrac{P(T \cap S^\complement \cap A^\complement)}{P(S^\complement \cap A^\complement)}   \\[0.5em]
+        = & \dfrac{0.05}{P(S^\complement \cap A^\complement)}
+    \end{array}
+$$
+
+the denominator needs to be found. Noticing that $P(S^\complement
+\cap A^\complement)$ $=$ $P((S \cup A)^\complement)$ $=$ $1$ $-$
+$P(S \cup A)$ $=$ $1$ $-$ $0.84$ $=$ $0.16$, the probability
+$P(T|(S^\complement \cap A^\complement)$ $=$ $0.05$ $/$ $0.16$ $=$
+$0.3125$.
