@@ -3,7 +3,7 @@ title  = "1.4 Conditional probability"
 layout = "solution-single"
 +++
 
-<span class = "exnum">1</span> **(a)**
+<span class = "exnum">1</span> **(a))**
 
 $$
     \begin{array}{r c l}
@@ -499,15 +499,12 @@ $\cap$ $B$ $\cap$ $C)$ $/$ $P(B$ $\cap$ $C)$ $=$ $0.775$.
 
 <span class = "exnum">14</span> When vegetable is good in taste
 ($T$), in size ($S$) and in appearance ($A$) and the given
-probabilities are $P(T)$ $=$ $0.78$, $P(T \cap S)$ $=$ $0.69$,
-$P(T \cap S^\complement \cap A)$ $=$ $0.5$ and $P(S \cup A)$ $=$
-$P(S)$ $+$ $P(A)$ $-$ $P(S \cap P)$ $=$ $0.84$.
-
-**(a)** If the $P(S|T)$ $=$ $P(S \cap T)$ $/$ $P(T)$ $=$ $P(T \cap
-S)$ $/$ $P(T)$ $\approx$ $0.88$.
-
-**(b)** To find out the probablity of vegetable being good taste,
-if a vegetable has bad size, that is, probablity
+probabilities are $P(T)$ $=$ $0.78$, $P(T \cap S)$ $=$ $0.69$, $P(T
+\cap S^\complement \cap A)$ $=$ $0.5$ and $P(S \cup A)$ $=$ $P(S)$
+$+$ $P(A)$ $-$ $P(S \cap P)$ $=$ $0.84$.  **(a)** If the $P(S|T)$
+$=$ $P(S \cap T)$ $/$ $P(T)$ $=$ $P(T \cap S)$ $/$ $P(T)$ $\approx$
+$0.88$.  **(b)** To find out the probablity of vegetable being good
+taste, if a vegetable has bad size, that is, probablity
 $P(T|(S^\complement \cap A^\complement))$
 
 $$
@@ -523,3 +520,26 @@ the denominator needs to be found. Noticing that $P(S^\complement
 $P(S \cup A)$ $=$ $1$ $-$ $0.84$ $=$ $0.16$, the probability
 $P(T|(S^\complement \cap A^\complement)$ $=$ $0.05$ $/$ $0.16$ $=$
 $0.3125$.
+
+<span class = "exnum">15</span> ...
+
+<span class = "exnum">16</span> ...
+
+<span class = "exnum">17</span> If the probabilities of expected
+revenue of a company is <i>below expectation</i> ($E_1$) with
+probability of $0.08$, <i>slightly below expectation</i> ($E_2$)
+with probability of $0.19$, <i>meets the expectation</i> ($E_3$)
+with probability of $0.26$, <i>slightly above expectation</i>
+($E_4$) with probability of $0.36$, and <i>above expectation</i>
+($E_5$) with probability of $0.11$, then if revenue is not below
+expectation, that is, revenue is expected or better ($\{E_3$ $\cap$
+$E_4$ $\cap$ $E_5\}$), the probability of revenue being expected is
+
+$$
+    \begin{array}{r c l}
+        P(E_3 | \{E_3, E_4, E_5\})
+            & =       & \dfrac{P(E_3 \cap \{E_3, E_4, E_5\})}{P(\{E_3, E_4, E_5\})} \\[0.5em]
+            & =       & \dfrac{P(E_3)}{P(E_3 \cap E_4 \cap E_5)}                    \\[1.0em]
+            & \approx & 0.36.
+    \end{array}
+$$
