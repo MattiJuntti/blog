@@ -436,12 +436,12 @@ $P(B \cap D)$ $=$ $0.22$ $=$ $P(D \cap B)$, it can be said that
 $P(D|B)$ $=$ $P(D \cap B)$ $/$ $P(B)$ is equal to $0.31$ $=$ $0.22$
 $/$ $P(B)$. Multiplying both sides with $P(B)$ and dividing with
 $0.31$, it can be seen that $P(B)$ $=$ $0.22$ $/$ $0.31$ $\approx$
-$0.71$. Becaus of this $P(A)$ $=$ $1 - P(B)$ $\approx$ $0.29$,
+$0.71$. Because of this $P(A)$ $=$ $1 - P(B)$ $\approx$ $0.29$,
 which is the probability of a gene being of type $A$.
 
 <span class = "exnum-ai-assisted">13</span> <span class = "ai">AI</span> Let the events $A$, $B$ and $C$,
 stand for component passing in performance, appearance and cost,
-respectively. Given probabilites are $P(B \cap C)$ $=$ $0.4$, $P(A
+respectively. Given probabilities are $P(B \cap C)$ $=$ $0.4$, $P(A
 \cap B \cap C)$ $=$ $0.31$, $P(A)$ $=$ $0.64$, $P(A^\complement
 \cap B^\complement \cap C^\complement)$ $=$ $0.19$ and
 $P(A^\complement \cap B \cap C^\complement)$ $=$ $0.06$.
@@ -503,8 +503,8 @@ probabilities are $P(T)$ $=$ $0.78$, $P(T \cap S)$ $=$ $0.69$, $P(T
 \cap S^\complement \cap A)$ $=$ $0.5$ and $P(S \cup A)$ $=$ $P(S)$
 $+$ $P(A)$ $-$ $P(S \cap P)$ $=$ $0.84$.  **(a)** If the $P(S|T)$
 $=$ $P(S \cap T)$ $/$ $P(T)$ $=$ $P(T \cap S)$ $/$ $P(T)$ $\approx$
-$0.88$.  **(b)** To find out the probablity of vegetable being good
-taste, if a vegetable has bad size, that is, probablity
+$0.88$.  **(b)** To find out the probability of vegetable being good
+taste, if a vegetable has bad size, that is, probability
 $P(T|(S^\complement \cap A^\complement))$
 
 $$
