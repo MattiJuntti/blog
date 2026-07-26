@@ -543,3 +543,17 @@ $$
             & \approx & 0.36.
     \end{array}
 $$
+
+<span class = "exnum">18</span> When the probabilities of an
+advertising campaign are: canceled before launch ($C$) is $0.10$ ,
+launched and canceled early ($L_c$) is $0.18$, launched and runs
+it's targeted time ($L_r$) is $0.43$ and launched and runs beyond
+extended length of it's targeted time is ($L_e$) is $0.29$, the
+probability that it's launched ($L$) is $P(L_c \cap L_r \cap L_e)$
+$=$ $P(L)$ $=$ $0.18$ $+$ $0.43$ $+$ $0.29$ $=$ $0.90$. The
+probability that campaign runs it's targeted time or beyond $T$, is
+$P(L_r \cap L_e)$ $=$ $P(T)$  $=$ $0.43$ $+$ $0.29$ $=$ $0.72$.
+Then, the probability that if advertising campaign is launched
+(i.e.  $L$), that it runs it's targeted time or beyond is $P(T|L)$
+$=$ $P(T \cap L)$ $/$ $P(L)$, but because $T$ $\subset$ $L$, the
+probability $P(T|L)$ $=$ $0.72$ $/$ $0.90$ $=$ $0.80$.
