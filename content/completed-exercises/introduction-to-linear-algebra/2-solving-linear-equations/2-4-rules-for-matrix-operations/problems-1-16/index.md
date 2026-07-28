@@ -190,3 +190,99 @@ $$
 which means that for the given matrices $\mathbf{A}$, $\mathbf{B}$
 and $\mathbf{C}$, $\mathbf{AB} + \mathbf{AC}$ $=$
 $\mathbf{A}(\mathbf{B} + \mathbf{C})$.
+
+<span class = "exnum">4</span> Continuing with the previous
+exercises matrices
+
+<div class = "widescreen">
+$$
+    \begin{array}{r c l}
+        \mathbf{A}(\mathbf{BC})
+            & = &
+                \begin{bmatrix}
+                    1 & 5 \\
+                    2 & 3
+                \end{bmatrix}
+                \begin{bmatrix}
+                    0(3) + 2(0) & 1(0) + 0(2) \\
+                    0(3) + 1(0) & 1(0) + 0(1)
+                \end{bmatrix}
+            \\[0.5em] & = &
+                \begin{bmatrix}
+                    1 & 5 \\
+                    2 & 3
+                \end{bmatrix}
+                \begin{bmatrix}
+                    0 & 0 \\
+                    0 & 0
+                \end{bmatrix}
+            \\[0.5em] & = &
+                \begin{bmatrix}
+                    0 & 0 \\
+                    0 & 0
+                \end{bmatrix}
+            \\[0.5em] & = &
+            \begin{bmatrix}
+                0(3) + 7(0) & 0(1) + 7(0) \\
+                0(3) + 7(0) & 0(1) + 7(0) \\
+            \end{bmatrix}
+            \\[0.5em] & = &
+            \begin{bmatrix}
+                0 & 7 \\
+                0 & 7
+            \end{bmatrix}
+            \begin{bmatrix}
+                3 & 1 \\
+                0 & 0 
+            \end{bmatrix}
+            \\[0.5em] & = &
+            (\mathbf{AB})C.
+    \end{array}
+$$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{r c l}
+            & &
+            \mathbf{A}(\mathbf{BC})
+            \\[0.5em] & = & \begin{bmatrix}
+                1 & 5 \\
+                2 & 3
+            \end{bmatrix}
+            \begin{bmatrix}
+                0(3) + 2(0) & 1(0) + 0(2) \\
+                0(3) + 1(0) & 1(0) + 0(1)
+            \end{bmatrix}
+            \\[0.5em] & = &
+                \begin{bmatrix}
+                    1 & 5 \\
+                    2 & 3
+                \end{bmatrix}
+                \begin{bmatrix}
+                    0 & 0 \\
+                    0 & 0
+                \end{bmatrix}
+            \\[0.5em] & = &
+                \begin{bmatrix} 0 & 0 \\
+                    0 & 0
+                \end{bmatrix}
+            \\[0.5em] & = &
+                \begin{bmatrix}
+                    0(3) + 7(0) & 0(1) + 7(0) \\
+                    0(3) + 7(0) & 0(1) + 7(0) \\
+                \end{bmatrix}
+            \\[0.5em] & = &
+                \begin{bmatrix}
+                    0 & 7 \\
+                    0 & 7
+                \end{bmatrix}
+                \begin{bmatrix}
+                    3 & 1 \\
+                    0 & 0 
+                \end{bmatrix}
+            \\[0.5em] & = &
+                (\mathbf{AB})C.
+    \end{array}
+$$
+</div>
