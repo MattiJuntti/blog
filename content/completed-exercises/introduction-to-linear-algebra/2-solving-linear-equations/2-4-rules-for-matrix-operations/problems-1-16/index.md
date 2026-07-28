@@ -23,3 +23,12 @@ allowed because operand dimensions don't match, and $\mathbf{A}
 $(\mathbf{B}_{5 \times 3}$ $+$ $\mathbf{C}_{5 \times 1})$ is not
 allowed because dimensions of $\mathbf{B}$ and $\mathbf{C}$ don't
 match.
+
+<span class = "exnum">2</span> Given some matrices $\mathbf{A}$ and
+$\mathbf{B}$ **(a)** the second column of product $\mathbf{A}
+\mathbf{B}$ is $\mathbf{Ab}_2$, where $\mathbf{b}_2$ is third
+column of $\mathbf{B}$, **(b)** the first row of $\mathbf{AB}$ is
+$\mathbf{a}_{1m}\mathbf{B}$, **(c)** the entry in row $3$, column
+$5$ of $\mathbf{AB}$ is $\mathbf{a}_{3m} \cdot \mathbf{b}_{n5}$ and
+**(d)** the entry in row $1$, column $1$ of $\mathbf{CDE}$ $=$
+$\mathbf{E}_{1k} \cdot \mathbf{d}_{kk} \cdot \mathbf{e}_{k1}$.
