@@ -236,7 +236,7 @@ $$
                 0 & 0 
             \end{bmatrix}
             \\[0.5em] & = &
-            (\mathbf{AB})C.
+            (\mathbf{AB})\mathbf{C}.
     \end{array}
 $$
 </div>
@@ -282,7 +282,277 @@ $$
                     0 & 0 
                 \end{bmatrix}
             \\[0.5em] & = &
-                (\mathbf{AB})C.
+                (\mathbf{AB})\mathbf{C}.
     \end{array}
 $$
 </div>
+
+<span class = "exnum">5</span> When
+
+$$
+    \mathbf{A} = \begin{bmatrix}
+        1 & b \\
+        0 & 1
+    \end{bmatrix}
+$$
+
+and when
+
+$$
+    \mathbf{A} = \begin{bmatrix}
+        2 & 2 \\
+        0 & 0
+    \end{bmatrix},
+$$
+
+the product
+
+<div class = "widescreen">
+$$
+    \begin{array}{r c l}
+            \mathbf{A}^3
+        & = &
+            (\mathbf{A}^2)\mathbf{A}
+        \\[0.5em] & = &
+            (\mathbf{AA})\mathbf{A}
+        \\[0.5em] & = &
+            \left(
+                \begin{bmatrix}
+                    1 & b \\
+                    0 & 1
+                \end{bmatrix}
+                \begin{bmatrix}
+                    1 & b \\
+                    0 & 1
+                \end{bmatrix}
+            \right)
+            \begin{bmatrix}
+                1 & b \\
+                0 & 1
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \left(
+                \begin{bmatrix}
+                    1(1) + b(0) & 1(b) + b(1) \\
+                    0(1) + 1(0) & 0(b) + 1(1) \\
+                \end{bmatrix}
+            \right)
+            \begin{bmatrix}
+                1 & b \\
+                0 & 1
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                1 & 2b \\
+                0 & 1
+            \end{bmatrix}
+            \begin{bmatrix}
+                1 & b \\
+                0 & 1
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                1(1) + 2b(0) & 1(b) + 2b(1) \\
+                0(1) + 1(0)  & 0(b) + 1(1)  \\
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                1 & 3b \\
+                0 &  1 \\
+            \end{bmatrix}
+    \end{array}
+$$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{r c l}
+        & &
+            \mathbf{A}^3
+        \\[0.25em] & = &
+            (\mathbf{A}^2)\mathbf{A}
+        \\[0.5em] & = &
+            (\mathbf{AA})\mathbf{A}
+        \\[0.5em] & = &
+            \left(
+                \begin{bmatrix}
+                    1 & b \\
+                    0 & 1
+                \end{bmatrix}
+                \begin{bmatrix}
+                    1 & b \\
+                    0 & 1
+                \end{bmatrix}
+            \right)
+            \begin{bmatrix}
+                1 & b \\
+                0 & 1
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \left(
+                \begin{bmatrix}
+                    1(1) + b(0) \hspace{-0.25em} & 1(b) + b(1) \\
+                    0(1) + 1(0) \hspace{-0.25em} & 0(b) + 1(1) \\
+                \end{bmatrix}
+            \right)
+            \begin{bmatrix}
+                1 & b \\
+                0 & 1
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                1 & 2b \\
+                0 & 1
+            \end{bmatrix}
+            \begin{bmatrix}
+                1 & b \\
+                0 & 1
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                1(1) + 2b(0) & 1(b) + 2b(1) \\
+                0(1) + 1(0)  & 0(b) + 1(1)  \\
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                1 & 3b \\
+                0 &  1 \\
+            \end{bmatrix}
+    \end{array}
+$$
+</div>
+
+so the pattern is
+
+$$
+    \mathbf{A}^n = \begin{bmatrix}
+        1 & nb \\
+        0 & 1  \\
+    \end{bmatrix}
+$$
+
+and
+
+<div class = "widescreen">
+$$
+    \begin{array}{r c l}
+            \mathbf{A}^3
+        & = &
+            (\mathbf{A}^2)\mathbf{A}
+        \\[0.5em] & = &
+            (\mathbf{AA})\mathbf{A}
+        \\[0.5em] & = &
+            \left(
+                \begin{bmatrix}
+                    2 & 2 \\
+                    0 & 0
+                \end{bmatrix}
+                \begin{bmatrix}
+                    2 & 2 \\
+                    0 & 0
+                \end{bmatrix}
+            \right)
+            \begin{bmatrix}
+                2 & 2 \\
+                0 & 0
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \left(
+                \begin{bmatrix}
+                    2(2) + 2(0) & 2(2) + 2(0) \\
+                    0(2) + 0(0) & 0(2) + 0(0) \\
+                \end{bmatrix}
+            \right)
+            \begin{bmatrix}
+                2 & 2 \\
+                0 & 0
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                4 & 4 \\
+                0 & 0
+            \end{bmatrix}
+            \begin{bmatrix}
+                2 & 2 \\
+                0 & 0
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                4(2) + 4(0) & 4(2) + 4(0) \\
+                0(2) + 0(0) & 0(2) + 0(0) \\
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                8 & 8 \\
+                0 & 0 \\
+            \end{bmatrix}.
+    \end{array}
+$$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{r c l}
+        & &
+            \mathbf{A}^3
+        \\[0.5em] & = &
+            (\mathbf{A}^2)\mathbf{A}
+        \\[0.5em] & = &
+            (\mathbf{AA})\mathbf{A}
+        \\[0.5em] & = &
+            \left(
+                \begin{bmatrix}
+                    2 & 2 \\
+                    0 & 0
+                \end{bmatrix}
+                \begin{bmatrix}
+                    2 & 2 \\
+                    0 & 0
+                \end{bmatrix}
+            \right)
+            \begin{bmatrix}
+                2 & 2 \\
+                0 & 0
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \left(
+                \begin{bmatrix}
+                    2(2) + 2(0) & \hspace{-0.35em} 2(2) + 2(0) \\
+                    0(2) + 0(0) & \hspace{-0.35em} 0(2) + 0(0) \\
+                \end{bmatrix}
+            \right)
+            \begin{bmatrix}
+                2 & 2 \\
+                0 & 0
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                4 & 4 \\
+                0 & 0
+            \end{bmatrix}
+            \begin{bmatrix}
+                2 & 2 \\
+                0 & 0
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                4(2) + 4(0) & 4(2) + 4(0) \\
+                0(2) + 0(0) & 0(2) + 0(0) \\
+            \end{bmatrix}
+        \\[0.5em] & = &
+            \begin{bmatrix}
+                8 & 8 \\
+                0 & 0 \\
+            \end{bmatrix}.
+    \end{array}
+$$
+</div>
+
+so
+
+$$
+    \mathbf{A}^n = \begin{bmatrix}
+        2^n & 2^n \\
+        0   & 0
+    \end{bmatrix}.
+$$
