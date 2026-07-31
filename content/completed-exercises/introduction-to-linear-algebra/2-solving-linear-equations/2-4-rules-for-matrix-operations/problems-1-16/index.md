@@ -556,3 +556,209 @@ $$
         0   & 0
     \end{bmatrix}.
 $$
+
+<span class = "exnum">6</span> When
+
+$$
+    \mathbf{A} = \begin{bmatrix}
+        1 & 2 \\
+        0 & 0
+    \end{bmatrix}
+    \quad
+    \mathbf{B} = \begin{bmatrix}
+        1 & 0 \\
+        3 & 0
+    \end{bmatrix},
+$$
+
+then
+
+<div class = "widescreen">
+$$
+    \begin{array}{r c l}
+        (\mathbf{A} + \mathbf{B})^2
+    & = &
+        \begin{bmatrix}
+            2 & 2 \\
+            3 & 0
+        \end{bmatrix}^2
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            2 & 2 \\
+            3 & 0
+        \end{bmatrix}
+        \begin{bmatrix}
+            2 & 2 \\
+            3 & 0
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            2(2) + 2(3) & 2(2) + 2(0) \\
+            3(2) + 0(3) & 3(2) + 0(0)
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            10 & 4 \\
+            6  & 6
+        \end{bmatrix},
+    \end{array}
+$$
+</div>
+<div class = "smallscreen">
+$$
+    \begin{array}{r c l}
+    & &
+        (\mathbf{A} + \mathbf{B})^2
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            2 & 2 \\
+            3 & 0
+        \end{bmatrix}^2
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            2 & 2 \\
+            3 & 0
+        \end{bmatrix}
+        \begin{bmatrix}
+            2 & 2 \\
+            3 & 0
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            2(2) + 2(3) & 2(2) + 2(0) \\
+            3(2) + 0(3) & 3(2) + 0(0)
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            10 & 4 \\
+            6  & 6
+        \end{bmatrix}.
+    \end{array}
+$$
+</div>
+
+but
+
+<div class = "widescreen">
+$$
+    \begin{array}{r c l}
+        \mathbf{A}^2 + 2\mathbf{AB} + \mathbf{B}^2
+    \\[0.5em] & = & \begin{bmatrix}
+            1 & 2 \\
+            0 & 0
+        \end{bmatrix}^2
+    +
+        2 \begin{bmatrix}
+            1 & 2 \\
+            0 & 0
+        \end{bmatrix}
+        \begin{bmatrix}
+            1 & 0 \\
+            3 & 0
+        \end{bmatrix}
+    +
+        \begin{bmatrix}
+            1 & 0 \\
+            3 & 0
+        \end{bmatrix}^2.
+    \end{array}
+$$
+</div>
+
+<div class = "smallscreen">
+$$
+    \begin{array}{r c l}
+    & &
+        \mathbf{A}^2 + 2\mathbf{AB} + \mathbf{B}^2
+    \\[0.5em] & = & \begin{bmatrix}
+            1 & 2 \\
+            0 & 0
+        \end{bmatrix}^2
+    +
+        2 \begin{bmatrix}
+            1 & 2 \\
+            0 & 0
+        \end{bmatrix}
+        \begin{bmatrix}
+            1 & 0 \\
+            3 & 0
+        \end{bmatrix}
+    +
+        \begin{bmatrix}
+            1 & 0 \\
+            3 & 0
+        \end{bmatrix}^2.
+    \end{array}
+$$
+</div>
+        
+The terms of the previous equation are
+
+$$
+    \begin{array}{r c l}
+        \mathbf{A}^2
+    & = & 
+        \begin{bmatrix}
+            1(1) + 0(2) & 2(1) + 0(2) \\
+            1(0) + 0(0) & 2(0) + 0(0)
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            1 & 2 \\
+            0 & 0
+        \end{bmatrix},
+    \\[0.0em] & & \\[0.0em]
+        2\mathbf{AB}
+    & = &
+        2 \begin{bmatrix}
+            1(1) + 3(2) & 0(1) + 0(2) \\
+            1(0) + 3(0) & 0(0) + 0(0)
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            2(7) & 2(0) \\
+            2(0) & 0(0)
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            14 & 0 \\
+             0 & 0
+        \end{bmatrix},
+    \\[0.0em] & & \\[0.0em]
+        \mathbf{B}^2
+    & = &
+        \begin{bmatrix}
+            1(1) + 3(0) & 0(1) + 0(0) \\
+            1(3) + 3(0) & 0(3) + 0(0)
+        \end{bmatrix}
+    \\[0.5em] & = &
+        \begin{bmatrix}
+            1 & 0 \\
+            3 & 0
+        \end{bmatrix},
+    \end{array}
+$$
+
+which adds to
+
+$$
+    \begin{array}{r c l}
+        \begin{bmatrix}
+            1 + 14 + 1 & 2 + 0 + 0 \\
+            0 +  0 + 3 & 0 + 0 + 0
+        \end{bmatrix}
+    & = &
+        \begin{bmatrix}
+            16 & 2 \\
+             3 & 0
+        \end{bmatrix},
+    \end{array} 
+$$
+
+so $(\mathbf{A} + \mathbf{B})^2$ $\neq$ $\mathbf{A}^2$ $+$
+$2\mathbf{AB}$ $+$ $\mathbf{B}^2$ for the given matrices. The
+correct rule for $(\mathbf{A}$ $+$ $\mathbf{B})$$(\mathbf{A}$ $+$
+$\mathbf{B})$ $=$ $\mathbf{AA}$ $+$ $\mathbf{AB}$ $+$ $\mathbf{BA}$
+$+$ $\mathbf{BB}$ $=$ $\mathbf{A}^2$ $+$ $\mathbf{AB}$ $+$
+$\mathbf{BA}$ $+$ $\mathbf{B}^2$, and that's it, because matrix
+multiplication operation does not (always) commute.
