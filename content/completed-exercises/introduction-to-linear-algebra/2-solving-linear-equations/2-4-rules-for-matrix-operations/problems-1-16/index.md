@@ -762,3 +762,144 @@ $\mathbf{B})$ $=$ $\mathbf{AA}$ $+$ $\mathbf{AB}$ $+$ $\mathbf{BA}$
 $+$ $\mathbf{BB}$ $=$ $\mathbf{A}^2$ $+$ $\mathbf{AB}$ $+$
 $\mathbf{BA}$ $+$ $\mathbf{B}^2$, and that's it, because matrix
 multiplication operation does not (always) commute.
+
+<span class = "exnum">7</span> **(a)** When
+
+$$
+    \mathbf{A} = \begin{bmatrix}
+        a_{11} & a_{12} & a_{13} \\
+        a_{21} & a_{22} & a_{23} \\
+        a_{31} & a_{32} & a_{33} \\
+    \end{bmatrix}
+$$
+
+and 
+
+$$
+    \mathbf{B} = \begin{bmatrix}
+        b & 0 & b \\
+        b & 1 & b \\
+        b & 2 & b \\
+    \end{bmatrix},
+$$
+
+then
+
+$$
+    \mathbf{AB} = \begin{bmatrix}
+        a_{11}b + a_{12}b + a_{13}b & 0a_{11} + 1a_{12} + 2a_{13} & a_{11}b + a_{12}b + a_{13}b \\
+        a_{21}b + a_{22}b + a_{23}b & 0a_{21} + 1a_{22} + 2a_{23} & a_{21}b + a_{22}b + a_{23}b \\
+        a_{31}b + a_{32}b + a_{33}b & 0a_{31} + 1a_{32} + 2a_{33} & a_{31}b + a_{32}b + a_{33}b \\
+    \end{bmatrix},
+$$
+
+from where it can be seen that columns $(\mathbf{AB})_{n1}$ $=$
+$(\mathbf{AB})_{n3}$.
+
+**(b)** If $\mathbf{B}$, i.e. rows $1$ and $3$ of $\mathbf{B}$ are
+same, is rotated $90$ degrees counterclockwise and $\mathbf{A}$
+remains the same, then
+
+$$
+    \mathbf{AB} = \begin{bmatrix}
+        a_{11}b + a_{12}0 + a_{13}b & a_{11}b + 1a_{12} + a_{13}b & a_{11}b + a_{12}2 + a_{13}b \\
+        a_{21}b + a_{22}0 + a_{23}b & a_{21}b + 1a_{22} + a_{23}b & a_{21}b + a_{22}2 + a_{23}b \\
+        a_{31}b + a_{32}0 + a_{33}b & a_{31}b + 1a_{32} + a_{33}b & a_{31}b + a_{32}2 + a_{33}b \\
+    \end{bmatrix},
+$$
+
+from where it can be seen that columns $(\mathbf{AB})_{n1}$ $\neq$
+$(\mathbf{AB})_{n3}$.
+
+**(c)** By the extension of the previous matrix product, the
+columns $1$ and $3$ of $\mathbf{ABC}$ are note same either.
+
+**(d)** If $\mathbf{A}$ is as above and
+
+$$
+    \mathbf{B} = \begin{bmatrix}
+        b_{11} & b_{12} & b_{13} \\
+        b_{21} & b_{22} & b_{23} \\
+        b_{31} & b_{32} & b_{33} \\
+    \end{bmatrix}    
+$$
+
+then
+
+$$
+    \begin{array}{r c l}
+        (\mathbf{AB})^2
+        \hspace{-0.8em} & = & \hspace{-0.8em}
+        \begin{bmatrix}
+            a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31} & \hspace{-0.8em} a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32} & \hspace{-0.8em} a_{11}b_{13} + a_{12}b_{23} + a_{13}b_{33} \hspace{-0.8em} \\
+            a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31} & \hspace{-0.8em} a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32} & \hspace{-0.8em} a_{21}b_{13} + a_{22}b_{23} + a_{23}b_{33} \hspace{-0.8em} \\
+            a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31} & \hspace{-0.8em} a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32} & \hspace{-0.8em} a_{31}b_{13} + a_{32}b_{23} + a_{33}b_{33} \hspace{-0.8em} \\
+        \end{bmatrix}^2.
+    \end{array}
+$$
+
+Computing the square as $(\mathbf{AB})(\mathbf{ab})_{i}$, where tha
+latter term is a column of $(\mathbf{AB})$ and $i$ $=$ $1,2,3$
+shows that:
+
+$$
+    \begin{array}{r c l}
+            (\mathbf{AB})(\mathbf{ab})_1
+        & = &
+            \left[
+                \begin{array}{l}
+                    b_{11}(a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31}) \\ + b_{21}(a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32}) \\ + b_{31} (a_{11}b_{13} + a_{12}b_{23} + a_{13}b_{33}) \\[0.5em]
+                    b_{11}(a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31}) \\ + b_{21}(a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32}) \\ + b_{31} (a_{21}b_{13} + a_{22}b_{23} + a_{23}b_{33}) \\[0.5em]
+                    b_{11}(a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31}) \\ + b_{21}(a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32}) \\ + b_{31} (a_{31}b_{13} + a_{32}b_{23} + a_{33}b_{33}) \\[0.5em]
+                \end{array}
+            \right],
+        \\[1em]
+            (\mathbf{AB})(\mathbf{ab})_2
+        & = &
+            \left[
+                \begin{array}{l}
+                    b_{12}(a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31}) \\ + b_{22}(a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32}) \\ + b_{32} (a_{11}b_{13} + a_{12}b_{23} + a_{13}b_{33}) \\[0.5em]
+                    b_{12}(a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31}) \\ + b_{22}(a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32}) \\ + b_{32} (a_{21}b_{13} + a_{22}b_{23} + a_{23}b_{33}) \\[0.5em]
+                    b_{12}(a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31}) \\ + b_{22}(a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32}) \\ + b_{32} (a_{31}b_{13} + a_{32}b_{23} + a_{33}b_{33}) \\[0.5em]
+                \end{array}
+            \right],
+        \\[1em]
+            (\mathbf{AB})(\mathbf{ab})_3
+        & = &
+            \left[
+                \begin{array}{l}
+                    b_{13}(a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31}) \\ + b_{23}(a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32}) \\ + b_{33} (a_{11}b_{13} + a_{12}b_{23} + a_{13}b_{33}) \\[0.5em]
+                    b_{13}(a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31}) \\ + b_{23}(a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32}) \\ + b_{33} (a_{21}b_{13} + a_{22}b_{23} + a_{23}b_{33}) \\[0.5em]
+                    b_{13}(a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31}) \\ + b_{23}(a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32}) \\ + b_{33} (a_{31}b_{13} + a_{32}b_{23} + a_{33}b_{33}) \\[0.5em]
+                \end{array}
+            \right].
+    \end{array}
+$$
+
+and omputing the squares and the product shows that:
+
+$$
+    \begin{array}{l c l}
+        \mathbf{A}^2
+    \hspace{-0.5em} & = & \hspace{-0.5em}
+        \begin{bmatrix}
+            a_{11}a_{11} + a_{21}a_{12} + a_{31}a_{13} & a_{12}a_{11} + a_{22}a_{12} + a_{32}a_{13} & a_{13}a_{11} + a_{23}a_{12} + a_{33}a_{13} \hspace{-1.0em} \\
+            a_{11}a_{21} + a_{21}a_{22} + a_{31}a_{23} & a_{12}a_{21} + a_{22}a_{22} + a_{32}a_{23} & a_{13}a_{21} + a_{23}a_{22} + a_{33}a_{23} \hspace{-1.0em} \\
+            a_{11}a_{31} + a_{21}a_{32} + a_{31}a_{33} & a_{12}a_{31} + a_{22}a_{32} + a_{32}a_{33} & a_{13}a_{31} + a_{23}a_{32} + a_{33}a_{33} \hspace{-1.0em} \\
+        \end{bmatrix},
+    \\[0.5em]
+        \mathbf{B}^2
+    \hspace{-0.5em} & = & \hspace{-0.5em}
+        \begin{bmatrix}
+            b_{11}b_{11} + b_{21}b_{12} + b_{31}b_{13} & b_{12}b_{11} + b_{22}b_{12} + b_{32}b_{13} & b_{13}b_{11} + b_{23}b_{12} + b_{33}b_{13} \hspace{-1.0em} \\
+            b_{11}b_{21} + b_{21}b_{22} + b_{31}b_{23} & b_{12}b_{21} + b_{22}b_{22} + b_{32}b_{23} & b_{13}b_{21} + b_{23}b_{22} + b_{33}b_{23} \hspace{-1.0em} \\
+            b_{11}b_{31} + b_{21}b_{32} + b_{31}b_{33} & b_{12}b_{31} + b_{22}b_{32} + b_{32}b_{33} & b_{13}b_{31} + b_{23}b_{32} + b_{33}b_{33} \hspace{-1.0em} \\
+        \end{bmatrix}.
+    \end{array}
+$$
+
+From these results, it can be seen that the first element of
+$\mathbf{A}^2\mathbf{B}^2$ shows that it's not equal to the first
+element of $(\mathbf{AB})(\mathbf{ab})_1$, so $\mathbf{AB}^2$
+$\neq$ $\mathbf{A}^2\mathbf{B}^2$.
+
