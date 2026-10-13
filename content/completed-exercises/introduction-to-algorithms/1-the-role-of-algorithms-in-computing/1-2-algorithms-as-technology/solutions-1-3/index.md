@@ -1,6 +1,5 @@
 +++
 title  = "Problems 1-3"
-date   = 2025-09-06T15:37:52+03:00
 layout = "solution-single"
 +++
 
