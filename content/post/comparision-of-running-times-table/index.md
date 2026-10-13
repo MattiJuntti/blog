@@ -58,10 +58,6 @@ is, around thirty and a half billion inputs in one minute.
 Though it's a good thing to be mindful that these values are
 indicative approximations, not actual measurements.
 
-<!-- Links -->
-[01]:{{< ref "lambert-w-function/index.md">}}
-[02]:https://mathworld.wolfram.com/LambertW-Function.html
-
 ### References
 
 Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022).
@@ -70,6 +66,11 @@ Introduction to algorithms (4th ed.). MIT Press.
 Iacono, R., & Boyd, J. P. (2017). New approximations to the principal
 real-valued branch of the Lambert W-function. _Advances in Computational
 Mathematics_, 43(6), 1403-1436. [https://doi.org/10.1007/s10444-017-9530-3][iacono17]
+
+<!-- Links -->
+[01]:{{< ref "lambert-w-function/index.md">}}
+[02]:https://mathworld.wolfram.com/LambertW-Function.html
+[iacono17]:https://www.researchgate.net/profile/John-Boyd-13/publication/315904900_New_approximations_to_the_principal_real-valued_branch_of_the_Lambert_W-function/links/5c6bcb124585156b5706e27c/New-approximations-to-the-principal-real-valued-branch-of-the-Lambert-W-function.pdf
 
 ### AI tool usage disclaimer
 
@@ -154,12 +155,12 @@ function W2(x)
     );
 }
 
-// ---------
+// --------- Stupid ad-hoc solution to get the small screen table ----
 
 tbl = document.getElementById("resulttable_ss");
 
 tbl.innerHTML = 
-    '\\begin{array}{ | c | c | c | c | c | c | c | } \\hline' + '\n'
+    '\\begin{array}{ | l | l | l | l | l | l | l | } \\hline' + '\n'
         + indnt // Row indentation
         + 'f(t) &'
         + ' 1 \\ \\text{s} &'
@@ -175,9 +176,9 @@ for (const [name, f] of Object.entries(functions)) {
     tbl.innerHTML += indnt + name;
 
     for (const t of durations) {
-        tbl.innerHTML += ' & ' + '\\small{'
-            + Number.parseFloat(f(t)).toExponential(2)
-        + '}';
+        let n = Number.parseFloat(f(t)).toExponential(2)
+        if (n == 'Infinity') { n = '\\infty'; }
+        tbl.innerHTML += ' & ' + '\\small{' + n + '}';
     }
 
     tbl.innerHTML += ' \\\\ ' + ' ' + '\n';
