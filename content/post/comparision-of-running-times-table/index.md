@@ -101,7 +101,7 @@ const functions = {
 const indnt = '    '; // Row indentation level
 
 tbl.innerHTML = 
-    '\\begin{array}{ | l | l | l | l | l | l | l | l | } \\hline' + '\n'
+    '\\begin{array}{ | c | r | r | r | r | r | r | r | } \\hline' + '\n'
         + indnt // Row indentation
         + 'n &'
         + ' 1 \\ \\text{s} &'
@@ -119,6 +119,10 @@ for (const [name, f] of Object.entries(functions)) {
     for (const t of durations) {
         let n = Number.parseFloat(f(t)).toExponential(2)
         if (n == 'Infinity') { n = '\\infty'; }
+        if (n.includes('+')) {
+            console.log(n);
+            n = n.replace('+','');
+        }
         tbl.innerHTML += ' & ' + '\\small{' + n + '}';
     }
 
@@ -160,7 +164,7 @@ function W2(x)
 tbl = document.getElementById("resulttable_ss");
 
 tbl.innerHTML = 
-    '\\begin{array}{ | l | l | l | l | l | l | l | } \\hline' + '\n'
+    '\\begin{array}{ | c | r | r | r | r | r | r | } \\hline' + '\n'
         + indnt // Row indentation
         + 'f(t) &'
         + ' 1 \\ \\text{s} &'
@@ -178,13 +182,15 @@ for (const [name, f] of Object.entries(functions)) {
     for (const t of durations) {
         let n = Number.parseFloat(f(t)).toExponential(2)
         if (n == 'Infinity') { n = '\\infty'; }
+        if (n.includes('+')) {
+            console.log(n);
+            n = n.replace('+','');
+        }
         tbl.innerHTML += ' & ' + '\\small{' + n + '}';
     }
 
     tbl.innerHTML += ' \\\\ ' + ' ' + '\n';
 }
-
-console.log(tbl.innerHTML)
 
 tbl.innerHTML += '\\hline' + '\n' + '\\end{array}'
 
