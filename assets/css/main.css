@@ -265,6 +265,11 @@ main {
     list-style   : none;
 }
 
+.main__center ol {
+    margin       : var(--padding-m) var(--padding-l) 0 var(--padding-l);
+    padding      : 0 var(--padding-l) 0 var(--padding-l);
+}
+
 .main__center img {
     max-width     : 100%;
     margin-top    : 2rem;
@@ -359,6 +364,11 @@ code {
 
     .header__center h1 {
         text-align : center;
+    }
+
+    .main__center ol {
+        margin  : var(--padding-m) var(--padding-m) 0 var(--padding-m);
+        padding : 0 var(--padding-l) 0 var(--padding-l);
     }
 
     .widescreen {
