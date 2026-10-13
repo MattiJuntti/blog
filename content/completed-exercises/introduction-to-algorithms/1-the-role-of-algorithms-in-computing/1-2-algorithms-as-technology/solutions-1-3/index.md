@@ -1,5 +1,5 @@
 +++
-title  = "Problems 1 - 3"
+title  = "Exercises 1 - 3"
 layout = "solution-single"
 +++
 
